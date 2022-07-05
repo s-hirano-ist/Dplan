@@ -1,0 +1,90 @@
+/* 
+  Localizable.strings
+  DraPla05
+
+  Created by S.Hirano on 2020/03/09.
+  Copyright © 2020 Sola_studio. All rights reserved.
+*/
+
+"Privacy policy" = "Privacy policy";
+"Terms of service" = "Terms of service";
+"Yes" = "Yes";
+"No" = "No";
+"Cancel" = "Cancel";
+"Close" = "Close";
+"Confirm" = "Confirm";
+"Search" = "Search";
+"Share" = "Share";
+"Open in Safari" = "Open in Safari";
+"Edit" = "Edit";
+"Move,Delete" = "Move,Delete";
+"Done" = "Done";
+"OK" = "OK";
+"Save" = "Save";
+"Title" = "Title";
+"No title" = "No title";
+
+"Make new plan" = "Make new plan";
+"Add new day" = "Add new day";
+"Add destination" = "Add destination";
+"Edit destination" = "Edit destination";
+
+"Edit transport" = "Edit transport";
+
+"Edit taken time" = "Edit taken time";
+"Add place" = "Add place";
+"Add plan" = "Add plan";
+"Add website" = "Add website";
+"Edit website" = "Edit website";
+"Add candidate" = "Add canditate";
+"Edit candidate" = "Edit canditate";
+
+"Go here" = "Go here";
+
+"Open in map app" = "Open in map app";
+"Show route" = "Show route";
+
+"Show route in Maps" = "Show route in Maps";
+"Show route in Google Maps" = "Show route in Google Maps";
+
+"Open in Maps" = "Open in Maps";
+"Open in Google Maps" = "Open in Google Maps";
+"Copy location" = "Copy location";
+
+
+"Pull to refresh" = "Pull to refresh";
+"https://www.google.com" = "https://www.google.com/";
+
+"Authentication is needed" = "Authentication is needed";
+"Input username and password" = "Input username and password";
+"user name" = "user name";
+"password" = "password";
+"Log in" = "Log in";
+"Input title" = "Input title";
+
+"Title of event" = "Title of event";
+
+"Destination" = "Destination";
+"Departing place" = "Departing place";
+
+"Address" = "Address";
+
+"Transport to here" = "Transport to here";
+
+"Stay time" = "stay time";
+"Departing time" = "Departing time";
+"Departing date" = "Departing date";
+
+"Notes" = "Notes";
+
+"Event title" = "Event title";
+"Search for a place or address" = "Search for a place or address";
+"Click to enter title" = "Click to enter title";
+"Not entered" = "Not entered";
+"min" = "min";
+"hr" = "hr";
+"Time to destination" = "Time taken to next location";
+"Lock time" = "Lock time";
+
+"OverWrite" = "Overwrite";
+

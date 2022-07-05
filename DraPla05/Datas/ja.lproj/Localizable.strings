@@ -1,0 +1,146 @@
+/* 
+  Localizable.strings
+  DraPla05
+
+  Created by S.Hirano on 2020/03/09.
+  Copyright © 2020 Sola_studio. All rights reserved.
+*/
+"Privacy policy" = "プライバシーポリシー";
+"Terms of service" = "利用規約";
+"Yes" = "はい";
+"No" = "いいえ";
+"Cancel" = "キャンセル";
+"Close" = "閉じる";
+"Confirm" = "確認";
+"Search" = "検索";
+"Share" = "共有";
+"Open in Safari" = "Safariで開く";
+"Edit" = "編集";
+"Move,Delete" = "編集、削除";
+"Done" = "完了";
+"OK" = "OK";
+"Save" = "保存";
+"Title" = "タイトル";
+"No title" = "タイトルなし";
+
+"All plans" = "プラン一覧";
+"All places" = "候補地一覧";
+"Websites" = "ウェブサイト";
+"Website" = "ウェブサイト";
+"Website URL" = "ウェブサイト";
+
+"Show map" = "地図で表示";
+"Show all" = "すべてを表示";
+"Show less" = "一部表示";
+
+"Make new plan" = "新規プラン作成";
+"Add new day" = "宿泊地設定\n(1日追加)";
+"Add destination" = "目的地追加";
+"Edit destination" = "編集";
+
+"Edit transport" = "交通手段編集";
+
+"Edit taken time" = "移動時間編集";
+"Add place" = "候補地を追加";
+"Add plan" = "プランを作成";
+"Add website" = "ウェブサイト追加";
+"Edit website" = "ウェブサイト編集";
+"Add candidate" = "候補地追加";
+"Edit candidate" = "候補地編集";
+"Candidate places" = "候補地";
+"Images" = "画像一覧";
+"Plans" = "プラン一覧";
+"Go here" = "ここへ行く";
+
+"Open in map app" = "マップで開く";
+"Show route" = "経路表示";
+
+"Show route in Maps" = "地図アプリで経路表示";
+"Show route in Google Maps" = "Google Mapsで経路表示";
+"Show route from here" = "ここからの経路表示";
+
+"Open in Maps" = "地図アプリで見る";
+"Open in Google Maps" = "Google Mapsで開く";
+"Copy location" = "位置情報をコピー";
+
+"Departing time" = "出発時刻";
+"Destination" = "目的地";
+"Time at destination" = "滞在時間";
+"Time to depart" = "出発時刻";
+"Date of departure" = "出発日時";
+"Pull to refresh" = "引っ張って更新";
+"https://www.google.com" = "https://www.google.co.jp/";
+
+"Authentication is needed" = "認証が必要です";
+"Input username and password" = "ユーザー名とパスワードを入力してください";
+"user name" = "user name";
+"password" = "password";
+"Log in" = "ログイン";
+"Input title" = "タイトルを入力";
+
+"Title of event" = "プラン名";
+"Add title image" = "タイトル画像追加";
+"Add image" = "画像追加";
+"Name" = "目的地名称";
+"Name of place" = "目的地";
+"Description of place" = "詳細";
+"Destination" = "目的地";
+"Departing place" = "出発地";
+"place Name" = "目的地名称";
+"Details" = "詳細";
+"Address" = "住所";
+"Add here to other data" = "他のプランにコピー";
+"Transport to here" = "ここまでの交通手段";
+
+"Stay time" = "滞在時間";
+"Departing time" = "出発時刻";
+"Time" = "時刻";
+"Departing date" = "出発日時";
+
+"Notes" = "メモ";
+"Name of place" = "目的地名称";
+"Event title" = "イベントタイトル";
+"Search for a place or address" = "目的地の名称か住所を入力";
+"Click to enter title" = "タイトル入力欄";
+"Not entered" = "未入力";
+"min" = "分";
+"hr" = "時間";
+"Time to destination" = "所要時間編集";
+"Lock time" = "時間ロック";
+
+"OverWrite" = "上書き保存";
+
+"About the app" = "このアプリについて";
+"App version" = "アプリのバージョン";
+"User name" = "ユーザー名";
+"e-mail address" = "Eメールアドレス";
+"Registrated information" = "登録情報";
+"Sign out" = "ログアウト";
+"Nothing entered" = "未登録";
+"Terms of service" = "利用規約";
+"Privacy policy" = "プライバシーポリシー";
+"Tap the \" + \" button to add a new plan" = "「+」ボタンをクリックしてプランを追加";
+"Tap the \" + \" button to add a new bookmark to a website" = "「+」ボタンをクリックしてウェブサイトを追加";
+"Tap the \" + \" button to add a new place you want to go" = "「+」ボタンをクリックして候補地を追加";
+"Add images to plans on the left screen or place you want to go to show images here" = "プランや候補地に画像を追加してここに画像を表示";
+
+"Unlock premium features" = "プレミアム機能をアンロック";
+"Remove Ads" = "広告除去";
+"Restore premium features" = "購入状態の復元";
+"Dismiss" = "閉じる";
+"Premium account" = "プレミアム会員";
+"features: No Ads" = "広告なし";
+"Purchase succeeded" = "購入完了";
+"Restore failed" = "復元失敗";
+"Restore completed" = "復元完了";
+"Please try again" ="再度お試し下さい";
+"Press dismiss to continue" = "閉じるボタンを押して下さい";
+"Nothing to restore" = "復元できる購入履歴が存在しません";
+"Please purchase the app. Please contact us for more information" = "まずはプレミア版を購入して下さい。何がお困りの点がございましたらデベロッパーに問い合わせ下さい。";
+"Error occured on purchase" = "購入に失敗しました";
+"Please retry" = "再手続きしてください";
+"Are you sure to sign out? No data except for user information will be deleted in this action." = "本当にログアウトしますか。登録されたユーザー情報以外は削除されません。";
+"Welcome to Dplan" = "Dplanへようこそ";
+
+"Official Twitter" = "公式Twitter";
+"Official Instagram" = "公式Instagram";
