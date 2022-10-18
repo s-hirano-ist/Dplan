@@ -1,8 +1,9 @@
 # 趣味で開発したアプリの概要
 
 詳しくは`promotion`フォルダを参照ください。
-
-
+2019 年ごろ制作したアプリのため、現行 iOS での対応状況はわかりかねます。
+また、プログラミング初学者のときの制作物となります。
+あらかじめご了承ください。
 
 ![iosAPP](/iosAPP.PNG)
 ![promotion](/promotion/mainViewPromotion01.png)
