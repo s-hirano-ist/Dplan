@@ -55,17 +55,17 @@
 		<true/>
 	</dict>
 	<key>NSCameraUsageDescription</key>
-	<string>写真を撮影します．</string>
+	<string>写真を撮影します。</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>現在位置を地図に表示するために利用します．</string>
+	<string>現在位置を地図に表示するために利用します。</string>
 	<key>NSLocationUsageDescription</key>
-	<string>現在位置を地図に表示するために利用します．</string>
+	<string>現在位置を地図に表示するために利用します。</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>現在位置を地図に表示するために利用します．</string>
+	<string>現在位置を地図に表示するために利用します。</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>撮影した写真を保存します．</string>
+	<string>撮影した写真を保存します。</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>画像を保存します．</string>
+	<string>画像を保存します。</string>
 	<key>UIFileSharingEnabled</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
