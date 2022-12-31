@@ -1,4 +1,4 @@
-platform :ios, '15.5'
+platform :ios, '16.2'
 
 target 'DraPla05' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -14,22 +14,22 @@ target 'DraPla05' do
   pod 'CropViewController'
   pod 'R.swift', '~> 7.2.4'
   pod 'SwipeCellKit', '~> 2.7.1'
-  pod 'RxSwift', '~> 5'
-  pod 'RxCocoa', '~> 5'
+  pod 'RxSwift', '~> 6.5.0'
+  pod 'RxCocoa', '~> 6.5.0'
 
-  pod 'IQKeyboardManagerSwift', '~> 6.3.0'
+  pod 'IQKeyboardManagerSwift', '~> 6.5.10'
   pod 'SnapKit', '~> 5.6.0'
   pod 'Motion', '~> 3.1.0'
   pod 'IGListKit', '~> 4.0.0'
-  pod 'SwiftyStoreKit', '~> 0.14.0'
+  pod 'SwiftyStoreKit', '~> 0.16.1'
   pod 'Alertift', '~> 4.1'
   pod "KRProgressHUD", '~> 3.4'
   
   # Pods for DraPla05
   
-  post_install do |installer|
-    installer.pods_project.build_configurations.each do |config|
-      config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
-    end
-  end
+#  post_install do |installer|
+#    installer.pods_project.build_configurations.each do |config|
+#      config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
+#    end
+#  end
 end
