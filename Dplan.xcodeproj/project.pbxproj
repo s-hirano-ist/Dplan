@@ -80,14 +80,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		FFF6C949242C866000BBE368 /* Embed App Extensions */ = {
+		FFF6C949242C866000BBE368 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
 			);
-			name = "Embed App Extensions";
+			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -516,7 +516,7 @@
 				FF9E6A5E22FD973100306786 /* Sources */,
 				FF9E6A6022FD973100306786 /* Resources */,
 				CCF79E6D8F32A693315DADB7 /* Frameworks */,
-				FFF6C949242C866000BBE368 /* Embed App Extensions */,
+				FFF6C949242C866000BBE368 /* Embed Foundation Extensions */,
 				C2226CEB50DC9930D160CAEE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -535,7 +535,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1340;
+				LastUpgradeCheck = 1420;
 				ORGANIZATIONNAME = Sola_studio;
 				TargetAttributes = {
 					FF9E6A6122FD973100306786 = {

@@ -192,8 +192,8 @@ extension Settings {
     }
     func raisedButton()->RaisedButton{
         let button = RaisedButton()
-        button.pulseColor = R.color.mainWhite()!
-        button.tintColor = R.color.mainWhite()!
+        button.pulseColor = R.color.mainBlack()!
+        button.tintColor = R.color.mainBlack()!
         button.backgroundColor = .clear
         return button
     }

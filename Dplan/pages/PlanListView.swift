@@ -16,69 +16,66 @@ class PlanListView: UIViewController {
     let c = RealmCandidate()
     let s = Settings()
     
+    var bannerViewHeight = 0 //MARK: is subscribed or not
+    
     var showAllNotes = true
     var showAllWebsites = true
     var showAllPlaces = true
     var showAllPlans = true
 
-    
-    var mainView:MainBackgroundView = {
-        let view = MainBackgroundView()
-        view.modalPresentationStyle = .fullScreen
-        return view
-    }()
-    
     lazy var collectionView :UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.estimatedItemSize = CGSize(width: 100, height: 40)
         let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
         collectionView.backgroundColor = .clear
         collectionView.alwaysBounceVertical = true
-        collectionView.showsVerticalScrollIndicator = false        
+        collectionView.showsVerticalScrollIndicator = false
         return collectionView
     }()
     
-    lazy var toSettingsButton: RaisedButton = {
+    lazy var topBarView = UIView()
+
+    lazy var addNewPlanButton: RaisedButton = {
         let button = s.raisedButton()
         button.tintColor = R.color.mainBlack()!
+        button.image = Icon.icon("ic_add_white")
+        button.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleAddNewPlan(gestureRecognizer:))))
+        return button
+    }()
+    @objc fileprivate func handleAddNewPlan(gestureRecognizer:UIGestureRecognizer) {
+        NUMBER = RealmPlan().countPlans()
+        RealmPlan().saveNewPlan()
+        present(mainView, animated: false, completion: { [self] in
+            self.mainView.collectionView.presentPlanLocationView(at: 0, 0, state: .newPlan)
+        })
+    }
+    
+    lazy var showSettingsButton: RaisedButton = {
+        let button = s.raisedButton()
         button.setImage(UIImage(systemName: "gear"), for: .normal)
         button.addGestureRecognizer(UITapGestureRecognizer(
             target: self,
-            action: #selector(showSettingsViewClicked(gestureRecognizer:))))
-        button.isHidden = true
+            action: #selector(handleShowSettings(gestureRecognizer:))))
         return button
     }()
-    @objc func showSettingsViewClicked(gestureRecognizer:UIGestureRecognizer) {
+    @objc fileprivate func handleShowSettings(gestureRecognizer:UIGestureRecognizer) {
         print("Settings button clicked")
-//        Segues().settingsSegue(controller: self)
     }
     
-    lazy var bottomView:UIView = {
-        let backgroundView = UIView()
-//        backgroundView.backgroundColor = .systemGray5
-        return backgroundView
-    }()
-    lazy var bottomTitleLabel:UILabel = {
+    lazy var titleLabel:UILabel = {
         let label = UILabel()
-        if let version = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as? String {
-            label.text = "Dplan version \(version)"
-        }else{
-            ERROR("error in version text error")
-            label.text = "Dplan version X.X"
-        }
+        label.text = "Dplan by Sola_studio"
+        //TODO: change fonts
         label.textAlignment = .left
-//        label.textColor = R.color.mainBlack()!
         label.isUserInteractionEnabled = true
-        label.addGestureRecognizer(UITapGestureRecognizer(target: self,
-                                                           action: #selector(bottomLabelClicked(gestureRecognizer:))))
+//        label.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTitleLabelClick(gestureRecognizer:))))
         return label
     }()
-    @objc func bottomLabelClicked(gestureRecognizer:UIGestureRecognizer){
-        //TODO: 無効化 ファイル以外に
-//        Segues().setPlanDataJson(data: getPlanJson())
-        adapter.performUpdates(animated: true, completion: nil)
-    }
-
+    /* TODO: add files from jsons
+     @objc func handleTitleLabelClick(gestureRecognizer:UIGestureRecognizer){
+         Segues().setPlanDataJson(data: getPlanJson())
+         adapter.performUpdates(animated: true, completion: nil)
+     }
     func getPlanJson()->JsonPlanData{
         let fileName = "write.json"
         var dir = FileManager.default.urls( for: .documentDirectory,
@@ -88,18 +85,24 @@ class PlanListView: UIViewController {
                                              from: try! Data(contentsOf: dir))
         return data
     }
-
-    private var bannerView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .clear
+     */
+    
+    var mainView = {
+        let view = MainBackgroundView()
+        view.modalPresentationStyle = .fullScreen
         return view
     }()
-
+    
+    private var bannerView: UIView = {
+        let view = UIView()
+        return view
+    }()
+    
     private var data:[ListDiffable] = []
     lazy private var adapter: ListAdapter = {
-         return ListAdapter(updater: ListAdapterUpdater(),
-                            viewController: self,
-                            workingRangeSize: 2)
+        return ListAdapter(updater: ListAdapterUpdater(),
+                           viewController: self,
+                           workingRangeSize: 2)
     }()
     var candidateView:CandidateLocationView = {
         let view = CandidateLocationView()
@@ -107,85 +110,62 @@ class PlanListView: UIViewController {
         return view
     }()
     
-    
-    lazy var addButton: FABButton = {
-        let button = FABButton(image: Icon.cm.share, tintColor: R.color.mainGray()! )
-        button.pulseColor = R.color.mainWhite()!
-        button.image = Icon.icon("ic_add_white")
-        button.tintColor = R.color.mainWhite()!
-        button.backgroundColor = R.color.subNavy()!
-        button.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handlePlanFABMenuItem(gestureRecognizer:))))
-        return button
-    }()
-    
-    @objc fileprivate func handlePlanFABMenuItem(gestureRecognizer:UIGestureRecognizer) {
-        if let mainView = self.children[0] as? PlanListView{
-            NUMBER = RealmPlan().countPlans()
-            RealmPlan().saveNewPlan()
-            present(mainView.mainView, animated: false, completion: {
-                mainView.mainView.collectionView.presentPlanLocationView(at: 0, 0, state: .newPlan)
-            })
-        }
-    }
 }
-//MARK: only once
+//MARK: on first load
 extension PlanListView {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = R.color.mainWhite()!
-
+        
         if c.countData() == 0 {
-            print("add Empty data")
+            print("Add new data for prevention of undefined error")
             c.addEmptyData()
         }
         setConsraints()
         adapter.collectionView = collectionView
         adapter.dataSource = self
-
-        view.addSubview(addButton)
-        addButton.snp.makeConstraints({ (make) -> Void in
-            make.size.equalTo(56)
-            make.right.bottom.equalToSuperview().offset(-16)
-        })
-        
     }
     func setConsraints(){
         view.addSubview(bannerView)
         view.addSubview(collectionView)
-        view.addSubview(bottomView)
-        bottomView.addSubview(toSettingsButton)
-        bottomView.addSubview(bottomTitleLabel)
-
-        bannerView.snp.makeConstraints({ (make) -> Void in
-            make.right.equalToSuperview()
-            make.left.equalToSuperview()
-            make.bottom.equalTo(bottomView.snp.top)
-            make.height.equalTo(0)
-        })
+        view.addSubview(topBarView)
+        topBarView.addSubview(showSettingsButton)
+        topBarView.addSubview(titleLabel)
+        topBarView.addSubview(addNewPlanButton)
         
-        collectionView.snp.makeConstraints({ (make) -> Void in
-            make.right.left.equalToSuperview()
-            make.top.equalToSuperview()
-            make.bottom.equalTo(bannerView.snp.top)
-        })
-        bottomView.snp.makeConstraints({ (make) -> Void in
-            make.bottom.equalToSuperview()
-            make.top.equalTo(view.safeAreaLayoutGuide.snp.bottom).inset(44)
+        topBarView.snp.makeConstraints({ (make) -> Void in
+            make.height.equalTo(44)
+            make.top.equalTo(view.safeAreaLayoutGuide.snp.top)
             make.left.right.equalToSuperview()
         })
-        toSettingsButton.snp.makeConstraints({ (make) -> Void in
-            make.size.equalTo(44)
-            make.left.equalToSuperview().offset(16)
-            make.top.equalToSuperview().offset(8)
+        bannerView.snp.makeConstraints({ (make) -> Void in
+            make.height.equalTo(bannerViewHeight)
+            make.top.equalTo(topBarView.snp.bottom)
+            make.right.left.equalToSuperview()
         })
-        bottomTitleLabel.snp.makeConstraints({(make) -> Void in
-            make.top.equalToSuperview().offset(8)
+        collectionView.snp.makeConstraints({ (make) -> Void in
+            make.top.equalTo(bannerView.snp.bottom)
+            make.right.left.equalToSuperview()
+            make.bottom.equalToSuperview()
+        })
+        titleLabel.snp.makeConstraints({(make) -> Void in
+            make.top.equalToSuperview()
             make.height.equalTo(44)
-            make.right.equalToSuperview().offset(-56)
-            make.left.equalTo(toSettingsButton.snp.right).offset(8)
+            make.left.equalToSuperview().offset(16)
+        })
+        showSettingsButton.snp.makeConstraints({ (make) -> Void in
+            make.top.equalToSuperview()
+            make.size.equalTo(44)
+            make.right.equalToSuperview().offset(-16)
+        })
+        addNewPlanButton.snp.makeConstraints({ (make) -> Void in
+            make.top.equalToSuperview()
+            make.size.equalTo(44)
+            make.right.equalTo(showSettingsButton.snp.left)
         })
     }
-}//MARK: everytime
+    
+}//MARK: on every view appear
 extension PlanListView {
     override func viewWillAppear(_ animated: Bool) {
         adapter.performUpdates(animated: true, completion: nil)
@@ -201,7 +181,7 @@ extension PlanListView: ListAdapterDataSource {
         }else{
             //data += d.planList().filter({$0.isFavorite == true}) as [ListDiffable]
         }
-
+        
         if c.countData() >= 1 {
             data += c.countWebsite() == 0 ? [6] as [ListDiffable] :[0] as [ListDiffable] //website Header
             if showAllWebsites {
@@ -210,16 +190,16 @@ extension PlanListView: ListAdapterDataSource {
                 //MARK: IMPROVE
             }
             /*data += [2] as [ListDiffable] //notes
-            for note in c.text() {
-                data += [note] as [ListDiffable]
-            }*/
+             for note in c.text() {
+             data += [note] as [ListDiffable]
+             }*/
             data += c.countCandidate()==0 ? [7] as [ListDiffable] : [1] as [ListDiffable] //candidate header
             if showAllPlaces{
                 data += (0..<c.countCandidate()).map { c.place()[$0]  as ListDiffable }
             }else{
                 //MARK: IMPROVE data += c.place().filter({$0.isFavorite == true }) as [ListDiffable]
             }
-
+            
         }else{
             ERROR("ERROR IN COUNT DATA == 0")
             return [] as [ListDiffable]
@@ -230,17 +210,17 @@ extension PlanListView: ListAdapterDataSource {
         switch object {
         case is Int:
             let controller = HeaderSectionController()
-            // MARK: HeaderSSection有効化でコメントイン
-//            controller.delegate = self
+            // MARK: HeaderSection有効化でコメントイン
+            //            controller.delegate = self
             return controller
         case is URLData:
             let controller = CandidateWebsiteSectionController()
             controller.delegate = self
             return controller
-        /*case is SectionState:
-            let controller = HorizontalSectionController()
-            controller.delegate = self
-            return controller*/
+            /*case is SectionState:
+             let controller = HorizontalSectionController()
+             controller.delegate = self
+             return controller*/
         case is Plan:
             let controller = PlanFlatSectionController()
             controller.delegate = self
@@ -249,8 +229,8 @@ extension PlanListView: ListAdapterDataSource {
             let controller = CandidateFlatSectionController()
             controller.delegate = self
             return controller
-        /*case is TextData:
-            return NotesSectionController()*/
+            /*case is TextData:
+             return NotesSectionController()*/
         default:
             ERROR("ERROR IN SECTION CONTROLLER SELECTION")
             return ListSectionController()
@@ -300,50 +280,50 @@ extension PlanListView:CandidateWebsiteSectionDelegate{
 
 
 /*
-extension SideCollectionView:HorizontalSectionDelegate {
-    func planClicked(at row: Int) {
-        NUMBER = row
-        let parent = self.presentingViewController as! MainBackgroundView
-        parent.updateView()
-        self.dismiss(animated: true, completion: nil)
-    }
-
-    func placeClicked(at row: Int) {
-        print(row)
-        Segues().candidateLocationSegue(in: row, state: .show, controller: self)
-    }
-}
-*/
+ extension SideCollectionView:HorizontalSectionDelegate {
+ func planClicked(at row: Int) {
+ NUMBER = row
+ let parent = self.presentingViewController as! MainBackgroundView
+ parent.updateView()
+ self.dismiss(animated: true, completion: nil)
+ }
+ 
+ func placeClicked(at row: Int) {
+ print(row)
+ Segues().candidateLocationSegue(in: row, state: .show, controller: self)
+ }
+ }
+ */
 
 /*
-// MARK: IMPROVE disable now Delegate有効化忘れずに
-extension SideCollectionView: HeaderSectionDelegate {
-    func showAllButtonClicked(at row: Int) {
-        print("show all")
-        switch row {
-        case 0: //website
-            //showAllWebsites.toggle()
-            break
-        case 1: //candidate
-            //showAllPlaces.toggle()
-            break
-        case 2: //notes
-            //showAllNotes.toggle()
-            break
-        case 3: //images
-            break
-        case 4: //plans
-            //showAllPlans.toggle()
-            break
-        default:
-            break
-        }
-    }
-    func showMapButtonClicked(at row: Int) {
-        print("show map")
-    }
-}
-*/
+ // MARK: IMPROVE disable now Delegate有効化忘れずに
+ extension SideCollectionView: HeaderSectionDelegate {
+ func showAllButtonClicked(at row: Int) {
+ print("show all")
+ switch row {
+ case 0: //website
+ //showAllWebsites.toggle()
+ break
+ case 1: //candidate
+ //showAllPlaces.toggle()
+ break
+ case 2: //notes
+ //showAllNotes.toggle()
+ break
+ case 3: //images
+ break
+ case 4: //plans
+ //showAllPlans.toggle()
+ break
+ default:
+ break
+ }
+ }
+ func showMapButtonClicked(at row: Int) {
+ print("show map")
+ }
+ }
+ */
 
 
 //MARK: 広告ありなしの使い分け

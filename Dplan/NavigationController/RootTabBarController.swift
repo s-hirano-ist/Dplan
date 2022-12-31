@@ -1,8 +1,8 @@
 //
-//  SideFabMenuView.swift
+//  RootTabBarController.swift
 //  DraPla05
 //
-//  Created by S.Hirano on 2022/12/14.
+//  Created by S.Hirano.
 //  Copyright © 2022 Sola_studio. All rights reserved.
 //
 
@@ -12,13 +12,13 @@ class RootTabBarController: UITabBarController {
     
     override func viewDidLoad() {
         let planListView = PlanListView()
-        planListView.tabBarItem = UITabBarItem(title: "Add plan".localized, image: .mappin, tag: 0)
+        planListView.tabBarItem = UITabBarItem(title: "Plans".localized, image: .mappin, tag: 0)
         
         let candidateListView = CandidateListView()
-        candidateListView.tabBarItem = UITabBarItem(title: "Add place".localized, image: .bookmark, tag: 1)
+        candidateListView.tabBarItem = UITabBarItem(title: "Places".localized, image: .bookmark, tag: 1)
 
         let websiteListView = CandidateListView()
-        websiteListView.tabBarItem = UITabBarItem(title: "Add website".localized, image: .paperPlane, tag: 2)
+        websiteListView.tabBarItem = UITabBarItem(title: "Websites".localized, image: .paperPlane, tag: 2)
         
         viewControllers = [planListView, candidateListView, websiteListView]
     }
