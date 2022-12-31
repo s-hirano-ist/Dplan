@@ -14,7 +14,7 @@
 import UIKit
 import SnapKit
 
-class FirstScrollView: UIViewController {
+class FirstBootView: UIViewController {
     let numberOfPages = 5 //MARK: for how many pages
     let howToImages = [R.image.promotion07()!,
                        R.image.promotion02()!,
@@ -40,7 +40,7 @@ class FirstScrollView: UIViewController {
     }()
 }
 
-extension FirstScrollView {
+extension FirstBootView {
 
     override func viewDidLoad() {
         setup()
@@ -90,7 +90,7 @@ extension FirstScrollView {
     }
 }
 
-extension FirstScrollView: UIScrollViewDelegate{
+extension FirstBootView: UIScrollViewDelegate{
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         currentPage = Int(scrollView.contentOffset.x / scrollView.frame.size.width)
         pageControl.currentPage = currentPage - 1 //最初の画面はページコントロール対象外
@@ -108,7 +108,7 @@ extension FirstScrollView: UIScrollViewDelegate{
      }
 }
 
-extension FirstScrollView: HowToViewDelegate, HowToLastViewDelegate, AgreementViewDelegate {
+extension FirstBootView: HowToViewDelegate, HowToLastViewDelegate, AgreementViewDelegate {
     func leftButtonClicked() {
         moveToPrevious()
     }
@@ -139,7 +139,7 @@ extension FirstScrollView: HowToViewDelegate, HowToLastViewDelegate, AgreementVi
 }
 
 // MARK: 説明画像の配置
-extension FirstScrollView {
+extension FirstBootView {
     private func setAgreementView(){
         var frame = scrollView.bounds
         frame.origin.x = calculateX(at: 0) //MARK: 初期は0ページ目

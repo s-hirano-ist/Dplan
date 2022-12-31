@@ -40,7 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         if UserDefaults.standard.bool(forKey:"isFirstTime") == true {
             DispatchQueue.main.async {
-                let view = FirstScrollView()
+                let view = FirstBootView()
                 view.modalPresentationStyle = .fullScreen
                 self.window?.rootViewController?.present(view, animated: false, completion:nil)
             }
