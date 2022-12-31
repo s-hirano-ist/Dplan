@@ -876,7 +876,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = Dplan;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
 				INSTALL_PATH = "@rpath";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"@executable_path/Frameworks",
 					"$(inherited)",
@@ -910,7 +910,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = Dplan;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
 				INSTALL_PATH = "@rpath";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"@executable_path/Frameworks",
 					"$(inherited)",

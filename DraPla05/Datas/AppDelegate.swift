@@ -26,7 +26,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         // MARK: 起動画面（同意後）
         self.window = UIWindow(frame: UIScreen.main.bounds)
-//        self.window?.rootViewController = SideFabMenuView(rootViewController: SideCollectionView())
         self.window?.rootViewController = RootTabBarController()
         self.window?.makeKeyAndVisible()
 
