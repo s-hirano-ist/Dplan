@@ -11,7 +11,7 @@ import IGListKit
 import SnapKit
 import Material
 
-class SideCollectionView: UIViewController {
+class PlanListView: UIViewController {
     let d = RealmPlan()
     let c = RealmCandidate()
     let s = Settings()
@@ -21,6 +21,7 @@ class SideCollectionView: UIViewController {
     var showAllPlaces = true
     var showAllPlans = true
 
+    
     var mainView:MainBackgroundView = {
         let view = MainBackgroundView()
         view.modalPresentationStyle = .fullScreen
@@ -54,7 +55,7 @@ class SideCollectionView: UIViewController {
     
     lazy var bottomView:UIView = {
         let backgroundView = UIView()
-        backgroundView.backgroundColor = .systemGray5
+//        backgroundView.backgroundColor = .systemGray5
         return backgroundView
     }()
     lazy var bottomTitleLabel:UILabel = {
@@ -66,7 +67,7 @@ class SideCollectionView: UIViewController {
             label.text = "Dplan version X.X"
         }
         label.textAlignment = .left
-        label.textColor = R.color.mainBlack()!
+//        label.textColor = R.color.mainBlack()!
         label.isUserInteractionEnabled = true
         label.addGestureRecognizer(UITapGestureRecognizer(target: self,
                                                            action: #selector(bottomLabelClicked(gestureRecognizer:))))
@@ -105,12 +106,32 @@ class SideCollectionView: UIViewController {
         view.modalPresentationStyle = .fullScreen
         return view
     }()
+    
+    
+    lazy var addButton: FABButton = {
+        let button = FABButton(image: Icon.cm.share, tintColor: R.color.mainGray()! )
+        button.pulseColor = R.color.mainWhite()!
+        button.image = Icon.icon("ic_add_white")
+        button.tintColor = R.color.mainWhite()!
+        button.backgroundColor = R.color.subNavy()!
+        button.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handlePlanFABMenuItem(gestureRecognizer:))))
+        return button
+    }()
+    
+    @objc fileprivate func handlePlanFABMenuItem(gestureRecognizer:UIGestureRecognizer) {
+        if let mainView = self.children[0] as? PlanListView{
+            NUMBER = RealmPlan().countPlans()
+            RealmPlan().saveNewPlan()
+            present(mainView.mainView, animated: false, completion: {
+                mainView.mainView.collectionView.presentPlanLocationView(at: 0, 0, state: .newPlan)
+            })
+        }
+    }
 }
 //MARK: only once
-extension SideCollectionView {
+extension PlanListView {
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("view did load")
         view.backgroundColor = R.color.mainWhite()!
 
         if c.countData() == 0 {
@@ -121,6 +142,12 @@ extension SideCollectionView {
         adapter.collectionView = collectionView
         adapter.dataSource = self
 
+        view.addSubview(addButton)
+        addButton.snp.makeConstraints({ (make) -> Void in
+            make.size.equalTo(56)
+            make.right.bottom.equalToSuperview().offset(-16)
+        })
+        
     }
     func setConsraints(){
         view.addSubview(bannerView)
@@ -159,14 +186,13 @@ extension SideCollectionView {
         })
     }
 }//MARK: everytime
-extension SideCollectionView {
+extension PlanListView {
     override func viewWillAppear(_ animated: Bool) {
-//        print("viewwillappear")
         adapter.performUpdates(animated: true, completion: nil)
     }
 }
 
-extension SideCollectionView: ListAdapterDataSource {
+extension PlanListView: ListAdapterDataSource {
     func objects(for listAdapter: ListAdapter) -> [ListDiffable] {
         data = []
         data += d.countPlans() == 0 ? [5] as [ListDiffable] :[4] as [ListDiffable] //plan header
@@ -235,7 +261,7 @@ extension SideCollectionView: ListAdapterDataSource {
     }
 }
 
-extension SideCollectionView: PlanFlatSectionDelegate, CandidateFlatSectionDelegate {
+extension PlanListView: PlanFlatSectionDelegate, CandidateFlatSectionDelegate {
     func candidateReload() {
         adapter.performUpdates(animated: true, completion: nil)
     }
@@ -263,7 +289,7 @@ extension SideCollectionView: PlanFlatSectionDelegate, CandidateFlatSectionDeleg
     func candidateFavoriteButtonPressed(at row: Int) {
     }
 }
-extension SideCollectionView:CandidateWebsiteSectionDelegate{
+extension PlanListView:CandidateWebsiteSectionDelegate{
     func websiteClicked(at row: Int) {
         Segues().websiteSegue(in: row, state: .editURLCandidate, controller: self)
     }

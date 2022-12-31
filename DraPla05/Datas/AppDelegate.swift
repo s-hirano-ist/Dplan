@@ -26,7 +26,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         // MARK: 起動画面（同意後）
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window?.rootViewController = SideFabMenuView(rootViewController: SideCollectionView())
+//        self.window?.rootViewController = SideFabMenuView(rootViewController: SideCollectionView())
+        self.window?.rootViewController = RootTabBarController()
         self.window?.makeKeyAndVisible()
 
         // MARK: for keyboard not hiding textView
@@ -36,7 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UserDefaults.standard.register(defaults: ["isFirstTime" : true])
         
         // MARK: DEBUG
-        UserDefaults.standard.set(true, forKey: "isFirstTime")
+//        UserDefaults.standard.set(true, forKey: "isFirstTime")
 
         if UserDefaults.standard.bool(forKey:"isFirstTime") == true {
             DispatchQueue.main.async {

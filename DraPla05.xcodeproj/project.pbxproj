@@ -20,8 +20,8 @@
 		FF2A5A6E23C33F8300B00A1F /* TimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2A5A6D23C33F8300B00A1F /* TimePickerView.swift */; };
 		FF2AB7E12432C451007F12F2 /* ObjectsForIGListKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2AB7E02432C451007F12F2 /* ObjectsForIGListKit.swift */; };
 		FF2EE84923A9A8A000CB71C4 /* RealmPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2EE84823A9A8A000CB71C4 /* RealmPlan.swift */; };
-		FF2F9A022431D1140086BD45 /* SideCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2F9A012431D1140086BD45 /* SideCollectionView.swift */; };
-		FF312FB223A5281000156F04 /* SideFabMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF312FB123A5281000156F04 /* SideFabMenuView.swift */; };
+		FF2F9A022431D1140086BD45 /* PlanListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2F9A012431D1140086BD45 /* PlanListView.swift */; };
+		FF312FB223A5281000156F04 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF312FB123A5281000156F04 /* RootTabBarController.swift */; };
 		FF3438342434945C00BA5CE6 /* HeaderCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3438332434945C00BA5CE6 /* HeaderCollectionCell.swift */; };
 		FF3632CE230F82CA0033C7D7 /* DataOfContents.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3632CD230F82CA0033C7D7 /* DataOfContents.swift */; };
 		FF3941E624335B01008346EC /* FlatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3941E524335B01008346EC /* FlatCell.swift */; };
@@ -48,6 +48,8 @@
 		FF764131242601A8000D08B8 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF764130242601A8000D08B8 /* DatePickerView.swift */; };
 		FF7B1ACB24345EA8005A8443 /* EditSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7B1ACA24345EA8005A8443 /* EditSectionController.swift */; };
 		FF7B1ACD24345EED005A8443 /* MainHeaderSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7B1ACC24345EED005A8443 /* MainHeaderSectionController.swift */; };
+		FF7F02DE29600C820024D407 /* CandidateListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F02DD29600C820024D407 /* CandidateListView.swift */; };
+		FF7F02E029600CD30024D407 /* WebsiteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F02DF29600CD30024D407 /* WebsiteListView.swift */; };
 		FF90127E2438844F00984517 /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90127D2438844F00984517 /* KeyChain.swift */; };
 		FF9682E1231969BA009A891A /* MainBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9682E0231969BA009A891A /* MainBackgroundView.swift */; };
 		FF99E0CB23755FD0005DD205 /* WebsiteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF99E0CA23755FD0005DD205 /* WebsiteView.swift */; };
@@ -107,8 +109,8 @@
 		FF2A5A6D23C33F8300B00A1F /* TimePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerView.swift; sourceTree = "<group>"; };
 		FF2AB7E02432C451007F12F2 /* ObjectsForIGListKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectsForIGListKit.swift; sourceTree = "<group>"; };
 		FF2EE84823A9A8A000CB71C4 /* RealmPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmPlan.swift; sourceTree = "<group>"; };
-		FF2F9A012431D1140086BD45 /* SideCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideCollectionView.swift; sourceTree = "<group>"; };
-		FF312FB123A5281000156F04 /* SideFabMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideFabMenuView.swift; sourceTree = "<group>"; };
+		FF2F9A012431D1140086BD45 /* PlanListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanListView.swift; sourceTree = "<group>"; };
+		FF312FB123A5281000156F04 /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
 		FF3438332434945C00BA5CE6 /* HeaderCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionCell.swift; sourceTree = "<group>"; };
 		FF3632CD230F82CA0033C7D7 /* DataOfContents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataOfContents.swift; sourceTree = "<group>"; };
 		FF3941E524335B01008346EC /* FlatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatCell.swift; sourceTree = "<group>"; };
@@ -136,6 +138,8 @@
 		FF764130242601A8000D08B8 /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
 		FF7B1ACA24345EA8005A8443 /* EditSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSectionController.swift; sourceTree = "<group>"; };
 		FF7B1ACC24345EED005A8443 /* MainHeaderSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHeaderSectionController.swift; sourceTree = "<group>"; };
+		FF7F02DD29600C820024D407 /* CandidateListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateListView.swift; sourceTree = "<group>"; };
+		FF7F02DF29600CD30024D407 /* WebsiteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsiteListView.swift; sourceTree = "<group>"; };
 		FF90127D2438844F00984517 /* KeyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChain.swift; sourceTree = "<group>"; };
 		FF9682E0231969BA009A891A /* MainBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBackgroundView.swift; sourceTree = "<group>"; };
 		FF99E0CA23755FD0005DD205 /* WebsiteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsiteView.swift; sourceTree = "<group>"; };
@@ -342,6 +346,14 @@
 			path = Datas;
 			sourceTree = "<group>";
 		};
+		FF7F02DC29600B250024D407 /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				FF312FB123A5281000156F04 /* RootTabBarController.swift */,
+			);
+			path = NavigationController;
+			sourceTree = "<group>";
+		};
 		FF9E6A5922FD973100306786 = {
 			isa = PBXGroup;
 			children = (
@@ -370,6 +382,7 @@
 				FFD35EF9295FF22A00996692 /* common */,
 				FFD35EF4295FF0CA00996692 /* features */,
 				FFD35EF8295FF11600996692 /* pages */,
+				FF7F02DC29600B250024D407 /* NavigationController */,
 				FF536E7A236BB3FF00C281A1 /* Datas */,
 				FF9E6A6E22FD973100306786 /* LaunchScreen.storyboard */,
 			);
@@ -418,8 +431,9 @@
 		FFD35EF8295FF11600996692 /* pages */ = {
 			isa = PBXGroup;
 			children = (
-				FF312FB123A5281000156F04 /* SideFabMenuView.swift */,
-				FF2F9A012431D1140086BD45 /* SideCollectionView.swift */,
+				FF2F9A012431D1140086BD45 /* PlanListView.swift */,
+				FF7F02DD29600C820024D407 /* CandidateListView.swift */,
+				FF7F02DF29600CD30024D407 /* WebsiteListView.swift */,
 				FFAB14422447F3B800A63D28 /* FirstBootView.swift */,
 				FF6316F123B9CB0B005E0065 /* RightFabMenuView.swift */,
 				FFF238902430640E00E9337E /* RightCollectionView.swift */,
@@ -633,7 +647,7 @@
 				FFE28302241F17B3000ED63E /* R.generated.swift in Sources */,
 				FFCFADA6242DF00B00520AC4 /* CustomGroupDetailCameraCell.swift in Sources */,
 				FF3941EA24336D76008346EC /* PlanFlatSectionController.swift in Sources */,
-				FF312FB223A5281000156F04 /* SideFabMenuView.swift in Sources */,
+				FF312FB223A5281000156F04 /* RootTabBarController.swift in Sources */,
 				FF0128D3244814BC00639AA2 /* HowToView.swift in Sources */,
 				FF0CBD2A2420AC4500E0A785 /* ButtonFourView.swift in Sources */,
 				FFAB14432447F3B800A63D28 /* FirstBootView.swift in Sources */,
@@ -652,6 +666,7 @@
 				FFBAB5922433706A0061BD73 /* CandidateFlatSectionConttoller.swift in Sources */,
 				FF2AB7E12432C451007F12F2 /* ObjectsForIGListKit.swift in Sources */,
 				FFF238972430664100E9337E /* ImageSectionController.swift in Sources */,
+				FF7F02E029600CD30024D407 /* WebsiteListView.swift in Sources */,
 				FF99E0CB23755FD0005DD205 /* WebsiteView.swift in Sources */,
 				FF6075232431E20D007C8A0F /* PlaceLocationView.swift in Sources */,
 				FF22714324174FC4002636EE /* RealmOthers.swift in Sources */,
@@ -663,7 +678,7 @@
 				FF4562222430D5D600E2850F /* NoteCell.swift in Sources */,
 				FF0CBD1E2420AAFB00E0A785 /* ImageView.swift in Sources */,
 				FF764131242601A8000D08B8 /* DatePickerView.swift in Sources */,
-				FF2F9A022431D1140086BD45 /* SideCollectionView.swift in Sources */,
+				FF2F9A022431D1140086BD45 /* PlanListView.swift in Sources */,
 				FFAB14452447F4BE00A63D28 /* AgreementView.swift in Sources */,
 				FF560C1A23A9DAFA00584762 /* Settings.swift in Sources */,
 				FF9682E1231969BA009A891A /* MainBackgroundView.swift in Sources */,
@@ -676,6 +691,7 @@
 				FF0128D5244816F900639AA2 /* HowToLastView.swift in Sources */,
 				FF7B1ACB24345EA8005A8443 /* EditSectionController.swift in Sources */,
 				FF3438342434945C00BA5CE6 /* HeaderCollectionCell.swift in Sources */,
+				FF7F02DE29600C820024D407 /* CandidateListView.swift in Sources */,
 				FF5816C12431F38A00005491 /* PlanDetailView.swift in Sources */,
 				FF45621E2430D59E00E2850F /* WebsiteCell.swift in Sources */,
 				FF52657E2430706B00D29BCA /* OthersWebsiteSectionController.swift in Sources */,
