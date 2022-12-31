@@ -33,12 +33,12 @@
 		FF48BF302415BF61003C39FB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF48BF322415BF61003C39FB /* Localizable.strings */; };
 		FF4986AB23A2775E00E8C4CE /* ImagePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4986AA23A2775E00E8C4CE /* ImagePageView.swift */; };
 		FF4DAC7A2431818700208538 /* HeaderSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4DAC792431818700208538 /* HeaderSectionController.swift */; };
-		FF4F0241295FF460008C5F6B /* ButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF4F0240295FF460008C5F6B /* ButtonView.xib */; };
 		FF52657E2430706B00D29BCA /* OthersWebsiteSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF52657D2430706B00D29BCA /* OthersWebsiteSectionController.swift */; };
 		FF5265802430707A00D29BCA /* NotesSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF52657F2430707A00D29BCA /* NotesSectionController.swift */; };
 		FF560C1A23A9DAFA00584762 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF560C1923A9DAFA00584762 /* Settings.swift */; };
 		FF5816C12431F38A00005491 /* PlanDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5816C02431F38A00005491 /* PlanDetailView.swift */; };
 		FF5816C32431F39500005491 /* PlaceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5816C22431F39500005491 /* PlaceDetailView.swift */; };
+		FF58FB56296073E600CE50EA /* ButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF58FB55296073E600CE50EA /* ButtonView.xib */; };
 		FF6075212431E201007C8A0F /* PlanLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6075202431E201007C8A0F /* PlanLocationView.swift */; };
 		FF6075232431E20D007C8A0F /* PlaceLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6075222431E20D007C8A0F /* PlaceLocationView.swift */; };
 		FF6075252431E8C3007C8A0F /* CandidateLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6075242431E8C3007C8A0F /* CandidateLocationView.swift */; };
@@ -102,7 +102,7 @@
 		FF0CBD252420AC0E00E0A785 /* MapUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapUIView.swift; sourceTree = "<group>"; };
 		FF0CBD292420AC4500E0A785 /* ButtonFourView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFourView.swift; sourceTree = "<group>"; };
 		FF0CBD2D2420AC8400E0A785 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
-		FF12ED2B24219E3700DBA6F6 /* DraPla05.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DraPla05.entitlements; sourceTree = "<group>"; };
+		FF12ED2B24219E3700DBA6F6 /* Dplan.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Dplan.entitlements; sourceTree = "<group>"; };
 		FF14F412242076B7001A9187 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		FF22714024174F09002636EE /* RealmCandidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCandidate.swift; sourceTree = "<group>"; };
 		FF22714224174FC4002636EE /* RealmOthers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmOthers.swift; sourceTree = "<group>"; };
@@ -123,12 +123,12 @@
 		FF48BF332415BF6A003C39FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FF4986AA23A2775E00E8C4CE /* ImagePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePageView.swift; sourceTree = "<group>"; };
 		FF4DAC792431818700208538 /* HeaderSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderSectionController.swift; sourceTree = "<group>"; };
-		FF4F0240295FF460008C5F6B /* ButtonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ButtonView.xib; path = DraPla05/common/components/ButtonView.xib; sourceTree = SOURCE_ROOT; };
 		FF52657D2430706B00D29BCA /* OthersWebsiteSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OthersWebsiteSectionController.swift; sourceTree = "<group>"; };
 		FF52657F2430707A00D29BCA /* NotesSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesSectionController.swift; sourceTree = "<group>"; };
 		FF560C1923A9DAFA00584762 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		FF5816C02431F38A00005491 /* PlanDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanDetailView.swift; sourceTree = "<group>"; };
 		FF5816C22431F39500005491 /* PlaceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailView.swift; sourceTree = "<group>"; };
+		FF58FB55296073E600CE50EA /* ButtonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonView.xib; sourceTree = "<group>"; };
 		FF6075202431E201007C8A0F /* PlanLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanLocationView.swift; sourceTree = "<group>"; };
 		FF6075222431E20D007C8A0F /* PlaceLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceLocationView.swift; sourceTree = "<group>"; };
 		FF6075242431E8C3007C8A0F /* CandidateLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateLocationView.swift; sourceTree = "<group>"; };
@@ -143,7 +143,7 @@
 		FF90127D2438844F00984517 /* KeyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChain.swift; sourceTree = "<group>"; };
 		FF9682E0231969BA009A891A /* MainBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBackgroundView.swift; sourceTree = "<group>"; };
 		FF99E0CA23755FD0005DD205 /* WebsiteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsiteView.swift; sourceTree = "<group>"; };
-		FF9E6A6222FD973100306786 /* DraPla05.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DraPla05.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF9E6A6222FD973100306786 /* Dplan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dplan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF9E6A6C22FD973100306786 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF9E6A6F22FD973100306786 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF9E6A7122FD973100306786 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -359,7 +359,7 @@
 			children = (
 				FFE28301241F17B3000ED63E /* R.generated.swift */,
 				FF14F412242076B7001A9187 /* Settings.bundle */,
-				FF9E6A6422FD973100306786 /* DraPla05 */,
+				FF9E6A6422FD973100306786 /* Dplan */,
 				FF9E6A6322FD973100306786 /* Products */,
 				99466731C2D2F1E3E34EAA3E /* Pods */,
 				80A5665F3BF0230E8AC10675 /* Frameworks */,
@@ -369,15 +369,15 @@
 		FF9E6A6322FD973100306786 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FF9E6A6222FD973100306786 /* DraPla05.app */,
+				FF9E6A6222FD973100306786 /* Dplan.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FF9E6A6422FD973100306786 /* DraPla05 */ = {
+		FF9E6A6422FD973100306786 /* Dplan */ = {
 			isa = PBXGroup;
 			children = (
-				FF12ED2B24219E3700DBA6F6 /* DraPla05.entitlements */,
+				FF12ED2B24219E3700DBA6F6 /* Dplan.entitlements */,
 				FFA3CFEE23EAC26D00405873 /* Main.storyboard */,
 				FFD35EF9295FF22A00996692 /* common */,
 				FFD35EF4295FF0CA00996692 /* features */,
@@ -386,7 +386,7 @@
 				FF536E7A236BB3FF00C281A1 /* Datas */,
 				FF9E6A6E22FD973100306786 /* LaunchScreen.storyboard */,
 			);
-			path = DraPla05;
+			path = Dplan;
 			sourceTree = "<group>";
 		};
 		FFD35EF4295FF0CA00996692 /* features */ = {
@@ -478,7 +478,7 @@
 				FFAB9E8D24342237001AE064 /* EventCollectionCell.swift */,
 				FFAB9E8F24342244001AE064 /* TimeCollectionCell.swift */,
 				FF3438332434945C00BA5CE6 /* HeaderCollectionCell.swift */,
-				FF4F0240295FF460008C5F6B /* ButtonView.xib */,
+				FF58FB55296073E600CE50EA /* ButtonView.xib */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -507,9 +507,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FF9E6A6122FD973100306786 /* DraPla05 */ = {
+		FF9E6A6122FD973100306786 /* Dplan */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FF9E6A7422FD973100306786 /* Build configuration list for PBXNativeTarget "DraPla05" */;
+			buildConfigurationList = FF9E6A7422FD973100306786 /* Build configuration list for PBXNativeTarget "Dplan" */;
 			buildPhases = (
 				61F0905AF6E7549B97C74A76 /* [CP] Check Pods Manifest.lock */,
 				FFB05E71241F14A000A592F4 /* ShellScript */,
@@ -523,9 +523,9 @@
 			);
 			dependencies = (
 			);
-			name = DraPla05;
+			name = Dplan;
 			productName = DraPla05;
-			productReference = FF9E6A6222FD973100306786 /* DraPla05.app */;
+			productReference = FF9E6A6222FD973100306786 /* Dplan.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -543,7 +543,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FF9E6A5D22FD973100306786 /* Build configuration list for PBXProject "DraPla05" */;
+			buildConfigurationList = FF9E6A5D22FD973100306786 /* Build configuration list for PBXProject "Dplan" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -557,7 +557,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FF9E6A6122FD973100306786 /* DraPla05 */,
+				FF9E6A6122FD973100306786 /* Dplan */,
 			);
 		};
 /* End PBXProject section */
@@ -568,7 +568,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF48BF302415BF61003C39FB /* Localizable.strings in Resources */,
-				FF4F0241295FF460008C5F6B /* ButtonView.xib in Resources */,
+				FF58FB56296073E600CE50EA /* ButtonView.xib in Resources */,
 				FF9E6A7022FD973100306786 /* LaunchScreen.storyboard in Resources */,
 				FF14F413242076B7001A9187 /* Settings.bundle in Resources */,
 				FFA3CFEF23EAC26D00405873 /* Main.storyboard in Resources */,
@@ -861,7 +861,7 @@
 			baseConfigurationReference = 6C37E18849E323DB2B032525 /* Pods-DraPla05.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = DraPla05/DraPla05.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Dplan/Dplan.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -872,7 +872,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/DraPla05/Datas/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Dplan/Datas/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Dplan;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
 				INSTALL_PATH = "@rpath";
@@ -895,7 +895,7 @@
 			baseConfigurationReference = 2D863EC482A3AA3AB1FABC90 /* Pods-DraPla05.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = DraPla05/DraPla05.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Dplan/Dplan.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -906,7 +906,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/DraPla05/Datas/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Dplan/Datas/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Dplan;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
 				INSTALL_PATH = "@rpath";
@@ -928,7 +928,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FF9E6A5D22FD973100306786 /* Build configuration list for PBXProject "DraPla05" */ = {
+		FF9E6A5D22FD973100306786 /* Build configuration list for PBXProject "Dplan" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FF9E6A7222FD973100306786 /* Debug */,
@@ -937,7 +937,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FF9E6A7422FD973100306786 /* Build configuration list for PBXNativeTarget "DraPla05" */ = {
+		FF9E6A7422FD973100306786 /* Build configuration list for PBXNativeTarget "Dplan" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FF9E6A7522FD973100306786 /* Debug */,

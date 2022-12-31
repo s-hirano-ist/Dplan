@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FF9E6A6122FD973100306786"
-               BuildableName = "DraPla05.app"
-               BlueprintName = "DraPla05"
-               ReferencedContainer = "container:DraPla05.xcodeproj">
+               BuildableName = "Dplan.app"
+               BlueprintName = "Dplan"
+               ReferencedContainer = "container:Dplan.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,9 +46,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FF9E6A6122FD973100306786"
-            BuildableName = "DraPla05.app"
-            BlueprintName = "DraPla05"
-            ReferencedContainer = "container:DraPla05.xcodeproj">
+            BuildableName = "Dplan.app"
+            BlueprintName = "Dplan"
+            ReferencedContainer = "container:Dplan.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -63,9 +63,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FF9E6A6122FD973100306786"
-            BuildableName = "DraPla05.app"
-            BlueprintName = "DraPla05"
-            ReferencedContainer = "container:DraPla05.xcodeproj">
+            BuildableName = "Dplan.app"
+            BlueprintName = "Dplan"
+            ReferencedContainer = "container:Dplan.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

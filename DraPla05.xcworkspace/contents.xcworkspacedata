@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:DraPla05.xcodeproj">
+      location = "group:/Users/sola/Dplan_2020_fixed/Dplan.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
