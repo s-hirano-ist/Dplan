@@ -60,8 +60,6 @@ extension SearchDestinationView{
                 if error == nil {
                     for place in placemarks! {
                         //MARK: 何個もplacemarkあった場合はどうする?
-                        print("placemark number")
-                        print(place)
                         self.delegate?.setLocation(location:place.location!.coordinate)
                     }
                 }else{
@@ -72,8 +70,6 @@ extension SearchDestinationView{
                             (placemarks, error) in
                             if error == nil {
                                 for place in placemarks! {
-                                    print("placemark number")
-                                    print(place)
                                     self.delegate?.setLocation(location:place.location!.coordinate)
                                 }
                             }else{

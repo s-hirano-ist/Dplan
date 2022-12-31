@@ -21,7 +21,6 @@ class ShowMapView: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(locData)
         if locData.count == 0 {
             //MARK: IMPROVE ここの値を変更
             locData.append(RealmPlan().data(at:0,0).location)

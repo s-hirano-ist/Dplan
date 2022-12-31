@@ -12,9 +12,9 @@ import Material
 class SideFabMenuView: FABMenuController {
     
     private var fabButton:FABButton = {
-        let fabButton = FABButton(image: Icon.icon("ic_add_white"), tintColor: R.color.mainWhite()!)
-        fabButton.backgroundColor = R.color.subNavy()!
-        fabButton.pulseColor = R.color.mainWhite()!
+        let fabButton = FABButton(image: Icon.icon("ic_add_white"), tintColor: R.color.mainCyan()!)
+//        fabButton.backgroundColor = R.color.subNavy()!
+//        fabButton.pulseColor = R.color.mainWhite()!
         return fabButton
     }()
     private var planFABMenuItem:FABMenuItem!
@@ -27,6 +27,19 @@ class SideFabMenuView: FABMenuController {
         return view
     }()
     
+    lazy var addButton: FABButton = {
+        let button = FABButton(image: Icon.cm.share, tintColor: R.color.mainGray()! )
+        button.pulseColor = R.color.mainWhite()!
+        button.image = Icon.icon("ic_add_white")
+        button.tintColor = R.color.mainWhite()!
+        button.backgroundColor = R.color.subNavy()!
+        button.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(addButtonPressed(gestureRecognizer:))))
+        return button
+    }()
+    @objc func addButtonPressed(gestureRecognizer:UIGestureRecognizer) {
+        print("ADD BUTTON PRESSED")
+    }
+    
     open override func prepare() {
         super.prepare()
         
@@ -38,6 +51,12 @@ class SideFabMenuView: FABMenuController {
         fabMenu.fabButton = fabButton
         fabMenu.fabMenuItems = [planFABMenuItem, placeFabMenuItem, websiteFabMenuItem]
         view.addSubview(fabMenu)
+        
+        view.addSubview(addButton)
+        addButton.snp.makeConstraints({ (make) -> Void in
+            make.size.equalTo(56)
+            make.right.bottom.equalToSuperview().offset(-16)
+        })
 
         fabMenu.snp.makeConstraints({ (make) -> Void in
             make.size.equalTo(56)

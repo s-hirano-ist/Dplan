@@ -65,16 +65,13 @@ extension EditSectionController: SwipeCollectionViewCellDelegate {
             action, indexPath in
             if RealmPlan().countDays(at: NUMBER) == 1 && RealmPlan().countDestination(at: NUMBER, in: self.section) <= 1 {
                 //MARK: 1日only ∧ dest個数1つ
-                print("Delete plan")
                 RealmPlan().deletePlan(at: NUMBER)
                 self.delegate?.dismissFromDelete()
             }else if RealmPlan().countDestination(at: NUMBER, in: self.section) <= 1 {
                 //MARK: セクション多数 ∧ dest個数1つ
-                print("Delete section")
                 RealmPlan().deleteSection(at: self.section)
                 self.delegate?.reloadFromEdit()
             }else{
-                print("Delete row")
                 RealmPlan().deleteRow(at: self.section, indexPath.row)
                 self.delegate?.reloadFromEdit()
             }

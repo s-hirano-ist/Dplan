@@ -61,6 +61,7 @@ class MainBackgroundView: UIViewController {
         return button
     }()
     @objc func addButtonPressed(gestureRecognizer:UIGestureRecognizer) {
+        print("ADD BUTTON PRESSED")
         let d = RealmPlan()
         let row =  d.countLastDestination(at: NUMBER)
         let section = d.countDays(at: NUMBER) - 1
@@ -185,17 +186,14 @@ extension MainBackgroundView {
         super.viewWillAppear(animated)
         let d = RealmPlan()
         if d.countDays(at: NUMBER) == 0 {
-            print("dismiss because no plan")
             dismiss(animated: false, completion: nil)
         }else if d.countDestination(at: NUMBER, in: 0) == 1 {
-            print("first so see you")
             reloadView() //まずは情報更新
             updateMainView() //非同期でリロード 必要なし．必ず以前データのロードを実行済．
             activateLocationManager()
             goToCenterOfMap()
             return
         }else{
-            print("backGroundWillAppear")
             reloadView() //まずは情報更新
             updateMainView() //非同期でリロード 必要なし．必ず以前データのロードを実行済．
             activateLocationManager()

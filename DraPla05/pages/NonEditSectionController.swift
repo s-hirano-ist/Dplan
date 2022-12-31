@@ -69,12 +69,10 @@ class NonEditSectionController: ListSectionController {
         if index % 2 == 0 { //places
             let sections = (section-1)/2
             let rows = index/2
-            print("\(sections),\(rows)")
             self.delegate?.placeClicked(at: sections, rows)
         }else{ //routes
             let sections = (section-1)/2
             let rows = (index+1)/2
-            print("\(sections),\(rows)")
             self.delegate?.timeClicked(at: sections, rows)
         }
     }

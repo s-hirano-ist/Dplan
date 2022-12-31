@@ -161,7 +161,7 @@ extension SideCollectionView {
 }//MARK: everytime
 extension SideCollectionView {
     override func viewWillAppear(_ animated: Bool) {
-        print("viewwillappear")
+//        print("viewwillappear")
         adapter.performUpdates(animated: true, completion: nil)
     }
 }
@@ -245,7 +245,6 @@ extension SideCollectionView: PlanFlatSectionDelegate, CandidateFlatSectionDeleg
     }
     
     func planPressed(at row: Int) {
-        print("PLAN PRESSED")
         NUMBER = row
         self.present(mainView, animated: true, completion: nil)
     }
@@ -256,16 +255,12 @@ extension SideCollectionView: PlanFlatSectionDelegate, CandidateFlatSectionDeleg
     }
     
     func planShareButtonPressed(at row: Int) {
-        print("share")
     }
     func planFavoriteButtonPressed(at row: Int) {
-        print("fav")
     }
     func candidateShareButtonPressed(at row: Int) {
-        print("share")
     }
     func candidateFavoriteButtonPressed(at row: Int) {
-        print("fav")
     }
 }
 extension SideCollectionView:CandidateWebsiteSectionDelegate{

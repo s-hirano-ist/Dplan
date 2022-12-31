@@ -159,7 +159,7 @@ extension MainCollectionView {
         titleField.isEnabled = editing
     }
     override func viewWillAppear(_ animated: Bool) {
-        print("collectionViewwillAppear")
+//        print("collectionViewwillAppear")
     }
 }
 

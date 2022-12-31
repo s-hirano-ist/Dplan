@@ -111,7 +111,6 @@ class DetailView: UIView {
         //セグメントが変更されたときの処理
         //選択されているセグメントのインデックス
         let selectedIndex = transportSelector.selectedSegmentIndex
-        print(selectedIndex)
     }
     @objc func activateTimeSelector(gestureRecognizer: UITapGestureRecognizer) {
         self.delegate?.showTimePickerClicked()

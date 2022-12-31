@@ -91,7 +91,7 @@ class PlanLocationView: UIViewController{
     }
     private func updateTitleImage(assets: [DKAsset]) {
         if titleImagePicker.exportsWhenCompleted {
-            print("select count")
+//            print("select count")
             for asset in assets {
                 if let error = asset.error {
                     ERROR("exporterDidEndExporting with error:\(error.localizedDescription)")
@@ -99,7 +99,7 @@ class PlanLocationView: UIViewController{
                     asset.fetchOriginalImage(completeBlock:{image, info in
                         self.titleImageAddButton.setImage(image, for: .normal)
                         RealmPlan().setTitleImage(at: NUMBER, to: image)
-                        print("set image for title")
+//                        print("set image for title")
                     })
                 }
             }

@@ -74,7 +74,6 @@ extension MainHeaderSectionController: SwipeCollectionViewCellDelegate {
             let rows = 0
             let editTimeTakenAction = SwipeAction(style: .default, title: "Edit taken time".localized) {
                 action, indexPath in
-                print("\(sections),\(rows)")
                 self.delegate?.timePickerActivate(at: sections, rows)
             }
             let showRouteAction = SwipeAction(style: .default, title: "Show route".localized) {

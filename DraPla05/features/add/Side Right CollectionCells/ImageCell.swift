@@ -70,7 +70,7 @@ class ImageCell: UICollectionViewCell {
         layoutIfNeeded()
         let size = contentView.systemLayoutSizeFitting(layoutAttributes.size)
         var newFrame = layoutAttributes.frame
-        print(newFrame)
+//        print(newFrame)
         newFrame.size.height = ceil(size.height)
         layoutAttributes.frame = newFrame
         return layoutAttributes

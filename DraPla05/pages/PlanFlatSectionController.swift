@@ -83,10 +83,7 @@ extension PlanFlatSectionController: SwipeCollectionViewCellDelegate {
             let deleteAction = SwipeAction(style: .default, title: "Delete".localized) {
                 action, indexPath in
                 let number = indexPath.section - 1
-                print("Number")
-                print(number)
                 RealmPlan().deletePlan(at: number)
-                print("delete")
                 self.delegate?.planReload()
             }
             deleteAction.image = UIImage(systemName: "xmark")

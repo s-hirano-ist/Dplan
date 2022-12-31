@@ -147,7 +147,7 @@ class Plan :Object {
                      try pngImageData!.write(to: pathFileName) //write to file init
                      self.fileName = "XXX\(counter).png" //write to realm
                  } catch {
-                     print("ERROR IN WRITE")
+                     error("ERROR IN WRITE")
                  }
              }
          }

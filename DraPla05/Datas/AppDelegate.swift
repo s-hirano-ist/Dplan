@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
         // MARK: REALMデータベースのパスを表示
-        print(Realm.Configuration.defaultConfiguration.fileURL!)
+        // print(Realm.Configuration.defaultConfiguration.fileURL!)
 
         // MARK: デフォルトはプレミア状態（広告無効化）
         UserDefaults.standard.register(defaults: ["premiumFeatures" : true])
