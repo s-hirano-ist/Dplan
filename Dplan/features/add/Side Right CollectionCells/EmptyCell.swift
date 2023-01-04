@@ -1,6 +1,6 @@
 //
 //  EmptyCell.swift
-//  DraPla05
+//  Dplan
 //
 //  Created by S.Hirano on 2020/04/05.
 //  Copyright © 2020 Sola Studio. All rights reserved.

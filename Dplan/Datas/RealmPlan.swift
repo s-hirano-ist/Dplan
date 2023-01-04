@@ -1,6 +1,6 @@
 //
 //  PlanDataController.swift
-//  DraPla05
+//  Dplan
 //
 //  Created by S.Hirano on 2019/12/18.
 //  Copyright © 2019 Sola Studio. All rights reserved.

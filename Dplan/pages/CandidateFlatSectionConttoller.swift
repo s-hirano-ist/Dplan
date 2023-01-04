@@ -1,6 +1,6 @@
 //
 //  CandidateFlatSectionConttoller.swift
-//  DraPla05
+//  Dplan
 //
 //  Created by S.Hirano on 2020/03/31.
 //  Copyright © 2020 Sola Studio. All rights reserved.

@@ -1,6 +1,6 @@
 //
 //  WebsiteListView.swift
-//  DraPla05
+//  Dplan
 //
 //  Created by Soraki Hirano on 2022/12/31.
 //  Copyright © 2022 Sola Studio. All rights reserved.

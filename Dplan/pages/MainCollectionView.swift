@@ -1,6 +1,6 @@
 //
 //  MainCollectionView.swift
-//  DraPla05
+//  Dplan
 //
 //  Created by S.Hirano on 2020/04/01.
 //  Copyright © 2020 Sola Studio. All rights reserved.
