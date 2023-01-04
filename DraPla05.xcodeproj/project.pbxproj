@@ -745,7 +745,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/DraPla05/Datas/Info.plist";
 				INSTALL_PATH = "@rpath";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"@executable_path/Frameworks",
 					"$(inherited)",
@@ -776,7 +776,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/DraPla05/Datas/Info.plist";
 				INSTALL_PATH = "@rpath";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"@executable_path/Frameworks",
 					"$(inherited)",
