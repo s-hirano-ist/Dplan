@@ -7,16 +7,14 @@
 //
 
 import UIKit
-//import IGListKit
-//import SnapKit
+import IGListKit
+import SnapKit
 import Material
 
-class CandidateListView: UIViewController {
+class CandidateListView: ListViewController {
     let c = RealmCandidate()
     let s = Settings()
-
-    var showAllPlaces = true
-
+        
     var candidateView:CandidateLocationView = {
         let view = CandidateLocationView()
         view.modalPresentationStyle = .fullScreen
@@ -33,14 +31,59 @@ class CandidateListView: UIViewController {
         //        placeFabMenuItem.fabButton.addTarget(self, action: #selector(handleCandidateFABMenuItem(button:)), for: .touchUpInside)
     }
     @objc fileprivate func handleCandidateFABMenuItem(button: UIButton) {
-//        if let mainView = self.children[0] as? PlanListView{
-//            mainView.candidateView.rows = RealmCandidate().place().count
-//            RealmCandidate().saveCandidate()
-//            mainView.candidateView.state = .new
-//            mainView.present(mainView.candidateView, animated: true, completion: nil)
-//        }
+        //        if let mainView = self.children[0] as? PlanListView{
+        //            mainView.candidateView.rows = RealmCandidate().place().count
+        //            RealmCandidate().saveCandidate()
+        //            mainView.candidateView.state = .new
+        //            mainView.present(mainView.candidateView, animated: true, completion: nil)
+        //        }
+    }
+    
+    func a() {
+        //        if c.countData() >= 1 {
+        //            data += c.countWebsite() == 0 ? [6] as [ListDiffable] :[0] as [ListDiffable] //website Header
+        //            if showAllWebsites {
+        //                data += c.website().map({$0 as ListDiffable})
+        //            }else{
+        //                //MARK: IMPROVE
+        //            }
+        //            /*data += [2] as [ListDiffable] //notes
+        //             for note in c.text() {
+        //             data += [note] as [ListDiffable]
+        //             }*/
+        //            data += c.countCandidate()==0 ? [7] as [ListDiffable] : [1] as [ListDiffable] //candidate header
+        //            if showAllPlaces{
+        //                data += (0..<c.countCandidate()).map { c.place()[$0]  as ListDiffable }
+        //            }else{
+        //                //MARK: IMPROVE data += c.place().filter({$0.isFavorite == true }) as [ListDiffable]
+        //            }
+        //
+        //        }else{
+        //            ERROR("ERROR IN COUNT DATA == 0")
+        //            return [] as [ListDiffable]
+        //        }
     }
 }
+//MARK: on first load
+extension CandidateListView {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        //        adapter.dataSource = self
+        //        adapter.collectionView = collectionView
+        //        topBarView.delegate = self
+        //        if c.countData() == 0 {
+        //            print("Add empty data to prevent data undefined")
+        //            c.addEmptyData()
+        //        }
+    }
+    
+}//MARK: on every view appear
+extension CandidateListView {
+    override func viewWillAppear(_ animated: Bool) {
+        adapter.performUpdates(animated: true, completion: nil)
+    }
+}
+
 extension CandidateListView: CandidateFlatSectionDelegate {
     func candidateShareButtonPressed(at row: Int) {
         
@@ -51,7 +94,7 @@ extension CandidateListView: CandidateFlatSectionDelegate {
     }
     
     func candidateReload() {
-        
+        adapter.performUpdates(animated: true, completion: nil)
     }
     
     func candidatePressed(at row: Int) {
@@ -60,3 +103,29 @@ extension CandidateListView: CandidateFlatSectionDelegate {
         present(candidateView, animated: true, completion: nil)
     }
 }
+
+extension CandidateListView: CandidateWebsiteSectionDelegate{
+    func websiteClicked(at row: Int) {
+        Segues().websiteSegue(in: row, state: .editURLCandidate, controller: self)
+    }
+    func webCellReload() {
+        adapter.performUpdates(animated: true, completion: nil)
+    }
+}
+
+/* TODO: WHAT IS THIS
+ extension SideCollectionView:HorizontalSectionDelegate {
+ func planClicked(at row: Int) {
+ NUMBER = row
+ let parent = self.presentingViewController as! MainBackgroundView
+ parent.updateView()
+ self.dismiss(animated: true, completion: nil)
+ }
+ 
+ func placeClicked(at row: Int) {
+ print(row)
+ Segues().candidateLocationSegue(in: row, state: .show, controller: self)
+ }
+ }
+ */
+
