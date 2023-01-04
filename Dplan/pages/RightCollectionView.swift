@@ -170,7 +170,7 @@ extension RightCollectionView: ListAdapterDataSource {
         switch object {
         case is Int:
             let controller = HeaderSectionController()
-            controller.delegate = self
+//            controller.delegate = self
             return controller
         case is URLData:
             let controller = OthersWebsiteSectionController()
@@ -211,7 +211,7 @@ extension RightCollectionView: PlaceFlatSectionDelegate {
     }
 }
 
-extension RightCollectionView: HeaderSectionDelegate{
+extension RightCollectionView{
     func showAllButtonClicked(at row: Int) {
         switch row {
         case 0: //website

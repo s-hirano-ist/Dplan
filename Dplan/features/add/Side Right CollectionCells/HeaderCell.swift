@@ -11,13 +11,7 @@ import IGListKit
 import Material
 import SnapKit
 
-protocol HeaderCellDelegate {
-    func showAllButtonClicked()->Void
-    func showMapButtonClicked()->Void
-}
-
 class HeaderCell: UICollectionViewCell {
-    var delegate: HeaderCellDelegate?
     var isShowAll = true
 
     let titleLabel: UILabel = {
@@ -46,7 +40,7 @@ class HeaderCell: UICollectionViewCell {
         button.backgroundColor = .clear
         button.fontSize = 12
         button.titleColor = R.color.mainBlack()!
-        button.isHidden = true
+//        button.isHidden = true
         button.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(showAllButtonPressed(gestureRecognizer:))))
         return button
     }()
@@ -58,19 +52,6 @@ class HeaderCell: UICollectionViewCell {
         contentView.snp.makeConstraints({ (make) -> Void in
             make.height.equalTo(44)
             make.right.left.width.equalToSuperview()
-        })
-
-        showAllButton.snp.makeConstraints({ (make) -> Void in
-            make.right.equalTo(contentView).offset(-offset)
-            make.width.equalTo(0)
-            make.top.equalTo(contentView).offset(4)
-            make.bottom.equalTo(contentView).offset(-4)
-        })
-        showMapButton.snp.makeConstraints({ (make) -> Void in
-            make.right.equalTo(showAllButton.snp.left).offset(-4)
-            make.width.equalTo(frame.width/6)
-            make.top.equalTo(contentView).offset(4)
-            make.bottom.equalTo(contentView).offset(-4)
         })
         titleLabel.snp.makeConstraints({ (make) -> Void in
             make.top.equalTo(contentView).offset(4)
@@ -101,11 +82,9 @@ class HeaderCell: UICollectionViewCell {
             showAllButton.setTitle("Show less".localized, for: .normal)
         }
         isShowAll.toggle()
-        //self.delegate?.showAllButtonClicked()
     }
 
     @objc func showMapButtonPressed(gestureRecognizer:UIGestureRecognizer) {
-        //self.delegate?.showMapButtonClicked()
     }
     override func preferredLayoutAttributesFitting(_ layoutAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {
         setNeedsLayout()

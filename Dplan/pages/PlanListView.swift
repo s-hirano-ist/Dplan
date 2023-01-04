@@ -20,9 +20,7 @@ class PlanListView: ListViewController {
         return view
     }()
     
-    
     private var data:[ListDiffable] = []
-    
     
 }
 //MARK: on first load
@@ -44,35 +42,18 @@ extension PlanListView {
 extension PlanListView: ListAdapterDataSource {
     func objects(for listAdapter: ListAdapter) -> [ListDiffable] {
         data = []
-        data += d.countPlans() == 0 ? [5] as [ListDiffable] :[4] as [ListDiffable] //plan header
+        data += d.countPlans() == 0 ? [5] as [ListDiffable] :[4] as [ListDiffable] //header
         data += (0..<d.countPlans()).map { d.planList()[$0]  as ListDiffable }
         return data
     }
     func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any)-> ListSectionController {
         switch object {
         case is Int:
-            let controller = HeaderSectionController()
-            // MARK: HeaderSection有効化でコメントイン
-            //            controller.delegate = self
-            return controller
-        case is URLData:
-            let controller = CandidateWebsiteSectionController()
-            //            controller.delegate = self
-            return controller
-            /*case is SectionState:
-             let controller = HorizontalSectionController()
-             controller.delegate = self
-             return controller*/
+            return HeaderSectionController()
         case is Plan:
             let controller = PlanFlatSectionController()
             controller.delegate = self
             return controller
-        case is PlaceData:
-            let controller = CandidateFlatSectionController()
-            //            controller.delegate = self
-            return controller
-            /*case is TextData:
-             return NotesSectionController()*/
         default:
             ERROR("ERROR IN SECTION CONTROLLER SELECTION")
             return ListSectionController()
@@ -103,6 +84,7 @@ extension PlanListView: PlanFlatSectionDelegate {
     func candidateFavoriteButtonPressed(at row: Int) {
     }
 }
+
 extension PlanListView: TopBarViewDelegate{
     func addNewPlan() {
         NUMBER = RealmPlan().countPlans()

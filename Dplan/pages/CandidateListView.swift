@@ -11,6 +11,40 @@ import IGListKit
 import SnapKit
 import Material
 
+//extension PlanListView: ListAdapterDataSource {
+//    func objects(for listAdapter: ListAdapter) -> [ListDiffable] {
+//        data = []
+//        data += d.countPlans() == 0 ? [5] as [ListDiffable] :[4] as [ListDiffable] //plan header
+//        data += (0..<d.countPlans()).map { d.planList()[$0]  as ListDiffable }
+//        return data
+//    }
+//    func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any)-> ListSectionController {
+//        switch object {
+//        case is Int:
+//            return HeaderSectionController()
+//        case is URLData:
+//            let controller = CandidateWebsiteSectionController()
+//            //            controller.delegate = self
+//            return controller
+//        case is Plan:
+//            let controller = PlanFlatSectionController()
+//            controller.delegate = self
+//            return controller
+//        case is PlaceData:
+//            let controller = CandidateFlatSectionController()
+//            //            controller.delegate = self
+//            return controller
+//        default:
+//            ERROR("ERROR IN SECTION CONTROLLER SELECTION")
+//            return ListSectionController()
+//        }
+//    }
+//    func emptyView(for listAdapter: ListAdapter) -> UIView? {
+//        return nil
+//    }
+//}
+//
+
 class CandidateListView: ListViewController {
     let c = RealmCandidate()
     let s = Settings()

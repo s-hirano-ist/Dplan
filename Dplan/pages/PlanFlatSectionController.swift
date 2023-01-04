@@ -9,6 +9,7 @@
 import UIKit
 import IGListKit
 import SwipeCellKit
+
 protocol PlanFlatSectionDelegate {
     func planPressed(at row:Int)->Void
     func planShareButtonPressed(at row:Int)->Void
@@ -59,7 +60,7 @@ class PlanFlatSectionController: ListSectionController {
         self.delegate?.planPressed(at: number)
     }
 }
-extension PlanFlatSectionController:FlatCellDelegate,FlatNonImageCellDelegate {
+extension PlanFlatSectionController: FlatCellDelegate, FlatNonImageCellDelegate {
     func nonImageFavoriteButtonPressed() {
         let number = section - 1
         self.delegate?.planFavoriteButtonPressed(at: number)

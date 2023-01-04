@@ -8,25 +8,21 @@
 
 import UIKit
 import IGListKit
-protocol HeaderSectionDelegate {
-    func showAllButtonClicked(at row:Int)->Void
-    func showMapButtonClicked(at row:Int)->Void
-}
 
 class HeaderSectionController: ListSectionController {
     private var sectionNumber:Int?
-    var delegate: HeaderSectionDelegate?
-
+    
     override func sizeForItem(at index: Int) -> CGSize {
         if index == 0 {
             return CGSize(width: collectionContext!.containerSize.width,
                           height: 44)
         }else{
             return CGSize(width: collectionContext!.containerSize.width,
-            height: 100)
+                          height: 100)
         }
     }
-
+    
+    //FIXME: parent viewからテキストを指定
     override func cellForItem(at index: Int) -> UICollectionViewCell {
         let cellType = index == 0 ? HeaderCell.self : EmptyCell.self
         let cell = collectionContext!.dequeueReusableCell(of: cellType,
@@ -55,7 +51,6 @@ class HeaderSectionController: ListSectionController {
             default:
                 ERROR("ERROR HEADERCELL")
             }
-            cell.delegate = self
         }else if let cell = cell as? EmptyCell {
             switch sectionNumber {
             case 5:
@@ -72,7 +67,7 @@ class HeaderSectionController: ListSectionController {
         }
         return cell
     }
-
+    
     override func didUpdate(to object: Any) {
         sectionNumber = object as? Int
     }
@@ -87,14 +82,5 @@ class HeaderSectionController: ListSectionController {
             ERROR("ERROR IN NUMBER OF ITEMS")
             return 0
         }
-    }
-}
-
-extension HeaderSectionController: HeaderCellDelegate {
-    func showAllButtonClicked() {
-        self.delegate?.showAllButtonClicked(at:sectionNumber!)
-    }
-    func showMapButtonClicked() {
-        self.delegate?.showMapButtonClicked(at:sectionNumber!)
     }
 }

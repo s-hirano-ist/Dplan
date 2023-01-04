@@ -14,7 +14,7 @@ import DKImagePickerController
 import FloatingPanel
 import MapKit
 
-
+//FIXME: error handle
 func ERROR(_ string:String){
     print(string)
 }
