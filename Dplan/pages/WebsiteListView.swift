@@ -12,6 +12,12 @@ import SnapKit
 import Material
 
 class WebsiteListView: UIViewController {
+    let c = RealmCandidate()
+    let s = Settings()
+
+    var showAllWebsites = true
+
+    
     private func prepareWebsiteFABMenuItem() {
         let button = FABButton(image: Icon.cm.share, tintColor: R.color.mainGray()! )
 //        websiteFabMenuItem.title = "Add website".localized
