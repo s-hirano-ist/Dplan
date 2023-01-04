@@ -3,7 +3,7 @@
 //  DraPla05
 //
 //  Created by S.Hirano on 2019/08/30.
-//  Copyright © 2019 Sola_studio. All rights reserved.
+//  Copyright © 2019 Sola Studio. All rights reserved.
 //
 
 import UIKit

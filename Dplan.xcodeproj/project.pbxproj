@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -72,6 +72,7 @@
 		FFCFADA7242DF00B00520AC4 /* CustomGroupDetailImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCFADA5242DF00B00520AC4 /* CustomGroupDetailImageCell.swift */; };
 		FFD009C1241224D500B136D4 /* Segues.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD009C0241224D500B136D4 /* Segues.swift */; };
 		FFE28302241F17B3000ED63E /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE28301241F17B3000ED63E /* R.generated.swift */; };
+		FFE4E2B02965942D00ADA6AD /* TopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE4E2AF2965942D00ADA6AD /* TopBarView.swift */; };
 		FFEA3B472435AA8A002F043F /* FlatNonImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEA3B462435AA8A002F043F /* FlatNonImageCell.swift */; };
 		FFF238912430640E00E9337E /* RightCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF238902430640E00E9337E /* RightCollectionView.swift */; };
 		FFF23893243064AC00E9337E /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF23892243064AC00E9337E /* ImageCell.swift */; };
@@ -164,6 +165,7 @@
 		FFCFADA5242DF00B00520AC4 /* CustomGroupDetailImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomGroupDetailImageCell.swift; sourceTree = "<group>"; };
 		FFD009C0241224D500B136D4 /* Segues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segues.swift; sourceTree = "<group>"; };
 		FFE28301241F17B3000ED63E /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		FFE4E2AF2965942D00ADA6AD /* TopBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarView.swift; sourceTree = "<group>"; };
 		FFEA3B462435AA8A002F043F /* FlatNonImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatNonImageCell.swift; sourceTree = "<group>"; };
 		FFF238902430640E00E9337E /* RightCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightCollectionView.swift; sourceTree = "<group>"; };
 		FFF23892243064AC00E9337E /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
@@ -479,6 +481,7 @@
 				FFAB9E8F24342244001AE064 /* TimeCollectionCell.swift */,
 				FF3438332434945C00BA5CE6 /* HeaderCollectionCell.swift */,
 				FF58FB55296073E600CE50EA /* ButtonView.xib */,
+				FFE4E2AF2965942D00ADA6AD /* TopBarView.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -536,7 +539,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 1420;
-				ORGANIZATIONNAME = Sola_studio;
+				ORGANIZATIONNAME = "Sola Studio";
 				TargetAttributes = {
 					FF9E6A6122FD973100306786 = {
 						CreatedOnToolsVersion = 10.3;
@@ -544,7 +547,7 @@
 				};
 			};
 			buildConfigurationList = FF9E6A5D22FD973100306786 /* Build configuration list for PBXProject "Dplan" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -658,6 +661,7 @@
 				FF3941E824335B84008346EC /* PlaceFlatSectionController.swift in Sources */,
 				FF6316F223B9CB0B005E0065 /* RightFabMenuView.swift in Sources */,
 				FFAB9E9024342244001AE064 /* TimeCollectionCell.swift in Sources */,
+				FFE4E2B02965942D00ADA6AD /* TopBarView.swift in Sources */,
 				FF6769A224337474007E7627 /* CandidateWebsiteSectionController.swift in Sources */,
 				FF2A5A6E23C33F8300B00A1F /* TimePickerView.swift in Sources */,
 				FF3941E624335B01008346EC /* FlatCell.swift in Sources */,

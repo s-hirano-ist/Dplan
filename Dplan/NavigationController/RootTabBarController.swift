@@ -1,9 +1,9 @@
 //
 //  RootTabBarController.swift
-//  DraPla05
+//  Dplan
 //
 //  Created by S.Hirano.
-//  Copyright © 2022 Sola_studio. All rights reserved.
+//  Copyright © 2022 Sola Studio. All rights reserved.
 //
 
 import UIKit

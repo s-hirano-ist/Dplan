@@ -3,7 +3,7 @@
 //  DraPla05
 //
 //  Created by S.Hirano on 2020/03/06.
-//  Copyright © 2020 Sola_studio. All rights reserved.
+//  Copyright © 2020 Sola Studio. All rights reserved.
 //
 
 import Foundation

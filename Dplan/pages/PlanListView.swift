@@ -3,7 +3,7 @@
 //  DraPla05
 //
 //  Created by S.Hirano on 2020/03/30.
-//  Copyright © 2020 Sola_studio. All rights reserved.
+//  Copyright © 2020 Sola Studio. All rights reserved.
 //
 
 import UIKit
@@ -16,12 +16,20 @@ class PlanListView: UIViewController {
     let c = RealmCandidate()
     let s = Settings()
     
-    var bannerViewHeight = 0 //MARK: is subscribed or not
+    var bannerViewHeight = 0 //FIXME: is subscribed or not
     
     var showAllNotes = true
     var showAllWebsites = true
     var showAllPlaces = true
     var showAllPlans = true
+    
+    var mainView = {
+        let view = MainBackgroundView()
+        view.modalPresentationStyle = .fullScreen
+        return view
+    }()
+    
+    private var bannerView = UIView()
 
     lazy var collectionView :UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -64,7 +72,7 @@ class PlanListView: UIViewController {
     
     lazy var titleLabel:UILabel = {
         let label = UILabel()
-        label.text = "Dplan by Sola_studio"
+        label.text = "Dplan by Sola Studio"
         //TODO: change fonts
         label.textAlignment = .left
         label.isUserInteractionEnabled = true
@@ -86,17 +94,7 @@ class PlanListView: UIViewController {
         return data
     }
      */
-    
-    var mainView = {
-        let view = MainBackgroundView()
-        view.modalPresentationStyle = .fullScreen
-        return view
-    }()
-    
-    private var bannerView: UIView = {
-        let view = UIView()
-        return view
-    }()
+
     
     private var data:[ListDiffable] = []
     lazy private var adapter: ListAdapter = {
@@ -118,7 +116,7 @@ extension PlanListView {
         view.backgroundColor = R.color.mainWhite()!
         
         if c.countData() == 0 {
-            print("Add new data for prevention of undefined error")
+            print("Add empty data to prevent data undefined")
             c.addEmptyData()
         }
         setConsraints()
@@ -126,11 +124,11 @@ extension PlanListView {
         adapter.dataSource = self
     }
     func setConsraints(){
+        view.addSubview(topBarView)
         view.addSubview(bannerView)
         view.addSubview(collectionView)
-        view.addSubview(topBarView)
-        topBarView.addSubview(showSettingsButton)
         topBarView.addSubview(titleLabel)
+        topBarView.addSubview(showSettingsButton)
         topBarView.addSubview(addNewPlanButton)
         
         topBarView.snp.makeConstraints({ (make) -> Void in

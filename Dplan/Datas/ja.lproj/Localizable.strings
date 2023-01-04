@@ -3,7 +3,7 @@
   DraPla05
 
   Created by S.Hirano on 2020/03/09.
-  Copyright © 2020 Sola_studio. All rights reserved.
+  Copyright © 2020 Sola Studio. All rights reserved.
 */
 "Privacy policy" = "プライバシーポリシー";
 "Terms of service" = "利用規約";
@@ -76,8 +76,6 @@
 
 "Authentication is needed" = "認証が必要です";
 "Input username and password" = "ユーザー名とパスワードを入力してください";
-"user name" = "user name";
-"password" = "password";
 "Log in" = "ログイン";
 "Input title" = "タイトルを入力";
 
@@ -116,6 +114,7 @@
 "About the app" = "このアプリについて";
 "App version" = "アプリのバージョン";
 "User name" = "ユーザー名";
+"password" = "パスワード";
 "e-mail address" = "Eメールアドレス";
 "Registrated information" = "登録情報";
 "Sign out" = "ログアウト";

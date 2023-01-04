@@ -3,7 +3,7 @@
 //  DraPla05
 //
 //  Created by S.Hirano on 2019/08/23.
-//  Copyright © 2019 Sola_studio. All rights reserved.
+//  Copyright © 2019 Sola Studio. All rights reserved.
 //
 /* 最終的に除去
  UIFileSharingEnabled (Application supports iTunes file sharing)
