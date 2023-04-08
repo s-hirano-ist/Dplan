@@ -111,7 +111,7 @@ extension TimeCollectionCell {
         }else{
             timeTo.text = String(hour) + "hr".localized + " " + String(min) + "min".localized
         }
-        //LOCKED ならば グレー表示．
+        //LOCKED ならば グレー表示
         if data.isLocked == false {
             timeTo.textColor = R.color.mainCyan()!
         }else {

@@ -187,13 +187,13 @@ extension MainBackgroundView {
             dismiss(animated: false, completion: nil)
         }else if d.countDestination(at: NUMBER, in: 0) == 1 {
             reloadView() //まずは情報更新
-            updateMainView() //非同期でリロード 必要なし 必ず以前データのロードを実行済．
+            updateMainView() //非同期でリロード 必要なし 必ず以前データのロードを実行済
             activateLocationManager()
             goToCenterOfMap()
             return
         }else{
             reloadView() //まずは情報更新
-            updateMainView() //非同期でリロード 必要なし 必ず以前データのロードを実行済．
+            updateMainView() //非同期でリロード 必要なし 必ず以前データのロードを実行済
             activateLocationManager()
             goToCenterOfMap()
         }

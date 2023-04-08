@@ -20,7 +20,6 @@
 		FF3632CE230F82CA0033C7D7 /* DataOfContents.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3632CD230F82CA0033C7D7 /* DataOfContents.swift */; };
 		FF48BF302415BF61003C39FB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF48BF322415BF61003C39FB /* Localizable.strings */; };
 		FF560C1A23A9DAFA00584762 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF560C1923A9DAFA00584762 /* Settings.swift */; };
-		FF6316F223B9CB0B005E0065 /* RightFabMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6316F123B9CB0B005E0065 /* RightFabMenuView.swift */; };
 		FF7F02DE29600C820024D407 /* CandidateListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F02DD29600C820024D407 /* CandidateListView.swift */; };
 		FF7F02E029600CD30024D407 /* WebsiteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F02DF29600CD30024D407 /* WebsiteListView.swift */; };
 		FF90127E2438844F00984517 /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90127D2438844F00984517 /* KeyChain.swift */; };
@@ -113,7 +112,6 @@
 		FF48BF312415BF61003C39FB /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FF48BF332415BF6A003C39FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FF560C1923A9DAFA00584762 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
-		FF6316F123B9CB0B005E0065 /* RightFabMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightFabMenuView.swift; sourceTree = "<group>"; };
 		FF7F02DD29600C820024D407 /* CandidateListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateListView.swift; sourceTree = "<group>"; };
 		FF7F02DF29600CD30024D407 /* WebsiteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsiteListView.swift; sourceTree = "<group>"; };
 		FF90127D2438844F00984517 /* KeyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChain.swift; sourceTree = "<group>"; };
@@ -264,7 +262,6 @@
 			isa = PBXGroup;
 			children = (
 				FF312FB123A5281000156F04 /* RootTabBarController.swift */,
-				FF6316F123B9CB0B005E0065 /* RightFabMenuView.swift */,
 			);
 			path = navigationController;
 			sourceTree = "<group>";
@@ -579,7 +576,6 @@
 				FFD009C1241224D500B136D4 /* Segues.swift in Sources */,
 				FFFAEB3829E1ACF600E37DBA /* TimePickerView.swift in Sources */,
 				FFFAEB4929E1ACF600E37DBA /* ImagePageView.swift in Sources */,
-				FF6316F223B9CB0B005E0065 /* RightFabMenuView.swift in Sources */,
 				FFFAEB4829E1ACF600E37DBA /* FlatCell.swift in Sources */,
 				FF2AB7E12432C451007F12F2 /* ObjectsForIGListKit.swift in Sources */,
 				FFFAEB4729E1ACF600E37DBA /* CandidateWebsiteSectionController.swift in Sources */,

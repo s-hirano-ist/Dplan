@@ -211,7 +211,7 @@ extension PlaceLocationView{
 
 //for searchBar
 extension PlaceLocationView:UISearchBarDelegate,MKLocalSearchCompleterDelegate,CLLocationManagerDelegate {
-    //データの保存なし そのままキーボードを閉じるのみ．
+    //データの保存なし そのままキーボードを閉じるのみ
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchBar.resignFirstResponder()
         searchBar.showsCancelButton = false

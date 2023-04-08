@@ -15,29 +15,28 @@ class RightCollectionView: UIViewController {
     let s = Settings()
     let d = RealmPlan()
     let o = RealmOthers()
-
+    
     lazy var collectionView :UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.estimatedItemSize = CGSize(width: 100, height: 40)
-        //let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: UICollectionViewFlowLayout.init())
         let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
         collectionView.backgroundColor = .clear
         collectionView.alwaysBounceVertical = true
         collectionView.showsVerticalScrollIndicator = false
         return collectionView
     }()
-
+    
     lazy var bottomView:UIView = {
         let backgroundView = UIView()
         backgroundView.backgroundColor = .systemGray5
         return backgroundView
     }()
-
+    
     var titleLabel: UILabel = {
         let label = UILabel()
         return label
     }()
-
+    
     lazy var toMainViewButton: RaisedButton = {
         let button = s.raisedButton()
         button.tintColor = R.color.mainBlack()!
@@ -52,12 +51,36 @@ class RightCollectionView: UIViewController {
             self.dismiss(animated: true, completion: nil)
         }
     }
-
+    lazy var addWebsiteButton: RaisedButton = {
+        let button = s.raisedButton()
+        button.tintColor = R.color.mainBlack()!
+        button.setImage(UIImage(systemName: "globe"), for: .normal)
+        button.addGestureRecognizer(UITapGestureRecognizer(target: self,
+                                                           action: #selector(handleAddWebsite(gestureRecognizer:))))
+        return button
+    }()
+    @objc fileprivate func handleAddWebsite(gestureRecognizer:UIGestureRecognizer) {
+        Segues().websiteSegue(in: 0, state: .newURL, controller: self)
+    }
+    lazy var addCandidateButton: RaisedButton = {
+        let button = s.raisedButton()
+        button.tintColor = R.color.mainBlack()!
+        button.setImage(UIImage(systemName: "mappin"), for: .normal)
+        button.addGestureRecognizer(UITapGestureRecognizer(target: self,
+                                                           action: #selector(handleAddCandidate(gestureRecognizer:))))
+        return button
+    }()
+    @objc fileprivate func handleAddCandidate(gestureRecognizer:UIGestureRecognizer) {
+        RealmOthers().savePlace() //ここで追加したから 下のは-1に変更
+        self.placeLocationSegue(in: RealmOthers().place().count-1, state: .new)
+    }
+    
+    
     var showAllNotes = true
     var showAllWebsites = true
     var showAllPlaces = true
     var showAllImages = true
-
+    
     var data:[ListDiffable] = []
     lazy var adapter: ListAdapter = {
         return ListAdapter(updater: ListAdapterUpdater(),
@@ -70,13 +93,13 @@ class RightCollectionView: UIViewController {
         view.modalPresentationStyle = .overFullScreen
         return view
     }()
-
+    
     func placeLocationSegue(in row:Int,state:State){
-        placeView.rows = row //適当な値．
+        placeView.rows = row //適当な値
         placeView.state = state
         self.present(placeView, animated: true, completion: nil)
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = R.color.mainWhite()!
@@ -89,7 +112,9 @@ class RightCollectionView: UIViewController {
         view.addSubview(bottomView)
         bottomView.addSubview(titleLabel)
         bottomView.addSubview(toMainViewButton)
-
+        bottomView.addSubview(addWebsiteButton)
+        bottomView.addSubview(addCandidateButton)
+        
         collectionView.snp.makeConstraints({ (make) -> Void in
             make.right.left.equalToSuperview()
             make.top.equalToSuperview()
@@ -100,7 +125,7 @@ class RightCollectionView: UIViewController {
             make.top.equalTo(view.safeAreaLayoutGuide.snp.bottom).inset(44)
             make.left.right.equalToSuperview()
         })
-
+        
         toMainViewButton.snp.makeConstraints({ (make) -> Void in
             make.size.equalTo(44)
             make.left.equalToSuperview().offset(16)
@@ -112,21 +137,31 @@ class RightCollectionView: UIViewController {
             make.right.equalToSuperview().offset(-56)
             make.left.equalTo(toMainViewButton.snp.right)
         })
+        addCandidateButton.snp.makeConstraints({(make) -> Void in
+            make.size.equalTo(44)
+            make.right.equalToSuperview().offset(-16)
+            make.top.equalToSuperview().offset(8)
+        })
+        addWebsiteButton.snp.makeConstraints({(make) -> Void in
+            make.size.equalTo(44)
+            make.right.equalTo(addCandidateButton.snp.left)
+            make.top.equalToSuperview().offset(8)
+        })
     }
-
+    
     override func viewDidAppear(_ animated: Bool) {
         adapter.performUpdates(animated: true, completion: nil)
         titleLabel.text = d.getTitle(at:NUMBER)
     }
 }
 extension RightCollectionView: ListAdapterDataSource {
-
+    
     func objects(for listAdapter: ListAdapter) -> [ListDiffable] {
         data = []
-
+        
         data += [2] as [ListDiffable] // notes header
         data += [d.eachPlanData()] as [ListDiffable]
-
+        
         data += o.countWebsites()==0 ? [6] as [ListDiffable] : [0] as [ListDiffable]
         if showAllWebsites {
             data += o.websites().map({$0 as ListDiffable})
@@ -162,12 +197,12 @@ extension RightCollectionView: ListAdapterDataSource {
         data += [i] as [ListDiffable]
         return data
     }
-
+    
     func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any)-> ListSectionController {
         switch object {
         case is Int:
             let controller = HeaderSectionController()
-//            controller.delegate = self
+            //            controller.delegate = self
             return controller
         case is URLData:
             let controller = OthersWebsiteSectionController()
@@ -188,14 +223,14 @@ extension RightCollectionView: ListAdapterDataSource {
             return ListSectionController()
         }
     }
-
+    
     func emptyView(for listAdapter: ListAdapter) -> UIView? {
         return nil
     }
 }
 extension RightCollectionView: PlaceFlatSectionDelegate {
     func placeFavoriteButtonPressed(at row: Int) {
-
+        
     }
     func placeShareButtonPressed(at row: Int) {
         
@@ -208,33 +243,6 @@ extension RightCollectionView: PlaceFlatSectionDelegate {
     }
 }
 
-extension RightCollectionView{
-    func showAllButtonClicked(at row: Int) {
-        switch row {
-        case 0: //website
-            //showAllWebsites.toggle()
-            break
-        case 1: //candidate
-            //showAllPlaces.toggle()
-            break
-        case 2: //notes
-            //showAllNotes.toggle()
-            break
-        case 3: //images
-            //showAllImages.toggle()
-            break
-        case 4: //plans
-            break
-        default:
-            break
-        }
-        //adapter.performUpdates(animated: true, completion: nil)
-    }
-
-    func showMapButtonClicked(at row: Int) {
-        print("showMap")
-    }
-}
 extension RightCollectionView:ImageSectionDelegate {
     func imageClicked(at row: Int,imageData:[UIImage?]) {
         let view = R.storyboard.main.imagepagE()!
@@ -260,12 +268,3 @@ extension RightCollectionView: OthersWebsiteSectionDelegate {
         adapter.performUpdates(animated: true, completion: nil)
     }
 }
-
-
-/*
-extension RightCollectionView: HorizontalSectionDelegate{
-    func placeClicked(at row: Int) {
-        Segues().placeLocationSegue(in: row, state: .show, controller: self)
-    }
-}
-*/

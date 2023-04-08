@@ -90,7 +90,7 @@ extension RealmPlan {
                 polyline.append(MKPolyline())
             }
         }
-        //ここだけ引数として取る．そうすることによって、変にリロードされない．
+        //ここだけ引数として取る そうすることによって、変にリロードされない
         self.findRouteAt(number,0,0,completion:completion)
     }
 

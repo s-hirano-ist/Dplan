@@ -49,7 +49,7 @@ extension SearchDestinationView{
         return searchCell
     }
     
-    //IMRPOVE 近くを探す 等 除外するべき選択肢多数．必要に応じて要改良．
+    //IMRPOVE 近くを探す 等 除外するべき選択肢多数 必要に応じて要改良
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let geocoder = CLGeocoder()
 

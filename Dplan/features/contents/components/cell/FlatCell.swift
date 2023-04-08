@@ -72,7 +72,7 @@ class FlatCell: SwipeCollectionViewCell {
 
     private let image: UIImageView = {
         var image = UIImageView()
-        //短い辺に合わせリサイズ、縦横比不変．
+        //短い辺に合わせリサイズ、縦横比不変
         image.contentMode = .scaleAspectFill
         image.clipsToBounds = true
         image.cornerRadiusPreset = .cornerRadius5

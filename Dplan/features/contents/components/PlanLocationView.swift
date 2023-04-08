@@ -319,7 +319,7 @@ extension PlanLocationView {
 
 //for searchBar
 extension PlanLocationView:UISearchBarDelegate,MKLocalSearchCompleterDelegate,CLLocationManagerDelegate,UIScrollViewDelegate {
-    //データの保存なし そのままキーボードを閉じるのみ．
+    //データの保存なし そのままキーボードを閉じるのみ
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchBar.resignFirstResponder()
         searchBar.showsCancelButton = false

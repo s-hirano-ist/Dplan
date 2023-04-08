@@ -12,11 +12,11 @@
  */
 
 /* 注意事項まとめ
- * constraintsは lazyには記載せず、まとめて1つのメソッドで記述する．
- * buttons.set() は viewDidlayoutSubviews()実行後にする．
- * timeTo 23時間50分 = 0分．
- *        00時間00分 = 未定義/探索不能．
- * PlanTableModalView.collectionView constraints設定で優先されるためcollectionViewサイズ変更不可.
+ * constraintsは lazyには記載せず、まとめて1つのメソッドで記述する
+ * buttons.set() は viewDidlayoutSubviews()実行後にする
+ * timeTo 23時間50分 = 0分
+ *        00時間00分 = 未定義/探索不能
+ * PlanTableModalView.collectionView constraints設定で優先されるためcollectionViewサイズ変更不可
  * do not add tableView.reloadData() while moving cells or transision of modal view.
  * do not viewwillappear tableview.reload which deletes all non-saved data.
  * collectionView: estimated size = none OR ERROR OCCUR
@@ -28,9 +28,9 @@
  */
 
 /* IMPROVE
- * 画像をgoogle検索し，候補を 写真のセレクト画面に同時に表示．
+ * 画像をgoogle検索し，候補を 写真のセレクト画面に同時に表示
  * url画面から検索し、住所を取得しそれを新規日付画面に反映させる
- * offline 通知, reloadエラー，目的地エラー通知．
+ * offline 通知, reloadエラー，目的地エラー通知
  * 初期設定としてsampleを作成
  * recently deleted 実装
  */

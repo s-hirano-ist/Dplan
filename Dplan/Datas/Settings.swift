@@ -261,12 +261,12 @@ extension Settings {
         settings.blurEffectStyle = nil //nil, .dark, .light, .extraLight
         settings.statusBarEndAlpha = 0 // menu fade status bar
         
-        settings.enableSwipeToDismissGesture = true //スワイプによる画面遷移禁止．
+        settings.enableSwipeToDismissGesture = true //スワイプによる画面遷移禁止
         return settings
     }
     func prepareRightView(view:UIView)->SideMenuNavigationController{
-        let rightFabMenu = RightFabMenuView(rootViewController: RightCollectionView())
-        let menu = SideMenuNavigationController(rootViewController: rightFabMenu)
+        let rightCollectionView = RightCollectionView()
+        let menu = SideMenuNavigationController(rootViewController: rightCollectionView)
         menu.setNavigationBarHidden(true, animated: false)
         menu.settings = makeSettings(right: true,view:view)
         menu.leftSide = false
@@ -292,38 +292,12 @@ extension Settings {
 extension Settings {
     func reloadRightViewDismiss(controller:UIViewController){
         if let view = controller.presentingViewController as? SideMenuNavigationController,
-           let vv = view.children[0] as? RightFabMenuView,
-           let v = vv.children[0] as? RightCollectionView {
+           let v = view.children[0] as? RightCollectionView {
             controller.dismiss(animated: true, completion: {
                 v.adapter.performUpdates(animated: false, completion: nil)
             })
         }
-    }
-    /*func reloadMainBackgroundViewDismiss(controller:UIViewController){
-     if let view = controller.presentingViewController as? MainBackgroundView {
-     controller.dismiss(animated: true, completion: {
-     view.updateMainView()
-     })
-     }
-     }
-     func reloadSideMenuDismiss(controller:UIViewController){
-     if let view = controller.presentingViewController as? SideFabMenuView,
-     let v = view.children[0] as? SideCollectionView{
-     controller.dismiss(animated: true, completion: {
-     v.adapter.performUpdates(animated: true, completion: nil)
-     })
-     }
-     }
-     func reloadSideMenuDismissPresent(controller:UIViewController){
-     if let view = controller.presentingViewController as? SideFabMenuView,
-     let v = view.children[0] as? SideCollectionView{
-     v.adapter.performUpdates(animated: true, completion: nil)
-     controller.dismiss(animated: true, completion: {
-     v.planPressed(at: NUMBER)
-     })
-     }
-     }*/
-    
+    }    
 }
 //for timePicker,datePicker view
 
@@ -337,7 +311,7 @@ class HalfFloatingPannelLayout: FloatingPanelLayout{
         return .half
     }
     public func insetFor(position: FloatingPanelPosition) -> CGFloat? {
-        //MARK:IMPROVE 厳密な値をセット．
+        //TODO: 厳密な値をセット
         switch position {
         case .half:
             return halfPositionHeight ?? 300 // A bottom inset from the safe area

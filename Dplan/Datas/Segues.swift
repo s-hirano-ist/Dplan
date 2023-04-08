@@ -46,7 +46,7 @@ class Segues {
 
     func searchTableViewPopup(controller:UIViewController,searchBar:UISearchBar,searchCompleter:MKLocalSearchCompleter)-> SearchDestinationView {
         let searchTableView = R.storyboard.main.searchView()!
-        //IMPROVE storyboard削除．
+        //IMPROVE storyboard削除
 
         searchTableView.searchBar = searchBar
         searchTableView.searchCompleter = searchCompleter
