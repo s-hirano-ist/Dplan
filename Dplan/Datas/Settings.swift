@@ -67,7 +67,10 @@ extension UIImage {
     class var lockFill:UIImage{
         return UIImage(systemName:"lock.fill")!
     }
-
+    class var globe:UIImage{
+        return UIImage(systemName: "globe")!
+    }
+    
 }
 extension UIView {
     func parentViewController() -> UIViewController? {
@@ -80,7 +83,7 @@ extension UIView {
             parentResponder = nextResponder
         }
     }
-
+    
     func parentView<T: UIView>(type: T.Type) -> T? {
         var parentResponder: UIResponder? = self
         while true {
@@ -98,7 +101,7 @@ struct DataCellSet {
     var detail:String
     var image:UIImage?
     var isSelected:Bool
-
+    
     init(name:String,
          detail:String,
          image:UIImage?,
@@ -127,7 +130,7 @@ extension Settings {
         guard let formatString = DateFormatter.dateFormat(fromTemplate: "MMMdd",
                                                           options: 0,
                                                           locale: Locale.current)
-            else { fatalError() }
+        else { fatalError() }
         dateFormatter.dateFormat = formatString
         return dateFormatter
     }
@@ -136,7 +139,7 @@ extension Settings {
         guard let formatString = DateFormatter.dateFormat(fromTemplate: "MMMdd-HH-mm",
                                                           options: 0,
                                                           locale: Locale.current)
-            else { fatalError() }
+        else { fatalError() }
         dateFormatter.dateFormat = formatString
         return dateFormatter
     }
@@ -145,7 +148,7 @@ extension Settings {
         guard let formatString = DateFormatter.dateFormat(fromTemplate: "HH-mm",
                                                           options: 0,
                                                           locale: Locale.current)
-            else { fatalError() }
+        else { fatalError() }
         dateFormatter.dateFormat = formatString
         return dateFormatter
     }
@@ -197,7 +200,7 @@ extension Settings {
         button.backgroundColor = .clear
         return button
     }
-
+    
     func textField()->UITextField{
         let textField = UITextField()
         textField.backgroundColor = .clear
@@ -208,7 +211,7 @@ extension Settings {
         textField.minimumFontSize = 8
         return textField
     }
-
+    
     //MARK: for button in date,time picker
     func setButtonBackground(frame:CGRect)->UIView{
         let v = UIView(frame: frame)
@@ -229,7 +232,7 @@ extension Settings {
         v.backgroundColor = .systemBackground
         return v
     }
-
+    
     //MARK: for fabMenu
     func prepareFabMenuItemColors(item:FABMenuItem,icon:UIImage?,backgroundColor:UIColor){
         item.fabButton.tintColor = R.color.mainWhite()!
@@ -239,7 +242,7 @@ extension Settings {
         item.fabButton.backgroundColor = backgroundColor
         item.fabButton.image = icon
     }
-
+    
     //MARK: for sideMenu settings
     func makeSettings(right :Bool,view:UIView) -> SideMenuSettings {
         //sideMenu settings
@@ -251,13 +254,13 @@ extension Settings {
         presentationStyle.onTopShadowOpacity = 0
         presentationStyle.presentingEndAlpha = CGFloat(1) //mainビューの透明度
         presentationStyle.presentingScaleFactor = CGFloat(1)
-
+        
         var settings = SideMenuSettings()
         settings.presentationStyle = presentationStyle
         settings.menuWidth = view.frame.width
         settings.blurEffectStyle = nil //nil, .dark, .light, .extraLight
         settings.statusBarEndAlpha = 0 // menu fade status bar
-
+        
         settings.enableSwipeToDismissGesture = true //スワイプによる画面遷移禁止．
         return settings
     }
@@ -269,7 +272,7 @@ extension Settings {
         menu.leftSide = false
         return menu
     }
-
+    
     //MARK: for image Picker
     func setImagePicker(singleSelect:Bool)->DKImagePickerController {
         let pickerController = DKImagePickerController()
@@ -282,45 +285,45 @@ extension Settings {
         //pickerController.UIDelegate = AssetClickHandler() // for default if wanted
         return pickerController
     }
-
+    
 }
 
 //MARK: for dismiss modal
 extension Settings {
     func reloadRightViewDismiss(controller:UIViewController){
         if let view = controller.presentingViewController as? SideMenuNavigationController,
-            let vv = view.children[0] as? RightFabMenuView,
-            let v = vv.children[0] as? RightCollectionView {
+           let vv = view.children[0] as? RightFabMenuView,
+           let v = vv.children[0] as? RightCollectionView {
             controller.dismiss(animated: true, completion: {
                 v.adapter.performUpdates(animated: false, completion: nil)
             })
         }
     }
     /*func reloadMainBackgroundViewDismiss(controller:UIViewController){
-        if let view = controller.presentingViewController as? MainBackgroundView {
-            controller.dismiss(animated: true, completion: {
-                view.updateMainView()
-            })
-        }
-    }
-    func reloadSideMenuDismiss(controller:UIViewController){
-        if let view = controller.presentingViewController as? SideFabMenuView,
-            let v = view.children[0] as? SideCollectionView{
-            controller.dismiss(animated: true, completion: {
-                v.adapter.performUpdates(animated: true, completion: nil)
-            })
-        }
-    }
-    func reloadSideMenuDismissPresent(controller:UIViewController){
-        if let view = controller.presentingViewController as? SideFabMenuView,
-            let v = view.children[0] as? SideCollectionView{
-            v.adapter.performUpdates(animated: true, completion: nil)
-            controller.dismiss(animated: true, completion: {
-                v.planPressed(at: NUMBER)
-            })
-        }
-    }*/
-
+     if let view = controller.presentingViewController as? MainBackgroundView {
+     controller.dismiss(animated: true, completion: {
+     view.updateMainView()
+     })
+     }
+     }
+     func reloadSideMenuDismiss(controller:UIViewController){
+     if let view = controller.presentingViewController as? SideFabMenuView,
+     let v = view.children[0] as? SideCollectionView{
+     controller.dismiss(animated: true, completion: {
+     v.adapter.performUpdates(animated: true, completion: nil)
+     })
+     }
+     }
+     func reloadSideMenuDismissPresent(controller:UIViewController){
+     if let view = controller.presentingViewController as? SideFabMenuView,
+     let v = view.children[0] as? SideCollectionView{
+     v.adapter.performUpdates(animated: true, completion: nil)
+     controller.dismiss(animated: true, completion: {
+     v.planPressed(at: NUMBER)
+     })
+     }
+     }*/
+    
 }
 //MARK: for timePicker,datePicker view
 
@@ -341,7 +344,7 @@ class HalfFloatingPannelLayout: FloatingPanelLayout{
         default: return nil // Or `case .hidden: return nil`
         }
     }
-
+    
     var topInteractionBuffer: CGFloat {
         return 0 //上部に侵入可能であるかどうか
     }

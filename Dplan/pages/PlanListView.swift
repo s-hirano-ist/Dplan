@@ -23,7 +23,7 @@ class PlanListView: ListViewController {
     private var data:[ListDiffable] = []
     
 }
-//MARK: on first load
+//on first load
 extension PlanListView {
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,7 +65,7 @@ extension PlanListView: ListAdapterDataSource {
 }
 
 extension PlanListView: PlanFlatSectionDelegate {
-    //MARK: for delete, add pin
+    //for delete, add pin
     func planReload() {
         adapter.performUpdates(animated: true, completion: nil)
     }

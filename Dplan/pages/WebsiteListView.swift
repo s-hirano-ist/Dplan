@@ -19,7 +19,7 @@ class WebsiteListView: UIViewController {
 
     
     private func prepareWebsiteFABMenuItem() {
-        let button = FABButton(image: Icon.cm.share, tintColor: R.color.mainGray()! )
+//        let button = FABButton(image: Icon.cm.share, tintColor: R.color.mainGray()! )
 //        websiteFabMenuItem.title = "Add website".localized
 //        Settings().prepareFabMenuItemColors(item: websiteFabMenuItem, icon: Icon.icon("ic_add_white"), backgroundColor: R.color.mainGray()!)
 //        websiteFabMenuItem.fabButton.addTarget(self, action: #selector(handleWebsiteFABMenuItem(button:)), for: .touchUpInside)
