@@ -690,7 +690,6 @@ struct _R {
 
       var imagepagE: RswiftResources.StoryboardViewControllerIdentifier<ImagePageView> { .init(identifier: "IMAGEPAGE", storyboard: name, bundle: bundle) }
       var searchView: RswiftResources.StoryboardViewControllerIdentifier<SearchDestinationView> { .init(identifier: "SearchView", storyboard: name, bundle: bundle) }
-      var showMapView: RswiftResources.StoryboardViewControllerIdentifier<ShowMapView> { .init(identifier: "ShowMapView", storyboard: name, bundle: bundle) }
       var urlView: RswiftResources.StoryboardViewControllerIdentifier<WebsiteView> { .init(identifier: "urlView", storyboard: name, bundle: bundle) }
 
       func validate() throws {
@@ -707,7 +706,6 @@ struct _R {
         if UIKit.UIColor(named: "mainWhite", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Color named 'mainWhite' is used in storyboard 'Main', but couldn't be loaded.") }
         if imagepagE() == nil { throw RswiftResources.ValidationError("[R.swift] ViewController with identifier 'imagepagE' could not be loaded from storyboard 'Main' as 'ImagePageView'.") }
         if searchView() == nil { throw RswiftResources.ValidationError("[R.swift] ViewController with identifier 'searchView' could not be loaded from storyboard 'Main' as 'SearchDestinationView'.") }
-        if showMapView() == nil { throw RswiftResources.ValidationError("[R.swift] ViewController with identifier 'showMapView' could not be loaded from storyboard 'Main' as 'ShowMapView'.") }
         if urlView() == nil { throw RswiftResources.ValidationError("[R.swift] ViewController with identifier 'urlView' could not be loaded from storyboard 'Main' as 'WebsiteView'.") }
       }
     }

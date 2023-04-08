@@ -9,7 +9,7 @@
 import RealmSwift
 import MapKit
 
-//MARK: DATA更新以外は検証済 最終検証のみでOK
+//DATA更新以外は検証済 最終検証のみでOK
 enum Transport {
     case car //0
     case train //1
@@ -19,7 +19,7 @@ enum Transport {
     }
 }
 
-//MARK: FOR main view
+//FOR main view
 class RealmPlan {
     private let realm = try! Realm()
     private let s = Settings()
@@ -77,7 +77,7 @@ class RealmPlan {
     }
 }
 
-//MARK: FOR data reload
+//FOR data reload
 extension RealmPlan {
     //ok
     func reload(completion: (()->())? = nil){
@@ -100,7 +100,6 @@ extension RealmPlan {
             ERROR("FATAL ERROR IN FIND ROUTE")
         }
         if collection[section].eachData.count - 1 == row { //if last row
-            print("reloadEventTimeAt\(section)")
             self.reloadEventTime(at:num,section)
             if collection.count - 1 == section {
                 completion?()
@@ -151,7 +150,7 @@ extension RealmPlan {
         myDirections.calculate() { (response, error) in
             if error != nil || response!.routes.isEmpty {
                 ERROR("unable to find route with error\(error!)")
-                //MARK: NO "TIME TO ZERO" RIGHT NOW
+                //NO "TIME TO ZERO" RIGHT NOW
                 /*if self.plan()[toSection].eachData[toRow].isLocked == false {
                     try! self.realm.write {
                         self.plan()[fromSection].eachData[fromRow].timeTo = 0
@@ -234,7 +233,7 @@ extension RealmPlan {
         }
     }
 }
-//MARK: for getters
+//for getters
 extension RealmPlan {
     func getTitle(at num:Int)->String {
         if realm.objects(Plan.self)[num].title == String.empty{
@@ -261,7 +260,7 @@ extension RealmPlan {
         return realm.objects(Plan.self)[num].isFavorite
     }
 
-    //MARK: for header
+    //for header
     func getDate(at section:Int)->String{
         let fromDate = data(at:0, 0).time
         let addDay = DateComponents(day: section,hour: 0, minute: 0)
@@ -270,7 +269,7 @@ extension RealmPlan {
     }
 }
 
-// MARK: set methods of eachData
+// set methods of eachData
 extension RealmPlan {
 
     func setTitle(at num:Int, to name:String){
@@ -361,7 +360,7 @@ extension RealmPlan {
 
 }
 
-// MARK: save overwrite,delete,move methods
+// save overwrite,delete,move methods
 extension RealmPlan {
     func addSample(){
         let d = EachData()

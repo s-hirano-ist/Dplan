@@ -11,7 +11,7 @@
  自分で撮影した画像 以外のデータ
  */
 
-/* MARK: 注意事項まとめ
+/* 注意事項まとめ
  * constraintsは lazyには記載せず、まとめて1つのメソッドで記述する．
  * buttons.set() は viewDidlayoutSubviews()実行後にする．
  * timeTo 23時間50分 = 0分．
@@ -22,12 +22,12 @@
  * collectionView: estimated size = none OR ERROR OCCUR
  */
 
-/* MARK: 不明点
+/* 不明点
  * tableView.rowHeight = UITableView.automaticDimension// cellの高さ可変??
  * tableView.estimatedRowHeight = 100 ??
  */
 
-/* MARK: IMPROVE
+/* IMPROVE
  * 画像をgoogle検索し，候補を 写真のセレクト画面に同時に表示．
  * url画面から検索し、住所を取得しそれを新規日付画面に反映させる
  * offline 通知, reloadエラー，目的地エラー通知．
@@ -52,7 +52,7 @@ extension Object: ListDiffable {
     }
 }
 
-//MARK: for candidate
+//for candidate
 class Candidate:Object {
     let place = List<PlaceData>()
     let text = List<TextData>()
@@ -74,7 +74,7 @@ class Candidate:Object {
     }
 }
 
-//MARK: for plan
+//for plan
 class Plan :Object {
     //TODO: 要リファクタリング 名称
     
@@ -115,7 +115,7 @@ class Plan :Object {
         }
     }
     
-    //MARK: 取得用
+    //取得用
      dynamic var websiteDatas:[URLData?]{
          get{
              var data:[URLData?] = []
@@ -250,7 +250,7 @@ class EachData:Object {
     }
 }
 
-//MARK: for other,candidate
+//for other,candidate
 class PlaceData:Object {
     @objc dynamic var name:String = String.empty
     @objc dynamic var address:String = String.empty
@@ -305,7 +305,7 @@ class PlaceData:Object {
     }
 }
 
-//MARK: for candidate
+//for candidate
 class TextData:Object {
     @objc dynamic var title: String = String.empty
     @objc dynamic var detail: String = String.empty
@@ -316,7 +316,7 @@ class TextData:Object {
     }
 }
 
-//MARK: for other,candidate
+//for other,candidate
 class URLData:Object {
     @objc dynamic var title: String = String.empty
     @objc dynamic var website: String = String.empty
@@ -417,7 +417,7 @@ class ImageData:Object {
  }*/
 
  */
-//MARK: for candidate
+//for candidate
 /*class ImageData: Object {
  @objc dynamic var photo: Data? = nil
  dynamic private var _image: UIImage? = nil

@@ -22,7 +22,7 @@ protocol HowToViewDelegate {
 
 class HowToView: UIView {
     var delegate:HowToViewDelegate?
-
+    
     lazy var imageView:UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
@@ -54,7 +54,7 @@ class HowToView: UIView {
     @objc func nextButton(gestureRecognizer:UIGestureRecognizer){
         self.delegate?.rightButtonClicked()
     }
-
+    
     override init(frame: CGRect) {
         super.init(frame:frame)
         setConstraints()
@@ -62,31 +62,31 @@ class HowToView: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
+    
     private func setConstraints(){
         self.addSubview(imageView)
         self.addSubview(leftButton)
         self.addSubview(rightButton)
-
+        
         let offset:CGFloat = 32
-
+        
         imageView.snp.makeConstraints({ (make) -> Void in
             make.left.right.top.bottom.equalToSuperview()
         })
-
+        
         leftButton.snp.makeConstraints({ (make) -> Void in
             make.height.width.equalTo(44)
             make.top.equalTo(self.safeAreaLayoutGuide.snp.top)
             make.left.equalToSuperview().offset(offset/2)
         })
-
+        
         rightButton.snp.makeConstraints({ (make) -> Void in
             make.height.width.equalTo(44)
             make.top.equalTo(self.safeAreaLayoutGuide.snp.top)
             make.right.equalToSuperview().offset(-offset/2)
         })
     }
-
+    
     
     func setImage(image:UIImage){
         imageView.image = image

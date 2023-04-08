@@ -46,7 +46,7 @@ class Segues {
 
     func searchTableViewPopup(controller:UIViewController,searchBar:UISearchBar,searchCompleter:MKLocalSearchCompleter)-> SearchDestinationView {
         let searchTableView = R.storyboard.main.searchView()!
-        //MARK: IMPROVE storyboard削除．
+        //IMPROVE storyboard削除．
 
         searchTableView.searchBar = searchBar
         searchTableView.searchCompleter = searchCompleter
@@ -58,9 +58,9 @@ class Segues {
     }
 }
 
-//MARK: for mapApp segue
+//for mapApp segue
 extension Segues {
-    //MARK: IMPROVE クリップボードにlocをコピーして必要に応じて yahoo map 等に segue
+    //IMPROVE クリップボードにlocをコピーして必要に応じて yahoo map 等に segue
     func copyLocation(){
 
     }
@@ -169,7 +169,7 @@ struct WData:Codable {
     let website:String
 }
 
-//MARK: for share segues
+//for share segues
 extension Segues {
     func convertFromJson(jsonData:String)->JsonPlanData{
         let data = try! JSONDecoder().decode(JsonPlanData.self,
@@ -248,7 +248,7 @@ extension Segues {
     }
 }
 
-//MARK: for converts
+//for converts
 extension Segues {
     private func planConvert(data:Plan)->JsonPlanData{
         return JsonPlanData(title: data.title,
@@ -317,7 +317,7 @@ extension Segues {
     }
 }
 extension Segues {
-    //MARK: append a new plan
+    //append a new plan
     func setPlanDataJson(data:JsonPlanData){
         let jData = Plan(title: data.title,
                          detail: data.detail,
@@ -363,7 +363,7 @@ extension Segues {
         return dd
     }
 
-    //MARK: TODO image転送には未対応
+    //TODO image転送には未対応
     private func placeDataJson(data:[PData])->[PlaceData]{
         var dd:[PlaceData] = []
         for d in data {

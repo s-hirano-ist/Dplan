@@ -22,7 +22,7 @@ protocol HowToLastViewDelegate {
 
 class HowToLastView: UIView {
     var delegate:HowToLastViewDelegate?
-
+    
     lazy var imageView:UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
@@ -47,14 +47,14 @@ class HowToLastView: UIView {
                                                            action: #selector(centerButtonClicked(gestureRecognizer:))))
         return button
     }()
-
+    
     @objc func backButton(gestureRecognizer:UIGestureRecognizer){
         self.delegate?.leftButtonClicked()
     }
     @objc func centerButtonClicked(gestureRecognizer:UIGestureRecognizer){
         self.delegate?.centerButtonClicked()
     }
-
+    
     override init(frame: CGRect) {
         super.init(frame:frame)
         setConstraints()
@@ -67,9 +67,9 @@ class HowToLastView: UIView {
         self.addSubview(imageView)
         self.addSubview(leftButton)
         self.addSubview(centerButton)
-
+        
         let offset:CGFloat = 32
-
+        
         imageView.snp.makeConstraints({ (make) -> Void in
             make.left.right.top.bottom.equalToSuperview()
         })
@@ -86,7 +86,7 @@ class HowToLastView: UIView {
             make.right.equalToSuperview().offset(-16)
         })
     }
-
+    
     func setImage(image:UIImage){
         imageView.image = image
     }

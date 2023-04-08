@@ -10,76 +10,74 @@
 		9992D51C5EEA18670005C56A /* libPods-Dplan.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EEA15B331D4C938EB0C2F7B /* libPods-Dplan.a */; };
 		FF0128D3244814BC00639AA2 /* HowToView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0128D2244814BC00639AA2 /* HowToView.swift */; };
 		FF0128D5244816F900639AA2 /* HowToLastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0128D4244816F900639AA2 /* HowToLastView.swift */; };
-		FF0CBD1E2420AAFB00E0A785 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CBD1D2420AAFB00E0A785 /* ImageView.swift */; };
-		FF0CBD262420AC0E00E0A785 /* MapUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CBD252420AC0E00E0A785 /* MapUIView.swift */; };
-		FF0CBD2A2420AC4500E0A785 /* ButtonFourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CBD292420AC4500E0A785 /* ButtonFourView.swift */; };
-		FF0CBD2E2420AC8400E0A785 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CBD2D2420AC8400E0A785 /* ButtonView.swift */; };
 		FF14F413242076B7001A9187 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FF14F412242076B7001A9187 /* Settings.bundle */; };
 		FF22714124174F09002636EE /* RealmCandidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF22714024174F09002636EE /* RealmCandidate.swift */; };
 		FF22714324174FC4002636EE /* RealmOthers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF22714224174FC4002636EE /* RealmOthers.swift */; };
-		FF2A5A6E23C33F8300B00A1F /* TimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2A5A6D23C33F8300B00A1F /* TimePickerView.swift */; };
 		FF2AB7E12432C451007F12F2 /* ObjectsForIGListKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2AB7E02432C451007F12F2 /* ObjectsForIGListKit.swift */; };
 		FF2EE84923A9A8A000CB71C4 /* RealmPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2EE84823A9A8A000CB71C4 /* RealmPlan.swift */; };
 		FF2F9A022431D1140086BD45 /* PlanListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2F9A012431D1140086BD45 /* PlanListView.swift */; };
 		FF312FB223A5281000156F04 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF312FB123A5281000156F04 /* RootTabBarController.swift */; };
-		FF3438342434945C00BA5CE6 /* HeaderCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3438332434945C00BA5CE6 /* HeaderCollectionCell.swift */; };
 		FF3632CE230F82CA0033C7D7 /* DataOfContents.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3632CD230F82CA0033C7D7 /* DataOfContents.swift */; };
-		FF3941E624335B01008346EC /* FlatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3941E524335B01008346EC /* FlatCell.swift */; };
-		FF3941E824335B84008346EC /* PlaceFlatSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3941E724335B84008346EC /* PlaceFlatSectionController.swift */; };
-		FF3941EA24336D76008346EC /* PlanFlatSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3941E924336D76008346EC /* PlanFlatSectionController.swift */; };
-		FF45621E2430D59E00E2850F /* WebsiteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF45621D2430D59E00E2850F /* WebsiteCell.swift */; };
-		FF4562202430D5C100E2850F /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF45621F2430D5C100E2850F /* HeaderCell.swift */; };
-		FF4562222430D5D600E2850F /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4562212430D5D600E2850F /* NoteCell.swift */; };
 		FF48BF302415BF61003C39FB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF48BF322415BF61003C39FB /* Localizable.strings */; };
-		FF4986AB23A2775E00E8C4CE /* ImagePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4986AA23A2775E00E8C4CE /* ImagePageView.swift */; };
-		FF4DAC7A2431818700208538 /* HeaderSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4DAC792431818700208538 /* HeaderSectionController.swift */; };
-		FF52657E2430706B00D29BCA /* OthersWebsiteSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF52657D2430706B00D29BCA /* OthersWebsiteSectionController.swift */; };
-		FF5265802430707A00D29BCA /* NotesSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF52657F2430707A00D29BCA /* NotesSectionController.swift */; };
 		FF560C1A23A9DAFA00584762 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF560C1923A9DAFA00584762 /* Settings.swift */; };
-		FF5816C12431F38A00005491 /* PlanDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5816C02431F38A00005491 /* PlanDetailView.swift */; };
-		FF5816C32431F39500005491 /* PlaceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5816C22431F39500005491 /* PlaceDetailView.swift */; };
-		FF58FB56296073E600CE50EA /* ButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF58FB55296073E600CE50EA /* ButtonView.xib */; };
-		FF6075212431E201007C8A0F /* PlanLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6075202431E201007C8A0F /* PlanLocationView.swift */; };
-		FF6075232431E20D007C8A0F /* PlaceLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6075222431E20D007C8A0F /* PlaceLocationView.swift */; };
-		FF6075252431E8C3007C8A0F /* CandidateLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6075242431E8C3007C8A0F /* CandidateLocationView.swift */; };
 		FF6316F223B9CB0B005E0065 /* RightFabMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6316F123B9CB0B005E0065 /* RightFabMenuView.swift */; };
-		FF6769A224337474007E7627 /* CandidateWebsiteSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6769A124337474007E7627 /* CandidateWebsiteSectionController.swift */; };
-		FF7158A1239E0AD0007C3FBD /* ButtonThreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7158A0239E0AD0007C3FBD /* ButtonThreeView.swift */; };
-		FF764131242601A8000D08B8 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF764130242601A8000D08B8 /* DatePickerView.swift */; };
-		FF7B1ACB24345EA8005A8443 /* EditSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7B1ACA24345EA8005A8443 /* EditSectionController.swift */; };
-		FF7B1ACD24345EED005A8443 /* MainHeaderSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7B1ACC24345EED005A8443 /* MainHeaderSectionController.swift */; };
 		FF7F02DE29600C820024D407 /* CandidateListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F02DD29600C820024D407 /* CandidateListView.swift */; };
 		FF7F02E029600CD30024D407 /* WebsiteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F02DF29600CD30024D407 /* WebsiteListView.swift */; };
 		FF90127E2438844F00984517 /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90127D2438844F00984517 /* KeyChain.swift */; };
 		FF9682E1231969BA009A891A /* MainBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9682E0231969BA009A891A /* MainBackgroundView.swift */; };
-		FF99E0CB23755FD0005DD205 /* WebsiteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF99E0CA23755FD0005DD205 /* WebsiteView.swift */; };
 		FF9E6A6D22FD973100306786 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF9E6A6C22FD973100306786 /* Assets.xcassets */; };
 		FF9E6A7022FD973100306786 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF9E6A6E22FD973100306786 /* LaunchScreen.storyboard */; };
 		FFA0BFD622FDC56C006A9988 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA0BFD522FDC56C006A9988 /* AppDelegate.swift */; };
 		FFA3CFEF23EAC26D00405873 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFA3CFEE23EAC26D00405873 /* Main.storyboard */; };
-		FFA92A05240CC40A00EED3BE /* SearchDestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA92A04240CC40A00EED3BE /* SearchDestinationView.swift */; };
 		FFAB14432447F3B800A63D28 /* FirstBootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAB14422447F3B800A63D28 /* FirstBootView.swift */; };
 		FFAB14452447F4BE00A63D28 /* AgreementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAB14442447F4BE00A63D28 /* AgreementView.swift */; };
 		FFAB9E8A243421EC001AE064 /* MainCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAB9E89243421EC001AE064 /* MainCollectionView.swift */; };
-		FFAB9E8E24342237001AE064 /* EventCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAB9E8D24342237001AE064 /* EventCollectionCell.swift */; };
-		FFAB9E9024342244001AE064 /* TimeCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAB9E8F24342244001AE064 /* TimeCollectionCell.swift */; };
-		FFAB9E94243428EB001AE064 /* NonEditSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAB9E93243428EB001AE064 /* NonEditSectionController.swift */; };
-		FFBAB5922433706A0061BD73 /* CandidateFlatSectionConttoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAB5912433706A0061BD73 /* CandidateFlatSectionConttoller.swift */; };
-		FFC1BCD1242E1C620070F920 /* ButtonOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC1BCD0242E1C620070F920 /* ButtonOneView.swift */; };
-		FFC94387243AB8A2008755AB /* EmptyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC94386243AB8A1008755AB /* EmptyCell.swift */; };
-		FFCFADA3242DEF9F00520AC4 /* CustomImagePickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCFADA2242DEF9F00520AC4 /* CustomImagePickerDelegate.swift */; };
-		FFCFADA6242DF00B00520AC4 /* CustomGroupDetailCameraCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCFADA4242DF00800520AC4 /* CustomGroupDetailCameraCell.swift */; };
-		FFCFADA7242DF00B00520AC4 /* CustomGroupDetailImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCFADA5242DF00B00520AC4 /* CustomGroupDetailImageCell.swift */; };
+		FFBDF5A829E1A632005DB97C /* PlanFlatSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBDF5A729E1A632005DB97C /* PlanFlatSectionController.swift */; };
 		FFD009C1241224D500B136D4 /* Segues.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD009C0241224D500B136D4 /* Segues.swift */; };
 		FFE28302241F17B3000ED63E /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE28301241F17B3000ED63E /* R.generated.swift */; };
-		FFE4E2B02965942D00ADA6AD /* TopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE4E2AF2965942D00ADA6AD /* TopBarView.swift */; };
-		FFE4E2B329659B8600ADA6AD /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE4E2B229659B8600ADA6AD /* BannerView.swift */; };
-		FFE4E2B52965A22200ADA6AD /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE4E2B42965A22200ADA6AD /* ListViewController.swift */; };
-		FFEA3B472435AA8A002F043F /* FlatNonImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEA3B462435AA8A002F043F /* FlatNonImageCell.swift */; };
 		FFF238912430640E00E9337E /* RightCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF238902430640E00E9337E /* RightCollectionView.swift */; };
-		FFF23893243064AC00E9337E /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF23892243064AC00E9337E /* ImageCell.swift */; };
-		FFF238972430664100E9337E /* ImageSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF238962430664100E9337E /* ImageSectionController.swift */; };
-		FFFEABA124278E43001092AA /* ShowMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFEABA024278E43001092AA /* ShowMapView.swift */; };
+		FFFAEB2429E1ACF600E37DBA /* ButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFFAEAF629E1ACF500E37DBA /* ButtonView.xib */; };
+		FFFAEB2529E1ACF600E37DBA /* EditSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEAF729E1ACF500E37DBA /* EditSectionController.swift */; };
+		FFFAEB2629E1ACF600E37DBA /* NotesSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEAF829E1ACF500E37DBA /* NotesSectionController.swift */; };
+		FFFAEB2729E1ACF600E37DBA /* PlaceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEAF929E1ACF500E37DBA /* PlaceDetailView.swift */; };
+		FFFAEB2829E1ACF600E37DBA /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEAFA29E1ACF500E37DBA /* ImageCell.swift */; };
+		FFFAEB2929E1ACF600E37DBA /* NonEditSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEAFB29E1ACF500E37DBA /* NonEditSectionController.swift */; };
+		FFFAEB2A29E1ACF600E37DBA /* MapUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEAFC29E1ACF500E37DBA /* MapUIView.swift */; };
+		FFFAEB2B29E1ACF600E37DBA /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEAFD29E1ACF500E37DBA /* DatePickerView.swift */; };
+		FFFAEB2C29E1ACF600E37DBA /* FlatNonImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEAFE29E1ACF500E37DBA /* FlatNonImageCell.swift */; };
+		FFFAEB2D29E1ACF600E37DBA /* ImageSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEAFF29E1ACF500E37DBA /* ImageSectionController.swift */; };
+		FFFAEB2E29E1ACF600E37DBA /* WebsiteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEB0029E1ACF500E37DBA /* WebsiteCell.swift */; };
+		FFFAEB3029E1ACF600E37DBA /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEB0229E1ACF500E37DBA /* NoteCell.swift */; };
+		FFFAEB3129E1ACF600E37DBA /* ButtonThreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEB0329E1ACF500E37DBA /* ButtonThreeView.swift */; };
+		FFFAEB3229E1ACF600E37DBA /* TimeCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEB0429E1ACF500E37DBA /* TimeCollectionCell.swift */; };
+		FFFAEB3329E1ACF600E37DBA /* CustomGroupDetailImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEB0529E1ACF500E37DBA /* CustomGroupDetailImageCell.swift */; };
+		FFFAEB3429E1ACF600E37DBA /* TopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEB0629E1ACF500E37DBA /* TopBarView.swift */; };
+		FFFAEB3529E1ACF600E37DBA /* WebsiteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEB0729E1ACF500E37DBA /* WebsiteView.swift */; };
+		FFFAEB3629E1ACF600E37DBA /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEB0829E1ACF500E37DBA /* HeaderCell.swift */; };
+		FFFAEB3729E1ACF600E37DBA /* OthersWebsiteSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEB0929E1ACF500E37DBA /* OthersWebsiteSectionController.swift */; };
+		FFFAEB3829E1ACF600E37DBA /* TimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEB0A29E1ACF500E37DBA /* TimePickerView.swift */; };
+		FFFAEB3929E1ACF600E37DBA /* ButtonFourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEB0B29E1ACF600E37DBA /* ButtonFourView.swift */; };
+		FFFAEB3A29E1ACF600E37DBA /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEB0C29E1ACF600E37DBA /* ImageView.swift */; };
+		FFFAEB3C29E1ACF600E37DBA /* ButtonOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEB0E29E1ACF600E37DBA /* ButtonOneView.swift */; };
+		FFFAEB3D29E1ACF600E37DBA /* EmptyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEB0F29E1ACF600E37DBA /* EmptyCell.swift */; };
+		FFFAEB3F29E1ACF600E37DBA /* PlaceLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEB1129E1ACF600E37DBA /* PlaceLocationView.swift */; };
+		FFFAEB4029E1ACF600E37DBA /* EventCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEB1229E1ACF600E37DBA /* EventCollectionCell.swift */; };
+		FFFAEB4129E1ACF600E37DBA /* PlanDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEB1329E1ACF600E37DBA /* PlanDetailView.swift */; };
+		FFFAEB4229E1ACF600E37DBA /* CandidateLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEB1429E1ACF600E37DBA /* CandidateLocationView.swift */; };
+		FFFAEB4429E1ACF600E37DBA /* HeaderSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEB1629E1ACF600E37DBA /* HeaderSectionController.swift */; };
+		FFFAEB4629E1ACF600E37DBA /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEB1829E1ACF600E37DBA /* ButtonView.swift */; };
+		FFFAEB4729E1ACF600E37DBA /* CandidateWebsiteSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEB1929E1ACF600E37DBA /* CandidateWebsiteSectionController.swift */; };
+		FFFAEB4829E1ACF600E37DBA /* FlatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEB1A29E1ACF600E37DBA /* FlatCell.swift */; };
+		FFFAEB4929E1ACF600E37DBA /* ImagePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEB1B29E1ACF600E37DBA /* ImagePageView.swift */; };
+		FFFAEB4A29E1ACF600E37DBA /* PlanLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEB1C29E1ACF600E37DBA /* PlanLocationView.swift */; };
+		FFFAEB4B29E1ACF600E37DBA /* CustomImagePickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEB1D29E1ACF600E37DBA /* CustomImagePickerDelegate.swift */; };
+		FFFAEB4C29E1ACF600E37DBA /* MainHeaderSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEB1E29E1ACF600E37DBA /* MainHeaderSectionController.swift */; };
+		FFFAEB4D29E1ACF600E37DBA /* SearchDestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEB1F29E1ACF600E37DBA /* SearchDestinationView.swift */; };
+		FFFAEB4E29E1ACF600E37DBA /* CustomGroupDetailCameraCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEB2029E1ACF600E37DBA /* CustomGroupDetailCameraCell.swift */; };
+		FFFAEB4F29E1ACF600E37DBA /* HeaderCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEB2129E1ACF600E37DBA /* HeaderCollectionCell.swift */; };
+		FFFAEB5029E1ACF600E37DBA /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEB2229E1ACF600E37DBA /* ListViewController.swift */; };
+		FFFAEB5729E1B0C700E37DBA /* PlaceFlatSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEB5529E1B0C700E37DBA /* PlaceFlatSectionController.swift */; };
+		FFFAEB5829E1B0C700E37DBA /* CandidateFlatSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEB5629E1B0C700E37DBA /* CandidateFlatSectionController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -103,80 +101,78 @@
 		E6A1282345804B1A0260AA13 /* Pods-Dplan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dplan.debug.xcconfig"; path = "Target Support Files/Pods-Dplan/Pods-Dplan.debug.xcconfig"; sourceTree = "<group>"; };
 		FF0128D2244814BC00639AA2 /* HowToView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToView.swift; sourceTree = "<group>"; };
 		FF0128D4244816F900639AA2 /* HowToLastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToLastView.swift; sourceTree = "<group>"; };
-		FF0CBD1D2420AAFB00E0A785 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
-		FF0CBD252420AC0E00E0A785 /* MapUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapUIView.swift; sourceTree = "<group>"; };
-		FF0CBD292420AC4500E0A785 /* ButtonFourView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFourView.swift; sourceTree = "<group>"; };
-		FF0CBD2D2420AC8400E0A785 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		FF12ED2B24219E3700DBA6F6 /* Dplan.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Dplan.entitlements; sourceTree = "<group>"; };
 		FF14F412242076B7001A9187 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		FF22714024174F09002636EE /* RealmCandidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCandidate.swift; sourceTree = "<group>"; };
 		FF22714224174FC4002636EE /* RealmOthers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmOthers.swift; sourceTree = "<group>"; };
-		FF2A5A6D23C33F8300B00A1F /* TimePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerView.swift; sourceTree = "<group>"; };
 		FF2AB7E02432C451007F12F2 /* ObjectsForIGListKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectsForIGListKit.swift; sourceTree = "<group>"; };
 		FF2EE84823A9A8A000CB71C4 /* RealmPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmPlan.swift; sourceTree = "<group>"; };
 		FF2F9A012431D1140086BD45 /* PlanListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanListView.swift; sourceTree = "<group>"; };
 		FF312FB123A5281000156F04 /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
-		FF3438332434945C00BA5CE6 /* HeaderCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionCell.swift; sourceTree = "<group>"; };
 		FF3632CD230F82CA0033C7D7 /* DataOfContents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataOfContents.swift; sourceTree = "<group>"; };
-		FF3941E524335B01008346EC /* FlatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatCell.swift; sourceTree = "<group>"; };
-		FF3941E724335B84008346EC /* PlaceFlatSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceFlatSectionController.swift; sourceTree = "<group>"; };
-		FF3941E924336D76008346EC /* PlanFlatSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanFlatSectionController.swift; sourceTree = "<group>"; };
-		FF45621D2430D59E00E2850F /* WebsiteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsiteCell.swift; sourceTree = "<group>"; };
-		FF45621F2430D5C100E2850F /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
-		FF4562212430D5D600E2850F /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
 		FF48BF312415BF61003C39FB /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FF48BF332415BF6A003C39FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		FF4986AA23A2775E00E8C4CE /* ImagePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePageView.swift; sourceTree = "<group>"; };
-		FF4DAC792431818700208538 /* HeaderSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderSectionController.swift; sourceTree = "<group>"; };
-		FF52657D2430706B00D29BCA /* OthersWebsiteSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OthersWebsiteSectionController.swift; sourceTree = "<group>"; };
-		FF52657F2430707A00D29BCA /* NotesSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesSectionController.swift; sourceTree = "<group>"; };
 		FF560C1923A9DAFA00584762 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
-		FF5816C02431F38A00005491 /* PlanDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanDetailView.swift; sourceTree = "<group>"; };
-		FF5816C22431F39500005491 /* PlaceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailView.swift; sourceTree = "<group>"; };
-		FF58FB55296073E600CE50EA /* ButtonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonView.xib; sourceTree = "<group>"; };
-		FF6075202431E201007C8A0F /* PlanLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanLocationView.swift; sourceTree = "<group>"; };
-		FF6075222431E20D007C8A0F /* PlaceLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceLocationView.swift; sourceTree = "<group>"; };
-		FF6075242431E8C3007C8A0F /* CandidateLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateLocationView.swift; sourceTree = "<group>"; };
 		FF6316F123B9CB0B005E0065 /* RightFabMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightFabMenuView.swift; sourceTree = "<group>"; };
-		FF6769A124337474007E7627 /* CandidateWebsiteSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateWebsiteSectionController.swift; sourceTree = "<group>"; };
-		FF7158A0239E0AD0007C3FBD /* ButtonThreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonThreeView.swift; sourceTree = "<group>"; };
-		FF764130242601A8000D08B8 /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
-		FF7B1ACA24345EA8005A8443 /* EditSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSectionController.swift; sourceTree = "<group>"; };
-		FF7B1ACC24345EED005A8443 /* MainHeaderSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHeaderSectionController.swift; sourceTree = "<group>"; };
 		FF7F02DD29600C820024D407 /* CandidateListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateListView.swift; sourceTree = "<group>"; };
 		FF7F02DF29600CD30024D407 /* WebsiteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsiteListView.swift; sourceTree = "<group>"; };
 		FF90127D2438844F00984517 /* KeyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChain.swift; sourceTree = "<group>"; };
 		FF9682E0231969BA009A891A /* MainBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBackgroundView.swift; sourceTree = "<group>"; };
-		FF99E0CA23755FD0005DD205 /* WebsiteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsiteView.swift; sourceTree = "<group>"; };
 		FF9E6A6222FD973100306786 /* Dplan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dplan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF9E6A6C22FD973100306786 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF9E6A6F22FD973100306786 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF9E6A7122FD973100306786 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFA0BFD522FDC56C006A9988 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFA3CFEE23EAC26D00405873 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		FFA92A04240CC40A00EED3BE /* SearchDestinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDestinationView.swift; sourceTree = "<group>"; };
 		FFAB14422447F3B800A63D28 /* FirstBootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstBootView.swift; sourceTree = "<group>"; };
 		FFAB14442447F4BE00A63D28 /* AgreementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreementView.swift; sourceTree = "<group>"; };
 		FFAB9E89243421EC001AE064 /* MainCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionView.swift; sourceTree = "<group>"; };
-		FFAB9E8D24342237001AE064 /* EventCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCollectionCell.swift; sourceTree = "<group>"; };
-		FFAB9E8F24342244001AE064 /* TimeCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCollectionCell.swift; sourceTree = "<group>"; };
-		FFAB9E93243428EB001AE064 /* NonEditSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonEditSectionController.swift; sourceTree = "<group>"; };
-		FFBAB5912433706A0061BD73 /* CandidateFlatSectionConttoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateFlatSectionConttoller.swift; sourceTree = "<group>"; };
-		FFC1BCD0242E1C620070F920 /* ButtonOneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonOneView.swift; sourceTree = "<group>"; };
-		FFC94386243AB8A1008755AB /* EmptyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyCell.swift; sourceTree = "<group>"; };
-		FFCFADA2242DEF9F00520AC4 /* CustomImagePickerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImagePickerDelegate.swift; sourceTree = "<group>"; };
-		FFCFADA4242DF00800520AC4 /* CustomGroupDetailCameraCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomGroupDetailCameraCell.swift; sourceTree = "<group>"; };
-		FFCFADA5242DF00B00520AC4 /* CustomGroupDetailImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomGroupDetailImageCell.swift; sourceTree = "<group>"; };
+		FFBDF5A729E1A632005DB97C /* PlanFlatSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanFlatSectionController.swift; sourceTree = "<group>"; };
 		FFD009C0241224D500B136D4 /* Segues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segues.swift; sourceTree = "<group>"; };
 		FFE28301241F17B3000ED63E /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
-		FFE4E2AF2965942D00ADA6AD /* TopBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarView.swift; sourceTree = "<group>"; };
-		FFE4E2B229659B8600ADA6AD /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
-		FFE4E2B42965A22200ADA6AD /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
-		FFEA3B462435AA8A002F043F /* FlatNonImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatNonImageCell.swift; sourceTree = "<group>"; };
 		FFF238902430640E00E9337E /* RightCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightCollectionView.swift; sourceTree = "<group>"; };
-		FFF23892243064AC00E9337E /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
-		FFF238962430664100E9337E /* ImageSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSectionController.swift; sourceTree = "<group>"; };
-		FFFEABA024278E43001092AA /* ShowMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMapView.swift; sourceTree = "<group>"; };
+		FFFAEAF629E1ACF500E37DBA /* ButtonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonView.xib; sourceTree = "<group>"; };
+		FFFAEAF729E1ACF500E37DBA /* EditSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditSectionController.swift; sourceTree = "<group>"; };
+		FFFAEAF829E1ACF500E37DBA /* NotesSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesSectionController.swift; sourceTree = "<group>"; };
+		FFFAEAF929E1ACF500E37DBA /* PlaceDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceDetailView.swift; sourceTree = "<group>"; };
+		FFFAEAFA29E1ACF500E37DBA /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		FFFAEAFB29E1ACF500E37DBA /* NonEditSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonEditSectionController.swift; sourceTree = "<group>"; };
+		FFFAEAFC29E1ACF500E37DBA /* MapUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapUIView.swift; sourceTree = "<group>"; };
+		FFFAEAFD29E1ACF500E37DBA /* DatePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
+		FFFAEAFE29E1ACF500E37DBA /* FlatNonImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlatNonImageCell.swift; sourceTree = "<group>"; };
+		FFFAEAFF29E1ACF500E37DBA /* ImageSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSectionController.swift; sourceTree = "<group>"; };
+		FFFAEB0029E1ACF500E37DBA /* WebsiteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebsiteCell.swift; sourceTree = "<group>"; };
+		FFFAEB0229E1ACF500E37DBA /* NoteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
+		FFFAEB0329E1ACF500E37DBA /* ButtonThreeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonThreeView.swift; sourceTree = "<group>"; };
+		FFFAEB0429E1ACF500E37DBA /* TimeCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeCollectionCell.swift; sourceTree = "<group>"; };
+		FFFAEB0529E1ACF500E37DBA /* CustomGroupDetailImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomGroupDetailImageCell.swift; sourceTree = "<group>"; };
+		FFFAEB0629E1ACF500E37DBA /* TopBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopBarView.swift; sourceTree = "<group>"; };
+		FFFAEB0729E1ACF500E37DBA /* WebsiteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebsiteView.swift; sourceTree = "<group>"; };
+		FFFAEB0829E1ACF500E37DBA /* HeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		FFFAEB0929E1ACF500E37DBA /* OthersWebsiteSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OthersWebsiteSectionController.swift; sourceTree = "<group>"; };
+		FFFAEB0A29E1ACF500E37DBA /* TimePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimePickerView.swift; sourceTree = "<group>"; };
+		FFFAEB0B29E1ACF600E37DBA /* ButtonFourView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonFourView.swift; sourceTree = "<group>"; };
+		FFFAEB0C29E1ACF600E37DBA /* ImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		FFFAEB0E29E1ACF600E37DBA /* ButtonOneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonOneView.swift; sourceTree = "<group>"; };
+		FFFAEB0F29E1ACF600E37DBA /* EmptyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyCell.swift; sourceTree = "<group>"; };
+		FFFAEB1129E1ACF600E37DBA /* PlaceLocationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceLocationView.swift; sourceTree = "<group>"; };
+		FFFAEB1229E1ACF600E37DBA /* EventCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCollectionCell.swift; sourceTree = "<group>"; };
+		FFFAEB1329E1ACF600E37DBA /* PlanDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanDetailView.swift; sourceTree = "<group>"; };
+		FFFAEB1429E1ACF600E37DBA /* CandidateLocationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidateLocationView.swift; sourceTree = "<group>"; };
+		FFFAEB1629E1ACF600E37DBA /* HeaderSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderSectionController.swift; sourceTree = "<group>"; };
+		FFFAEB1829E1ACF600E37DBA /* ButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		FFFAEB1929E1ACF600E37DBA /* CandidateWebsiteSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidateWebsiteSectionController.swift; sourceTree = "<group>"; };
+		FFFAEB1A29E1ACF600E37DBA /* FlatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlatCell.swift; sourceTree = "<group>"; };
+		FFFAEB1B29E1ACF600E37DBA /* ImagePageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePageView.swift; sourceTree = "<group>"; };
+		FFFAEB1C29E1ACF600E37DBA /* PlanLocationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanLocationView.swift; sourceTree = "<group>"; };
+		FFFAEB1D29E1ACF600E37DBA /* CustomImagePickerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImagePickerDelegate.swift; sourceTree = "<group>"; };
+		FFFAEB1E29E1ACF600E37DBA /* MainHeaderSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainHeaderSectionController.swift; sourceTree = "<group>"; };
+		FFFAEB1F29E1ACF600E37DBA /* SearchDestinationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchDestinationView.swift; sourceTree = "<group>"; };
+		FFFAEB2029E1ACF600E37DBA /* CustomGroupDetailCameraCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomGroupDetailCameraCell.swift; sourceTree = "<group>"; };
+		FFFAEB2129E1ACF600E37DBA /* HeaderCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCollectionCell.swift; sourceTree = "<group>"; };
+		FFFAEB2229E1ACF600E37DBA /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		FFFAEB5529E1B0C700E37DBA /* PlaceFlatSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceFlatSectionController.swift; sourceTree = "<group>"; };
+		FFFAEB5629E1B0C700E37DBA /* CandidateFlatSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidateFlatSectionController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,158 +206,67 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		FF42CBCA295FF2E4009B0BD9 /* plan */ = {
+		FF42CBCA295FF2E4009B0BD9 /* contents */ = {
 			isa = PBXGroup;
 			children = (
+				FFFAEB1D29E1ACF600E37DBA /* CustomImagePickerDelegate.swift */,
 				FF42CBD3295FF327009B0BD9 /* components */,
-				FF42CBD4295FF32C009B0BD9 /* hooks */,
-				FF42CBD5295FF32F009B0BD9 /* utils */,
+				FFFAEB5D29E1B67F00E37DBA /* controller */,
 			);
-			path = plan;
-			sourceTree = "<group>";
-		};
-		FF42CBCB295FF2E7009B0BD9 /* candidate */ = {
-			isa = PBXGroup;
-			children = (
-				FF42CBD0295FF315009B0BD9 /* components */,
-				FF42CBD1295FF318009B0BD9 /* hooks */,
-				FF42CBD2295FF31A009B0BD9 /* utils */,
-			);
-			path = candidate;
-			sourceTree = "<group>";
-		};
-		FF42CBCC295FF2EC009B0BD9 /* others */ = {
-			isa = PBXGroup;
-			children = (
-				FF42CBCD295FF2F0009B0BD9 /* componnts */,
-				FF42CBCF295FF312009B0BD9 /* hooks */,
-				FF42CBCE295FF2F4009B0BD9 /* utils */,
-			);
-			path = others;
-			sourceTree = "<group>";
-		};
-		FF42CBCD295FF2F0009B0BD9 /* componnts */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = componnts;
-			sourceTree = "<group>";
-		};
-		FF42CBCE295FF2F4009B0BD9 /* utils */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = utils;
-			sourceTree = "<group>";
-		};
-		FF42CBCF295FF312009B0BD9 /* hooks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = hooks;
-			sourceTree = "<group>";
-		};
-		FF42CBD0295FF315009B0BD9 /* components */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = components;
-			sourceTree = "<group>";
-		};
-		FF42CBD1295FF318009B0BD9 /* hooks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = hooks;
-			sourceTree = "<group>";
-		};
-		FF42CBD2295FF31A009B0BD9 /* utils */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = utils;
+			path = contents;
 			sourceTree = "<group>";
 		};
 		FF42CBD3295FF327009B0BD9 /* components */ = {
 			isa = PBXGroup;
 			children = (
+				FFFAEB6329E1B97200E37DBA /* cell */,
+				FFFAEB6229E1B95100E37DBA /* buttons */,
+				FF2F9A012431D1140086BD45 /* PlanListView.swift */,
+				FFF238902430640E00E9337E /* RightCollectionView.swift */,
+				FF7F02DD29600C820024D407 /* CandidateListView.swift */,
+				FF7F02DF29600CD30024D407 /* WebsiteListView.swift */,
+				FFFAEB1B29E1ACF600E37DBA /* ImagePageView.swift */,
+				FFFAEB0C29E1ACF600E37DBA /* ImageView.swift */,
+				FFFAEB0729E1ACF500E37DBA /* WebsiteView.swift */,
+				FFFAEAF929E1ACF500E37DBA /* PlaceDetailView.swift */,
+				FFFAEB1329E1ACF600E37DBA /* PlanDetailView.swift */,
+				FFFAEB1129E1ACF600E37DBA /* PlaceLocationView.swift */,
+				FFFAEB1C29E1ACF600E37DBA /* PlanLocationView.swift */,
+				FFFAEB1429E1ACF600E37DBA /* CandidateLocationView.swift */,
+				FFFAEAFC29E1ACF500E37DBA /* MapUIView.swift */,
+				FFFAEB1F29E1ACF600E37DBA /* SearchDestinationView.swift */,
+				FFFAEAFD29E1ACF500E37DBA /* DatePickerView.swift */,
+				FFFAEB0629E1ACF500E37DBA /* TopBarView.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
 		};
-		FF42CBD4295FF32C009B0BD9 /* hooks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = hooks;
-			sourceTree = "<group>";
-		};
-		FF42CBD5295FF32F009B0BD9 /* utils */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = utils;
-			sourceTree = "<group>";
-		};
-		FF42CBD6295FF350009B0BD9 /* hooks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = hooks;
-			sourceTree = "<group>";
-		};
-		FF42CBD7295FF3C1009B0BD9 /* hooks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = hooks;
-			sourceTree = "<group>";
-		};
-		FF4F0242295FF4A0008C5F6B /* add */ = {
-			isa = PBXGroup;
-			children = (
-				FF6075202431E201007C8A0F /* PlanLocationView.swift */,
-				FF6075222431E20D007C8A0F /* PlaceLocationView.swift */,
-				FF6075242431E8C3007C8A0F /* CandidateLocationView.swift */,
-				FF0CBD1D2420AAFB00E0A785 /* ImageView.swift */,
-				FF5816C02431F38A00005491 /* PlanDetailView.swift */,
-				FF5816C22431F39500005491 /* PlaceDetailView.swift */,
-				FF0CBD252420AC0E00E0A785 /* MapUIView.swift */,
-				FFC1BCD0242E1C620070F920 /* ButtonOneView.swift */,
-				FF7158A0239E0AD0007C3FBD /* ButtonThreeView.swift */,
-				FF0CBD292420AC4500E0A785 /* ButtonFourView.swift */,
-				FF99E0CA23755FD0005DD205 /* WebsiteView.swift */,
-				FFA92A04240CC40A00EED3BE /* SearchDestinationView.swift */,
-				FFF2388F243063D800E9337E /* Side Right CollectionCells */,
-			);
-			path = add;
-			sourceTree = "<group>";
-		};
-		FF536E7A236BB3FF00C281A1 /* Datas */ = {
+		FF536E7A236BB3FF00C281A1 /* datas */ = {
 			isa = PBXGroup;
 			children = (
 				FF9E6A7122FD973100306786 /* Info.plist */,
 				FF48BF322415BF61003C39FB /* Localizable.strings */,
+				FFA0BFD522FDC56C006A9988 /* AppDelegate.swift */,
 				FF3632CD230F82CA0033C7D7 /* DataOfContents.swift */,
 				FF90127D2438844F00984517 /* KeyChain.swift */,
 				FF2AB7E02432C451007F12F2 /* ObjectsForIGListKit.swift */,
-				FF560C1923A9DAFA00584762 /* Settings.swift */,
-				FFD009C0241224D500B136D4 /* Segues.swift */,
-				FF2EE84823A9A8A000CB71C4 /* RealmPlan.swift */,
-				FF22714224174FC4002636EE /* RealmOthers.swift */,
 				FF22714024174F09002636EE /* RealmCandidate.swift */,
-				FFA0BFD522FDC56C006A9988 /* AppDelegate.swift */,
+				FF22714224174FC4002636EE /* RealmOthers.swift */,
+				FF2EE84823A9A8A000CB71C4 /* RealmPlan.swift */,
+				FFD009C0241224D500B136D4 /* Segues.swift */,
+				FF560C1923A9DAFA00584762 /* Settings.swift */,
 				FF9E6A6C22FD973100306786 /* Assets.xcassets */,
 			);
-			path = Datas;
+			path = datas;
 			sourceTree = "<group>";
 		};
-		FF7F02DC29600B250024D407 /* NavigationController */ = {
+		FF7F02DC29600B250024D407 /* navigationController */ = {
 			isa = PBXGroup;
 			children = (
 				FF312FB123A5281000156F04 /* RootTabBarController.swift */,
+				FF6316F123B9CB0B005E0065 /* RightFabMenuView.swift */,
 			);
-			path = NavigationController;
+			path = navigationController;
 			sourceTree = "<group>";
 		};
 		FF9E6A5922FD973100306786 = {
@@ -389,11 +294,9 @@
 			children = (
 				FF12ED2B24219E3700DBA6F6 /* Dplan.entitlements */,
 				FFA3CFEE23EAC26D00405873 /* Main.storyboard */,
-				FFD35EF9295FF22A00996692 /* common */,
 				FFD35EF4295FF0CA00996692 /* features */,
-				FFD35EF8295FF11600996692 /* pages */,
-				FF7F02DC29600B250024D407 /* NavigationController */,
-				FF536E7A236BB3FF00C281A1 /* Datas */,
+				FF7F02DC29600B250024D407 /* navigationController */,
+				FF536E7A236BB3FF00C281A1 /* datas */,
 				FF9E6A6E22FD973100306786 /* LaunchScreen.storyboard */,
 			);
 			path = Dplan;
@@ -402,10 +305,8 @@
 		FFD35EF4295FF0CA00996692 /* features */ = {
 			isa = PBXGroup;
 			children = (
-				FF4F0242295FF4A0008C5F6B /* add */,
-				FF42CBCC295FF2EC009B0BD9 /* others */,
-				FF42CBCB295FF2E7009B0BD9 /* candidate */,
-				FF42CBCA295FF2E4009B0BD9 /* plan */,
+				FFFAEB5B29E1B39500E37DBA /* route */,
+				FF42CBCA295FF2E4009B0BD9 /* contents */,
 				FFD35EF5295FF0D800996692 /* howTo */,
 			);
 			path = features;
@@ -415,8 +316,6 @@
 			isa = PBXGroup;
 			children = (
 				FFD35EF6295FF0E000996692 /* components */,
-				FF42CBD6295FF350009B0BD9 /* hooks */,
-				FFD35EF7295FF0F900996692 /* utils */,
 			);
 			path = howTo;
 			sourceTree = "<group>";
@@ -424,6 +323,7 @@
 		FFD35EF6295FF0E000996692 /* components */ = {
 			isa = PBXGroup;
 			children = (
+				FFAB14422447F3B800A63D28 /* FirstBootView.swift */,
 				FFAB14442447F4BE00A63D28 /* AgreementView.swift */,
 				FF0128D2244814BC00639AA2 /* HowToView.swift */,
 				FF0128D4244816F900639AA2 /* HowToLastView.swift */,
@@ -431,90 +331,88 @@
 			path = components;
 			sourceTree = "<group>";
 		};
-		FFD35EF7295FF0F900996692 /* utils */ = {
+		FFFAEB5B29E1B39500E37DBA /* route */ = {
 			isa = PBXGroup;
 			children = (
+				FFFAEB6129E1B90B00E37DBA /* components */,
+				FFFAEB5C29E1B3A400E37DBA /* controller */,
 			);
-			path = utils;
+			path = route;
 			sourceTree = "<group>";
 		};
-		FFD35EF8295FF11600996692 /* pages */ = {
+		FFFAEB5C29E1B3A400E37DBA /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				FF2F9A012431D1140086BD45 /* PlanListView.swift */,
-				FF7F02DD29600C820024D407 /* CandidateListView.swift */,
-				FF7F02DF29600CD30024D407 /* WebsiteListView.swift */,
-				FFAB14422447F3B800A63D28 /* FirstBootView.swift */,
-				FF6316F123B9CB0B005E0065 /* RightFabMenuView.swift */,
-				FFF238902430640E00E9337E /* RightCollectionView.swift */,
+				FFFAEAF729E1ACF500E37DBA /* EditSectionController.swift */,
+				FFFAEAFB29E1ACF500E37DBA /* NonEditSectionController.swift */,
+				FFFAEB1E29E1ACF600E37DBA /* MainHeaderSectionController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		FFFAEB5D29E1B67F00E37DBA /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				FFFAEB1629E1ACF600E37DBA /* HeaderSectionController.swift */,
+				FFFAEB1929E1ACF600E37DBA /* CandidateWebsiteSectionController.swift */,
+				FFFAEB0929E1ACF500E37DBA /* OthersWebsiteSectionController.swift */,
+				FFFAEAF829E1ACF500E37DBA /* NotesSectionController.swift */,
+				FFFAEAFF29E1ACF500E37DBA /* ImageSectionController.swift */,
+				FFBDF5A729E1A632005DB97C /* PlanFlatSectionController.swift */,
+				FFFAEB5629E1B0C700E37DBA /* CandidateFlatSectionController.swift */,
+				FFFAEB5529E1B0C700E37DBA /* PlaceFlatSectionController.swift */,
+				FFFAEB2229E1ACF600E37DBA /* ListViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		FFFAEB6129E1B90B00E37DBA /* components */ = {
+			isa = PBXGroup;
+			children = (
+				FFFAEB6429E1B9A900E37DBA /* cell */,
 				FF9682E0231969BA009A891A /* MainBackgroundView.swift */,
 				FFAB9E89243421EC001AE064 /* MainCollectionView.swift */,
-				FFAB9E93243428EB001AE064 /* NonEditSectionController.swift */,
-				FF7B1ACA24345EA8005A8443 /* EditSectionController.swift */,
-				FF7B1ACC24345EED005A8443 /* MainHeaderSectionController.swift */,
-				FF4DAC792431818700208538 /* HeaderSectionController.swift */,
-				FF52657D2430706B00D29BCA /* OthersWebsiteSectionController.swift */,
-				FF6769A124337474007E7627 /* CandidateWebsiteSectionController.swift */,
-				FF52657F2430707A00D29BCA /* NotesSectionController.swift */,
-				FF3941E924336D76008346EC /* PlanFlatSectionController.swift */,
-				FF3941E724335B84008346EC /* PlaceFlatSectionController.swift */,
-				FFBAB5912433706A0061BD73 /* CandidateFlatSectionConttoller.swift */,
-				FFF238962430664100E9337E /* ImageSectionController.swift */,
-				FFE4E2B42965A22200ADA6AD /* ListViewController.swift */,
-			);
-			path = pages;
-			sourceTree = "<group>";
-		};
-		FFD35EF9295FF22A00996692 /* common */ = {
-			isa = PBXGroup;
-			children = (
-				FFD35EFA295FF23C00996692 /* components */,
-				FF42CBD7295FF3C1009B0BD9 /* hooks */,
-				FFD35EFB295FF24000996692 /* utils */,
-			);
-			path = common;
-			sourceTree = "<group>";
-		};
-		FFD35EFA295FF23C00996692 /* components */ = {
-			isa = PBXGroup;
-			children = (
-				FFFEABA024278E43001092AA /* ShowMapView.swift */,
-				FF2A5A6D23C33F8300B00A1F /* TimePickerView.swift */,
-				FF764130242601A8000D08B8 /* DatePickerView.swift */,
-				FF4986AA23A2775E00E8C4CE /* ImagePageView.swift */,
-				FFCFADA2242DEF9F00520AC4 /* CustomImagePickerDelegate.swift */,
-				FFCFADA4242DF00800520AC4 /* CustomGroupDetailCameraCell.swift */,
-				FFCFADA5242DF00B00520AC4 /* CustomGroupDetailImageCell.swift */,
-				FF0CBD2D2420AC8400E0A785 /* ButtonView.swift */,
-				FFAB9E8D24342237001AE064 /* EventCollectionCell.swift */,
-				FFAB9E8F24342244001AE064 /* TimeCollectionCell.swift */,
-				FF3438332434945C00BA5CE6 /* HeaderCollectionCell.swift */,
-				FF58FB55296073E600CE50EA /* ButtonView.xib */,
-				FFE4E2AF2965942D00ADA6AD /* TopBarView.swift */,
-				FFE4E2B229659B8600ADA6AD /* BannerView.swift */,
+				FFFAEB0A29E1ACF500E37DBA /* TimePickerView.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
 		};
-		FFD35EFB295FF24000996692 /* utils */ = {
+		FFFAEB6229E1B95100E37DBA /* buttons */ = {
 			isa = PBXGroup;
 			children = (
+				FFFAEB0B29E1ACF600E37DBA /* ButtonFourView.swift */,
+				FFFAEB0E29E1ACF600E37DBA /* ButtonOneView.swift */,
+				FFFAEB0329E1ACF500E37DBA /* ButtonThreeView.swift */,
+				FFFAEAF629E1ACF500E37DBA /* ButtonView.xib */,
+				FFFAEB1829E1ACF600E37DBA /* ButtonView.swift */,
 			);
-			path = utils;
+			path = buttons;
 			sourceTree = "<group>";
 		};
-		FFF2388F243063D800E9337E /* Side Right CollectionCells */ = {
+		FFFAEB6329E1B97200E37DBA /* cell */ = {
 			isa = PBXGroup;
 			children = (
-				FF45621F2430D5C100E2850F /* HeaderCell.swift */,
-				FFC94386243AB8A1008755AB /* EmptyCell.swift */,
-				FF3941E524335B01008346EC /* FlatCell.swift */,
-				FFEA3B462435AA8A002F043F /* FlatNonImageCell.swift */,
-				FFF23892243064AC00E9337E /* ImageCell.swift */,
-				FF45621D2430D59E00E2850F /* WebsiteCell.swift */,
-				FF4562212430D5D600E2850F /* NoteCell.swift */,
+				FFFAEB2029E1ACF600E37DBA /* CustomGroupDetailCameraCell.swift */,
+				FFFAEB0529E1ACF500E37DBA /* CustomGroupDetailImageCell.swift */,
+				FFFAEB1A29E1ACF600E37DBA /* FlatCell.swift */,
+				FFFAEB0229E1ACF500E37DBA /* NoteCell.swift */,
+				FFFAEB0029E1ACF500E37DBA /* WebsiteCell.swift */,
+				FFFAEAFA29E1ACF500E37DBA /* ImageCell.swift */,
+				FFFAEAFE29E1ACF500E37DBA /* FlatNonImageCell.swift */,
+				FFFAEB0829E1ACF500E37DBA /* HeaderCell.swift */,
+				FFFAEB0F29E1ACF600E37DBA /* EmptyCell.swift */,
 			);
-			path = "Side Right CollectionCells";
+			path = cell;
+			sourceTree = "<group>";
+		};
+		FFFAEB6429E1B9A900E37DBA /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				FFFAEB0429E1ACF500E37DBA /* TimeCollectionCell.swift */,
+				FFFAEB2129E1ACF600E37DBA /* HeaderCollectionCell.swift */,
+				FFFAEB1229E1ACF600E37DBA /* EventCollectionCell.swift */,
+			);
+			path = cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -581,8 +479,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF48BF302415BF61003C39FB /* Localizable.strings in Resources */,
-				FF58FB56296073E600CE50EA /* ButtonView.xib in Resources */,
 				FF9E6A7022FD973100306786 /* LaunchScreen.storyboard in Resources */,
+				FFFAEB2429E1ACF600E37DBA /* ButtonView.xib in Resources */,
 				FF14F413242076B7001A9187 /* Settings.bundle in Resources */,
 				FFA3CFEF23EAC26D00405873 /* Main.storyboard in Resources */,
 				FF9E6A6D22FD973100306786 /* Assets.xcassets in Resources */,
@@ -657,72 +555,70 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFFAEB5829E1B0C700E37DBA /* CandidateFlatSectionController.swift in Sources */,
 				FFE28302241F17B3000ED63E /* R.generated.swift in Sources */,
-				FFCFADA6242DF00B00520AC4 /* CustomGroupDetailCameraCell.swift in Sources */,
-				FF3941EA24336D76008346EC /* PlanFlatSectionController.swift in Sources */,
+				FFFAEB2A29E1ACF600E37DBA /* MapUIView.swift in Sources */,
+				FFFAEB4629E1ACF600E37DBA /* ButtonView.swift in Sources */,
+				FFFAEB3929E1ACF600E37DBA /* ButtonFourView.swift in Sources */,
+				FFFAEB2629E1ACF600E37DBA /* NotesSectionController.swift in Sources */,
+				FFFAEB2B29E1ACF600E37DBA /* DatePickerView.swift in Sources */,
+				FFFAEB3429E1ACF600E37DBA /* TopBarView.swift in Sources */,
 				FF312FB223A5281000156F04 /* RootTabBarController.swift in Sources */,
 				FF0128D3244814BC00639AA2 /* HowToView.swift in Sources */,
-				FF0CBD2A2420AC4500E0A785 /* ButtonFourView.swift in Sources */,
+				FFFAEB3529E1ACF600E37DBA /* WebsiteView.swift in Sources */,
+				FFFAEB3229E1ACF600E37DBA /* TimeCollectionCell.swift in Sources */,
 				FFAB14432447F3B800A63D28 /* FirstBootView.swift in Sources */,
-				FF7158A1239E0AD0007C3FBD /* ButtonThreeView.swift in Sources */,
-				FFE4E2B52965A22200ADA6AD /* ListViewController.swift in Sources */,
-				FFEA3B472435AA8A002F043F /* FlatNonImageCell.swift in Sources */,
 				FFF238912430640E00E9337E /* RightCollectionView.swift in Sources */,
+				FFFAEB4029E1ACF600E37DBA /* EventCollectionCell.swift in Sources */,
+				FFFAEB3F29E1ACF600E37DBA /* PlaceLocationView.swift in Sources */,
+				FFFAEB4C29E1ACF600E37DBA /* MainHeaderSectionController.swift in Sources */,
+				FFFAEB2529E1ACF600E37DBA /* EditSectionController.swift in Sources */,
+				FFFAEB4A29E1ACF600E37DBA /* PlanLocationView.swift in Sources */,
+				FFFAEB3329E1ACF600E37DBA /* CustomGroupDetailImageCell.swift in Sources */,
+				FFFAEB4B29E1ACF600E37DBA /* CustomImagePickerDelegate.swift in Sources */,
 				FFD009C1241224D500B136D4 /* Segues.swift in Sources */,
-				FF3941E824335B84008346EC /* PlaceFlatSectionController.swift in Sources */,
+				FFFAEB3829E1ACF600E37DBA /* TimePickerView.swift in Sources */,
+				FFFAEB4929E1ACF600E37DBA /* ImagePageView.swift in Sources */,
 				FF6316F223B9CB0B005E0065 /* RightFabMenuView.swift in Sources */,
-				FFAB9E9024342244001AE064 /* TimeCollectionCell.swift in Sources */,
-				FFE4E2B02965942D00ADA6AD /* TopBarView.swift in Sources */,
-				FF6769A224337474007E7627 /* CandidateWebsiteSectionController.swift in Sources */,
-				FF2A5A6E23C33F8300B00A1F /* TimePickerView.swift in Sources */,
-				FF3941E624335B01008346EC /* FlatCell.swift in Sources */,
-				FFCFADA3242DEF9F00520AC4 /* CustomImagePickerDelegate.swift in Sources */,
-				FF4562202430D5C100E2850F /* HeaderCell.swift in Sources */,
-				FFBAB5922433706A0061BD73 /* CandidateFlatSectionConttoller.swift in Sources */,
+				FFFAEB4829E1ACF600E37DBA /* FlatCell.swift in Sources */,
 				FF2AB7E12432C451007F12F2 /* ObjectsForIGListKit.swift in Sources */,
-				FFF238972430664100E9337E /* ImageSectionController.swift in Sources */,
+				FFFAEB4729E1ACF600E37DBA /* CandidateWebsiteSectionController.swift in Sources */,
+				FFFAEB4D29E1ACF600E37DBA /* SearchDestinationView.swift in Sources */,
+				FFFAEB3029E1ACF600E37DBA /* NoteCell.swift in Sources */,
+				FFFAEB3629E1ACF600E37DBA /* HeaderCell.swift in Sources */,
 				FF7F02E029600CD30024D407 /* WebsiteListView.swift in Sources */,
-				FF99E0CB23755FD0005DD205 /* WebsiteView.swift in Sources */,
-				FF6075232431E20D007C8A0F /* PlaceLocationView.swift in Sources */,
+				FFFAEB5729E1B0C700E37DBA /* PlaceFlatSectionController.swift in Sources */,
+				FFFAEB3A29E1ACF600E37DBA /* ImageView.swift in Sources */,
+				FFFAEB4E29E1ACF600E37DBA /* CustomGroupDetailCameraCell.swift in Sources */,
+				FFFAEB2929E1ACF600E37DBA /* NonEditSectionController.swift in Sources */,
+				FFFAEB3D29E1ACF600E37DBA /* EmptyCell.swift in Sources */,
+				FFFAEB4F29E1ACF600E37DBA /* HeaderCollectionCell.swift in Sources */,
 				FF22714324174FC4002636EE /* RealmOthers.swift in Sources */,
-				FFFEABA124278E43001092AA /* ShowMapView.swift in Sources */,
-				FFCFADA7242DF00B00520AC4 /* CustomGroupDetailImageCell.swift in Sources */,
-				FF0CBD2E2420AC8400E0A785 /* ButtonView.swift in Sources */,
 				FF90127E2438844F00984517 /* KeyChain.swift in Sources */,
-				FFC94387243AB8A2008755AB /* EmptyCell.swift in Sources */,
-				FF4562222430D5D600E2850F /* NoteCell.swift in Sources */,
-				FF0CBD1E2420AAFB00E0A785 /* ImageView.swift in Sources */,
-				FF764131242601A8000D08B8 /* DatePickerView.swift in Sources */,
 				FF2F9A022431D1140086BD45 /* PlanListView.swift in Sources */,
+				FFFAEB2C29E1ACF600E37DBA /* FlatNonImageCell.swift in Sources */,
+				FFFAEB2D29E1ACF600E37DBA /* ImageSectionController.swift in Sources */,
+				FFFAEB4129E1ACF600E37DBA /* PlanDetailView.swift in Sources */,
+				FFFAEB5029E1ACF600E37DBA /* ListViewController.swift in Sources */,
 				FFAB14452447F4BE00A63D28 /* AgreementView.swift in Sources */,
 				FF560C1A23A9DAFA00584762 /* Settings.swift in Sources */,
+				FFFAEB4229E1ACF600E37DBA /* CandidateLocationView.swift in Sources */,
 				FF9682E1231969BA009A891A /* MainBackgroundView.swift in Sources */,
 				FFAB9E8A243421EC001AE064 /* MainCollectionView.swift in Sources */,
-				FFAB9E8E24342237001AE064 /* EventCollectionCell.swift in Sources */,
-				FF7B1ACD24345EED005A8443 /* MainHeaderSectionController.swift in Sources */,
-				FF4DAC7A2431818700208538 /* HeaderSectionController.swift in Sources */,
-				FF5816C32431F39500005491 /* PlaceDetailView.swift in Sources */,
-				FFAB9E94243428EB001AE064 /* NonEditSectionController.swift in Sources */,
+				FFFAEB4429E1ACF600E37DBA /* HeaderSectionController.swift in Sources */,
 				FF0128D5244816F900639AA2 /* HowToLastView.swift in Sources */,
-				FF7B1ACB24345EA8005A8443 /* EditSectionController.swift in Sources */,
-				FF3438342434945C00BA5CE6 /* HeaderCollectionCell.swift in Sources */,
+				FFFAEB2E29E1ACF600E37DBA /* WebsiteCell.swift in Sources */,
+				FFFAEB2729E1ACF600E37DBA /* PlaceDetailView.swift in Sources */,
+				FFBDF5A829E1A632005DB97C /* PlanFlatSectionController.swift in Sources */,
+				FFFAEB3729E1ACF600E37DBA /* OthersWebsiteSectionController.swift in Sources */,
 				FF7F02DE29600C820024D407 /* CandidateListView.swift in Sources */,
-				FF5816C12431F38A00005491 /* PlanDetailView.swift in Sources */,
-				FFE4E2B329659B8600ADA6AD /* BannerView.swift in Sources */,
-				FF45621E2430D59E00E2850F /* WebsiteCell.swift in Sources */,
-				FF52657E2430706B00D29BCA /* OthersWebsiteSectionController.swift in Sources */,
-				FF6075252431E8C3007C8A0F /* CandidateLocationView.swift in Sources */,
-				FF0CBD262420AC0E00E0A785 /* MapUIView.swift in Sources */,
 				FF2EE84923A9A8A000CB71C4 /* RealmPlan.swift in Sources */,
+				FFFAEB3C29E1ACF600E37DBA /* ButtonOneView.swift in Sources */,
 				FF3632CE230F82CA0033C7D7 /* DataOfContents.swift in Sources */,
 				FFA0BFD622FDC56C006A9988 /* AppDelegate.swift in Sources */,
+				FFFAEB3129E1ACF600E37DBA /* ButtonThreeView.swift in Sources */,
 				FF22714124174F09002636EE /* RealmCandidate.swift in Sources */,
-				FF4986AB23A2775E00E8C4CE /* ImagePageView.swift in Sources */,
-				FF6075212431E201007C8A0F /* PlanLocationView.swift in Sources */,
-				FFF23893243064AC00E9337E /* ImageCell.swift in Sources */,
-				FFA92A05240CC40A00EED3BE /* SearchDestinationView.swift in Sources */,
-				FF5265802430707A00D29BCA /* NotesSectionController.swift in Sources */,
-				FFC1BCD1242E1C620070F920 /* ButtonOneView.swift in Sources */,
+				FFFAEB2829E1ACF600E37DBA /* ImageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

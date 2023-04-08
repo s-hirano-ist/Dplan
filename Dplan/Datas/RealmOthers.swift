@@ -11,7 +11,7 @@ import RealmSwift
 import UIKit
 import MapKit
 
-class RealmOthers { //MARK: FOR 目的地系統以外の処理
+class RealmOthers { //FOR 目的地系統以外の処理
     private let realm = try! Realm()
     func printAll(){
         for p in place(){
@@ -55,7 +55,7 @@ class RealmOthers { //MARK: FOR 目的地系統以外の処理
     }
 
 }
-//MARK: for images
+//for images
 extension RealmOthers {
     func appendImage(at row:Int,image:UIImage?,at index:Int){
         if let image = image{
@@ -85,7 +85,7 @@ extension RealmOthers {
     }
 }
 
-//MARK: FOR URL DATA
+//FOR URL DATA
 extension RealmOthers {
     func isIncluded(string:URL)->Bool{
         for data in websites(){
@@ -129,7 +129,7 @@ extension RealmOthers {
     }
 }
 
-//MARK: FOR PLACE DATA
+//FOR PLACE DATA
 extension RealmOthers {
     func data(at num:Int)->PlaceData{
         return place()[num]

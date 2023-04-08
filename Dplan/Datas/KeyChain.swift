@@ -99,7 +99,7 @@ struct KeychainItem {
         guard status == noErr || status == errSecItemNotFound else { throw KeychainError.unhandledError }
     }
 
-    // MARK: Convenience
+    // Convenience
 
     private static func keychainQuery(withService service: String, account: String? = nil, accessGroup: String? = nil) -> [String: AnyObject] {
         var query = [String: AnyObject]()

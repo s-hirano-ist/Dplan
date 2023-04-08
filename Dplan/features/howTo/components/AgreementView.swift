@@ -73,7 +73,7 @@ class AgreementView: UIView {
         button.backgroundColor = R.color.subNavy()!
         return button
     }()
-
+    
     @objc func termsOfServiceButtonClicked(gestureRecognizer:UIGestureRecognizer){
         let url = URL(string: "https://www.google.com/")
         if let url = url {
@@ -93,7 +93,7 @@ class AgreementView: UIView {
     @objc func agreeButtonClicked(gestureRecognizer:UIGestureRecognizer){
         self.delegate?.agreeButtonPressed()
     }
-
+    
     override init(frame: CGRect) {
         super.init(frame:frame)
         self.backgroundColor = R.color.mainWhite()!
@@ -105,7 +105,7 @@ class AgreementView: UIView {
 }
 
 extension AgreementView {
-
+    
     private func setupConstraints(){
         self.addSubview(welcomeLabel)
         self.addSubview(iconImage)
@@ -113,9 +113,9 @@ extension AgreementView {
         self.addSubview(privacyButton)
         self.addSubview(termsOfServiceView)
         self.addSubview(agreeButton)
-
+        
         let offset:CGFloat = 32
-
+        
         welcomeLabel.snp.makeConstraints({ (make) -> Void in
             make.right.equalToSuperview().offset(-offset)
             make.left.equalToSuperview().offset(offset)
@@ -127,28 +127,28 @@ extension AgreementView {
             make.bottom.equalTo(self.snp.centerY).offset(-100)
             make.height.width.equalTo(128)
         })
-
+        
         termsOfServiceView.snp.makeConstraints({ (make) -> Void in
             make.right.equalToSuperview().offset(-offset)
             make.left.equalToSuperview().offset(offset)
             make.top.equalTo(iconImage.snp.bottom).offset(offset)
             make.height.equalTo(100)
         })
-
+        
         termsOfServiceButton.snp.makeConstraints({ (make) -> Void in
             make.left.equalToSuperview().offset(offset)
             make.right.equalToSuperview().offset(-offset)
             make.top.equalTo(termsOfServiceView.snp.bottom).offset(offset)
             make.height.equalTo(44)
         })
-
+        
         privacyButton.snp.makeConstraints({ (make) -> Void in
             make.left.equalToSuperview().offset(offset)
             make.right.equalToSuperview().offset(-offset)
             make.top.equalTo(termsOfServiceButton.snp.bottom).offset(offset/4)
             make.height.equalTo(44)
         })
-
+        
         agreeButton.snp.makeConstraints({ (make) -> Void in
             make.height.equalTo(44)
             make.bottom.equalTo(self.safeAreaLayoutGuide.snp.bottom).offset(-16)

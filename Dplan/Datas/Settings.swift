@@ -120,10 +120,10 @@ struct DataCellSet {
 }
 
 class Settings{
-    //MARK: IMPROVE current localizationによって要変更
+    //IMPROVE current localizationによって要変更
     let defaultLoc = CLLocationCoordinate2DMake(35.681114,139.766932)
 }
-//MARK: for formatter
+//for formatter
 extension Settings {
     func dateFormatter()->DateFormatter{
         let dateFormatter = DateFormatter()
@@ -180,7 +180,7 @@ extension Settings {
     }
 }
 
-//MARK: for buttons,textField
+//for buttons,textField
 extension Settings {
     func flatButton(title:String,titleColor:UIColor)->FlatButton{
         let button = FlatButton()
@@ -212,7 +212,7 @@ extension Settings {
         return textField
     }
     
-    //MARK: for button in date,time picker
+    //for button in date,time picker
     func setButtonBackground(frame:CGRect)->UIView{
         let v = UIView(frame: frame)
         v.layer.shadowOffset = CGSize(width: 0.0, height: -2)// 影の方向
@@ -222,7 +222,7 @@ extension Settings {
         v.backgroundColor = .systemBackground
         return v
     }
-    //MARK: for button in date,time picker
+    //for button in date,time picker
     func setButtonBackground()->UIView{
         let v = UIView()
         v.layer.shadowOffset = CGSize(width: 0.0, height: -2)// 影の方向
@@ -233,7 +233,7 @@ extension Settings {
         return v
     }
     
-    //MARK: for fabMenu
+    //for fabMenu
     func prepareFabMenuItemColors(item:FABMenuItem,icon:UIImage?,backgroundColor:UIColor){
         item.fabButton.tintColor = R.color.mainWhite()!
         item.fabButton.pulseColor = R.color.mainWhite()!
@@ -243,7 +243,7 @@ extension Settings {
         item.fabButton.image = icon
     }
     
-    //MARK: for sideMenu settings
+    //for sideMenu settings
     func makeSettings(right :Bool,view:UIView) -> SideMenuSettings {
         //sideMenu settings
         //.menuSlideIn, .viewSlideOut, .viewSlideOutMenuIn, .menuDissolveIn
@@ -273,7 +273,7 @@ extension Settings {
         return menu
     }
     
-    //MARK: for image Picker
+    //for image Picker
     func setImagePicker(singleSelect:Bool)->DKImagePickerController {
         let pickerController = DKImagePickerController()
         pickerController.assetType = .allPhotos
@@ -288,7 +288,7 @@ extension Settings {
     
 }
 
-//MARK: for dismiss modal
+//for dismiss modal
 extension Settings {
     func reloadRightViewDismiss(controller:UIViewController){
         if let view = controller.presentingViewController as? SideMenuNavigationController,
@@ -325,7 +325,7 @@ extension Settings {
      }*/
     
 }
-//MARK: for timePicker,datePicker view
+//for timePicker,datePicker view
 
 var halfPositionHeight:CGFloat?
 
@@ -355,7 +355,7 @@ class HalfFloatingPannelLayout: FloatingPanelLayout{
         return 0.4
     }
 }
-//MARK: for plan tableview
+//for plan tableview
 class PlanFloatingPannelLayout: FloatingPanelLayout {
     public var initialPosition: FloatingPanelPosition {
         return .half

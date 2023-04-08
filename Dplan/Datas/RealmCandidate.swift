@@ -50,7 +50,7 @@ class RealmCandidate {
     }
 }
 
-//MARK: FOR TEXT DATA in Candidate
+//FOR TEXT DATA in Candidate
 extension RealmCandidate {
     func setTextData(_ d: TextData){
         try! realm.write{
@@ -79,7 +79,7 @@ extension RealmCandidate {
         }
     }
 }
-//MARK: FOR URL DATA in Candidate
+//FOR URL DATA in Candidate
 extension RealmCandidate {
     func saveWebsite(_ d: URLData){
         try! realm.write{
@@ -122,7 +122,7 @@ extension RealmCandidate {
         return  website()[row]
     }
 }
-//MARK: FOR PLACE DATA
+//FOR PLACE DATA
 extension RealmCandidate {
     func getAllDatas()->[PlaceData]{
         var data:[PlaceData] = []
