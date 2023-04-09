@@ -57,7 +57,6 @@ class WebsiteView: UIViewController{
 
         if url == URL(string: "https://www.google.com".localized) ||
         url.absoluteString == "https://www.google.com".localized {
-            DEBUG("gogole home so no delete or ...")
             bookmarkButton.title = String.empty
             return
         }

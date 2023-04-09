@@ -28,7 +28,7 @@ class HeaderSectionController: ListSectionController {
         let cell = collectionContext!.dequeueReusableCell(of: cellType,
                                                           for: self,
                                                           at: index)
-        if let cell = cell as? HeaderCell,let sectionNumber = sectionNumber {
+        if let cell = cell as? HeaderCell {
             switch sectionNumber {
             case 0:
                 cell.setLabel(title: "Websites".localized, mapHidden: true)

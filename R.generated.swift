@@ -1052,9 +1052,7 @@ struct _R {
     }
 
     /// Storyboard `Main`.
-    struct main: RswiftResources.StoryboardReference, RswiftResources.InitialControllerContainer {
-      typealias InitialController = RootTabBarController
-
+    struct main: RswiftResources.StoryboardReference {
       let bundle: Foundation.Bundle
 
       let name = "Main"

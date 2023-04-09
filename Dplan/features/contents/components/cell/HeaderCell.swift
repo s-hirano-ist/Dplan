@@ -12,8 +12,7 @@ import Material
 import SnapKit
 
 class HeaderCell: UICollectionViewCell {
-    var isShowAll = true
-
+    
     let titleLabel: UILabel = {
         let titleLabel = UILabel()
         titleLabel.font = .systemFont(ofSize: 17)
@@ -22,70 +21,29 @@ class HeaderCell: UICollectionViewCell {
         titleLabel.minimumScaleFactor = 0.5
         return titleLabel
     }()
-    lazy var showMapButton:FlatButton = {
-        let button = FlatButton(title: "Show map".localized)
-        button.pulseColor = .lightGray
-        button.backgroundColor = .clear
-        button.fontSize = 12
-        //button.titleColor = R.color.mainBlack()!
-        button.titleColor = R.color.mainGray()!
-        button.isHidden = true
-        button.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(showMapButtonPressed(gestureRecognizer:))))
-        return button
-    }()
-
-    lazy var showAllButton:FlatButton = {
-        let button = FlatButton(title: "Show less".localized)
-        button.pulseColor = .lightGray
-        button.backgroundColor = .clear
-        button.fontSize = 12
-        button.titleColor = R.color.mainBlack()!
-//        button.isHidden = true
-        button.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(showAllButtonPressed(gestureRecognizer:))))
-        return button
-    }()
-    let offset:CGFloat = 16
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = R.color.mainWhite()!
-        setAll()
+        contentView.addSubview(titleLabel)
+        
         contentView.snp.makeConstraints({ (make) -> Void in
             make.height.equalTo(44)
             make.right.left.width.equalToSuperview()
         })
         titleLabel.snp.makeConstraints({ (make) -> Void in
-            make.top.equalTo(contentView).offset(4)
-            make.bottom.equalTo(contentView).offset(-4)
-            make.left.equalTo(contentView).offset(offset)
-            make.right.equalTo(showMapButton.snp.left)
+            make.top.bottom.right.left.equalToSuperview().offset(10)
         })
     }
-
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
+    
     func setLabel(title:String,mapHidden:Bool){
         titleLabel.text = title
-        //showMapButton.isHidden = mapHidden
     }
-
-    private func setAll(){
-        contentView.addSubview(showAllButton)
-        contentView.addSubview(showMapButton)
-        contentView.addSubview(titleLabel)
-    }
-    @objc func showAllButtonPressed(gestureRecognizer:UIGestureRecognizer) {
-        if isShowAll {
-            showAllButton.setTitle("Show all".localized, for: .normal)
-        }else{
-            showAllButton.setTitle("Show less".localized, for: .normal)
-        }
-        isShowAll.toggle()
-    }
-
-    @objc func showMapButtonPressed(gestureRecognizer:UIGestureRecognizer) {
-    }
+    
     override func preferredLayoutAttributesFitting(_ layoutAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {
         setNeedsLayout()
         layoutIfNeeded()

@@ -16,12 +16,9 @@
 		FF2AB7E12432C451007F12F2 /* ObjectsForIGListKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2AB7E02432C451007F12F2 /* ObjectsForIGListKit.swift */; };
 		FF2EE84923A9A8A000CB71C4 /* RealmPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2EE84823A9A8A000CB71C4 /* RealmPlan.swift */; };
 		FF2F9A022431D1140086BD45 /* PlanListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2F9A012431D1140086BD45 /* PlanListView.swift */; };
-		FF312FB223A5281000156F04 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF312FB123A5281000156F04 /* RootTabBarController.swift */; };
 		FF3632CE230F82CA0033C7D7 /* DataOfContents.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3632CD230F82CA0033C7D7 /* DataOfContents.swift */; };
 		FF48BF302415BF61003C39FB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF48BF322415BF61003C39FB /* Localizable.strings */; };
 		FF560C1A23A9DAFA00584762 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF560C1923A9DAFA00584762 /* Settings.swift */; };
-		FF7F02DE29600C820024D407 /* CandidateListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F02DD29600C820024D407 /* CandidateListView.swift */; };
-		FF7F02E029600CD30024D407 /* WebsiteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F02DF29600CD30024D407 /* WebsiteListView.swift */; };
 		FF90127E2438844F00984517 /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90127D2438844F00984517 /* KeyChain.swift */; };
 		FF9682E1231969BA009A891A /* MainBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9682E0231969BA009A891A /* MainBackgroundView.swift */; };
 		FF9E6A6D22FD973100306786 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF9E6A6C22FD973100306786 /* Assets.xcassets */; };
@@ -65,7 +62,6 @@
 		FFFAEB4229E1ACF600E37DBA /* CandidateLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEB1429E1ACF600E37DBA /* CandidateLocationView.swift */; };
 		FFFAEB4429E1ACF600E37DBA /* HeaderSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEB1629E1ACF600E37DBA /* HeaderSectionController.swift */; };
 		FFFAEB4629E1ACF600E37DBA /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEB1829E1ACF600E37DBA /* ButtonView.swift */; };
-		FFFAEB4729E1ACF600E37DBA /* CandidateWebsiteSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEB1929E1ACF600E37DBA /* CandidateWebsiteSectionController.swift */; };
 		FFFAEB4829E1ACF600E37DBA /* FlatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEB1A29E1ACF600E37DBA /* FlatCell.swift */; };
 		FFFAEB4929E1ACF600E37DBA /* ImagePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEB1B29E1ACF600E37DBA /* ImagePageView.swift */; };
 		FFFAEB4A29E1ACF600E37DBA /* PlanLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEB1C29E1ACF600E37DBA /* PlanLocationView.swift */; };
@@ -76,7 +72,6 @@
 		FFFAEB4F29E1ACF600E37DBA /* HeaderCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEB2129E1ACF600E37DBA /* HeaderCollectionCell.swift */; };
 		FFFAEB5029E1ACF600E37DBA /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEB2229E1ACF600E37DBA /* ListViewController.swift */; };
 		FFFAEB5729E1B0C700E37DBA /* PlaceFlatSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEB5529E1B0C700E37DBA /* PlaceFlatSectionController.swift */; };
-		FFFAEB5829E1B0C700E37DBA /* CandidateFlatSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAEB5629E1B0C700E37DBA /* CandidateFlatSectionController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -107,13 +102,10 @@
 		FF2AB7E02432C451007F12F2 /* ObjectsForIGListKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectsForIGListKit.swift; sourceTree = "<group>"; };
 		FF2EE84823A9A8A000CB71C4 /* RealmPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmPlan.swift; sourceTree = "<group>"; };
 		FF2F9A012431D1140086BD45 /* PlanListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanListView.swift; sourceTree = "<group>"; };
-		FF312FB123A5281000156F04 /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
 		FF3632CD230F82CA0033C7D7 /* DataOfContents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataOfContents.swift; sourceTree = "<group>"; };
 		FF48BF312415BF61003C39FB /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FF48BF332415BF6A003C39FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FF560C1923A9DAFA00584762 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
-		FF7F02DD29600C820024D407 /* CandidateListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateListView.swift; sourceTree = "<group>"; };
-		FF7F02DF29600CD30024D407 /* WebsiteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsiteListView.swift; sourceTree = "<group>"; };
 		FF90127D2438844F00984517 /* KeyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChain.swift; sourceTree = "<group>"; };
 		FF9682E0231969BA009A891A /* MainBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBackgroundView.swift; sourceTree = "<group>"; };
 		FF9E6A6222FD973100306786 /* Dplan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dplan.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,7 +151,6 @@
 		FFFAEB1429E1ACF600E37DBA /* CandidateLocationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidateLocationView.swift; sourceTree = "<group>"; };
 		FFFAEB1629E1ACF600E37DBA /* HeaderSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderSectionController.swift; sourceTree = "<group>"; };
 		FFFAEB1829E1ACF600E37DBA /* ButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
-		FFFAEB1929E1ACF600E37DBA /* CandidateWebsiteSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidateWebsiteSectionController.swift; sourceTree = "<group>"; };
 		FFFAEB1A29E1ACF600E37DBA /* FlatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlatCell.swift; sourceTree = "<group>"; };
 		FFFAEB1B29E1ACF600E37DBA /* ImagePageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePageView.swift; sourceTree = "<group>"; };
 		FFFAEB1C29E1ACF600E37DBA /* PlanLocationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanLocationView.swift; sourceTree = "<group>"; };
@@ -170,7 +161,6 @@
 		FFFAEB2129E1ACF600E37DBA /* HeaderCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCollectionCell.swift; sourceTree = "<group>"; };
 		FFFAEB2229E1ACF600E37DBA /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		FFFAEB5529E1B0C700E37DBA /* PlaceFlatSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceFlatSectionController.swift; sourceTree = "<group>"; };
-		FFFAEB5629E1B0C700E37DBA /* CandidateFlatSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidateFlatSectionController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,8 +211,6 @@
 				FFFAEB6229E1B95100E37DBA /* buttons */,
 				FF2F9A012431D1140086BD45 /* PlanListView.swift */,
 				FFF238902430640E00E9337E /* RightCollectionView.swift */,
-				FF7F02DD29600C820024D407 /* CandidateListView.swift */,
-				FF7F02DF29600CD30024D407 /* WebsiteListView.swift */,
 				FFFAEB1B29E1ACF600E37DBA /* ImagePageView.swift */,
 				FFFAEB0C29E1ACF600E37DBA /* ImageView.swift */,
 				FFFAEB0729E1ACF500E37DBA /* WebsiteView.swift */,
@@ -258,14 +246,6 @@
 			path = datas;
 			sourceTree = "<group>";
 		};
-		FF7F02DC29600B250024D407 /* navigationController */ = {
-			isa = PBXGroup;
-			children = (
-				FF312FB123A5281000156F04 /* RootTabBarController.swift */,
-			);
-			path = navigationController;
-			sourceTree = "<group>";
-		};
 		FF9E6A5922FD973100306786 = {
 			isa = PBXGroup;
 			children = (
@@ -292,7 +272,6 @@
 				FF12ED2B24219E3700DBA6F6 /* Dplan.entitlements */,
 				FFA3CFEE23EAC26D00405873 /* Main.storyboard */,
 				FFD35EF4295FF0CA00996692 /* features */,
-				FF7F02DC29600B250024D407 /* navigationController */,
 				FF536E7A236BB3FF00C281A1 /* datas */,
 				FF9E6A6E22FD973100306786 /* LaunchScreen.storyboard */,
 			);
@@ -351,12 +330,10 @@
 			isa = PBXGroup;
 			children = (
 				FFFAEB1629E1ACF600E37DBA /* HeaderSectionController.swift */,
-				FFFAEB1929E1ACF600E37DBA /* CandidateWebsiteSectionController.swift */,
 				FFFAEB0929E1ACF500E37DBA /* OthersWebsiteSectionController.swift */,
 				FFFAEAF829E1ACF500E37DBA /* NotesSectionController.swift */,
 				FFFAEAFF29E1ACF500E37DBA /* ImageSectionController.swift */,
 				FFBDF5A729E1A632005DB97C /* PlanFlatSectionController.swift */,
-				FFFAEB5629E1B0C700E37DBA /* CandidateFlatSectionController.swift */,
 				FFFAEB5529E1B0C700E37DBA /* PlaceFlatSectionController.swift */,
 				FFFAEB2229E1ACF600E37DBA /* ListViewController.swift */,
 			);
@@ -552,7 +529,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFFAEB5829E1B0C700E37DBA /* CandidateFlatSectionController.swift in Sources */,
 				FFE28302241F17B3000ED63E /* R.generated.swift in Sources */,
 				FFFAEB2A29E1ACF600E37DBA /* MapUIView.swift in Sources */,
 				FFFAEB4629E1ACF600E37DBA /* ButtonView.swift in Sources */,
@@ -560,7 +536,6 @@
 				FFFAEB2629E1ACF600E37DBA /* NotesSectionController.swift in Sources */,
 				FFFAEB2B29E1ACF600E37DBA /* DatePickerView.swift in Sources */,
 				FFFAEB3429E1ACF600E37DBA /* TopBarView.swift in Sources */,
-				FF312FB223A5281000156F04 /* RootTabBarController.swift in Sources */,
 				FF0128D3244814BC00639AA2 /* HowToView.swift in Sources */,
 				FFFAEB3529E1ACF600E37DBA /* WebsiteView.swift in Sources */,
 				FFFAEB3229E1ACF600E37DBA /* TimeCollectionCell.swift in Sources */,
@@ -578,11 +553,9 @@
 				FFFAEB4929E1ACF600E37DBA /* ImagePageView.swift in Sources */,
 				FFFAEB4829E1ACF600E37DBA /* FlatCell.swift in Sources */,
 				FF2AB7E12432C451007F12F2 /* ObjectsForIGListKit.swift in Sources */,
-				FFFAEB4729E1ACF600E37DBA /* CandidateWebsiteSectionController.swift in Sources */,
 				FFFAEB4D29E1ACF600E37DBA /* SearchDestinationView.swift in Sources */,
 				FFFAEB3029E1ACF600E37DBA /* NoteCell.swift in Sources */,
 				FFFAEB3629E1ACF600E37DBA /* HeaderCell.swift in Sources */,
-				FF7F02E029600CD30024D407 /* WebsiteListView.swift in Sources */,
 				FFFAEB5729E1B0C700E37DBA /* PlaceFlatSectionController.swift in Sources */,
 				FFFAEB3A29E1ACF600E37DBA /* ImageView.swift in Sources */,
 				FFFAEB4E29E1ACF600E37DBA /* CustomGroupDetailCameraCell.swift in Sources */,
@@ -607,7 +580,6 @@
 				FFFAEB2729E1ACF600E37DBA /* PlaceDetailView.swift in Sources */,
 				FFBDF5A829E1A632005DB97C /* PlanFlatSectionController.swift in Sources */,
 				FFFAEB3729E1ACF600E37DBA /* OthersWebsiteSectionController.swift in Sources */,
-				FF7F02DE29600C820024D407 /* CandidateListView.swift in Sources */,
 				FF2EE84923A9A8A000CB71C4 /* RealmPlan.swift in Sources */,
 				FFFAEB3C29E1ACF600E37DBA /* ButtonOneView.swift in Sources */,
 				FF3632CE230F82CA0033C7D7 /* DataOfContents.swift in Sources */,

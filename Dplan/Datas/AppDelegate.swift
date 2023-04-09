@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         // 起動画面（同意後）
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window?.rootViewController = RootTabBarController()
+        self.window?.rootViewController = PlanListView()
         self.window?.makeKeyAndVisible()
 
         // for keyboard not hiding textView

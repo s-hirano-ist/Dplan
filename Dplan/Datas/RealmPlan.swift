@@ -36,7 +36,6 @@ class RealmPlan {
         if num < countPlans(){
             return realm.objects(Plan.self)[num].dayData.count
         }else{
-            print("NO PLANS TO COUNT OUT OF BOUNDS")
             return 0
         }
     }
@@ -81,7 +80,6 @@ class RealmPlan {
 extension RealmPlan {
     //ok
     func reload(completion: (()->())? = nil){
-        print("RELOAD with number\(NUMBER)\n\n")
         polyline = []
         let number = NUMBER
 
