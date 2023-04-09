@@ -5,14 +5,14 @@ target 'Dplan' do
   #use_frameworks!
   use_modular_headers!
 
+  pod 'DKImagePickerController', '~> 4.3.4'
   pod 'FloatingPanel', '~> 1.7.6'
   pod 'RealmSwift', '~> 10.33.0'
-  pod 'DKImagePickerController', '~> 4.3.4'
   pod 'SideMenu', '~> 6.0'
 
   pod 'Material', '~> 3.1.0'
   pod 'CropViewController'
-  pod 'R.swift', '~> 7.2.4'
+  pod 'R.swift', '~> 7.3.0'
   pod 'SwipeCellKit', '~> 2.7.1'
   pod 'RxSwift', '~> 6.5.0'
   pod 'RxCocoa', '~> 6.5.0'
@@ -21,11 +21,7 @@ target 'Dplan' do
   pod 'SnapKit', '~> 5.6.0'
   pod 'Motion', '~> 3.1.0'
   pod 'IGListKit', '~> 4.0.0'
-  pod 'SwiftyStoreKit', '~> 0.16.1'
-  pod 'Alertift', '~> 4.1'
   pod "KRProgressHUD", '~> 3.4'
-  
-  # Pods for Dplan
   
   post_install do |installer|
     installer.pods_project.targets.each do |target|
