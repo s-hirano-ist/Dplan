@@ -83,7 +83,6 @@ PODS:
   - SideMenu (6.5.0)
   - SnapKit (5.6.0)
   - SwiftyGif (5.4.4)
-  - SwiftyStoreKit (0.16.1)
   - SwipeCellKit (2.7.1)
 
 DEPENDENCIES:
@@ -102,7 +101,6 @@ DEPENDENCIES:
   - RxSwift (~> 6.5.0)
   - SideMenu (~> 6.0)
   - SnapKit (~> 5.6.0)
-  - SwiftyStoreKit (~> 0.16.1)
   - SwipeCellKit (~> 2.7.1)
 
 SPEC REPOS:
@@ -130,7 +128,6 @@ SPEC REPOS:
     - SideMenu
     - SnapKit
     - SwiftyGif
-    - SwiftyStoreKit
     - SwipeCellKit
 
 SPEC CHECKSUMS:
@@ -157,9 +154,8 @@ SPEC CHECKSUMS:
   SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SwiftyGif: 93a1cc87bf3a51916001cf8f3d63835fb64c819f
-  SwiftyStoreKit: 6b9c08810269f030586dac1fae8e75871a82e84a
   SwipeCellKit: 3972254a826da74609926daf59b08d6c72e619ea
 
-PODFILE CHECKSUM: 8f5ed7f8279afc7568936b660ae979355eb898c1
+PODFILE CHECKSUM: e8ef7b7da7c3bb4892b666940908635d1043089c
 
 COCOAPODS: 1.12.0

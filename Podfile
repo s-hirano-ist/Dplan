@@ -21,11 +21,9 @@ target 'Dplan' do
   pod 'SnapKit', '~> 5.6.0'
   pod 'Motion', '~> 3.1.0'
   pod 'IGListKit', '~> 4.0.0'
-  pod 'SwiftyStoreKit', '~> 0.16.1'
   pod 'Alertift', '~> 4.1'
   pod "KRProgressHUD", '~> 3.4'
-  
-  # Pods for Dplan
+
   
   post_install do |installer|
     installer.pods_project.targets.each do |target|
