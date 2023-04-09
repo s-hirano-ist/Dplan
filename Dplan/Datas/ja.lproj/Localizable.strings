@@ -5,6 +5,7 @@
   Created by S.Hirano on 2020/03/09.
   Copyright © 2020 Sola Studio. All rights reserved.
 */
+
 "Privacy policy" = "プライバシーポリシー";
 "Terms of service" = "利用規約";
 "Yes" = "はい";
@@ -25,9 +26,7 @@
 
 "All plans" = "プラン一覧";
 "All places" = "候補地一覧";
-"Websites" = "ウェブサイト";
 "Website" = "ウェブサイト";
-"Website URL" = "ウェブサイト";
 
 "Show map" = "地図で表示";
 "Show all" = "すべてを表示";
@@ -47,6 +46,7 @@
 "Edit website" = "ウェブサイト編集";
 "Add candidate" = "候補地追加";
 "Edit candidate" = "候補地編集";
+
 "Candidate places" = "候補地";
 "Images" = "画像一覧";
 "Plans" = "プラン一覧";
@@ -113,7 +113,7 @@
 
 "About the app" = "このアプリについて";
 "App version" = "アプリのバージョン";
-"User name" = "ユーザー名";
+"user name" = "ユーザー名";
 "password" = "パスワード";
 "e-mail address" = "Eメールアドレス";
 "Registrated information" = "登録情報";
