@@ -1,5 +1,4 @@
 PODS:
-  - Alertift (4.2.0)
   - CropViewController (2.6.1)
   - DKCamera (1.6.7)
   - DKImagePickerController (4.3.4):
@@ -86,7 +85,6 @@ PODS:
   - SwipeCellKit (2.7.1)
 
 DEPENDENCIES:
-  - Alertift (~> 4.1)
   - CropViewController
   - DKImagePickerController (~> 4.3.4)
   - FloatingPanel (~> 1.7.6)
@@ -105,7 +103,6 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
-    - Alertift
     - CropViewController
     - DKCamera
     - DKImagePickerController
@@ -131,7 +128,6 @@ SPEC REPOS:
     - SwipeCellKit
 
 SPEC CHECKSUMS:
-  Alertift: 17b37be915cd28edeceabd438e4134d041ea825c
   CropViewController: 58fb440f30dac788b129d2a1f24cffdcb102669c
   DKCamera: a902b66921fca14b7a75266feb8c7568aa7caa71
   DKImagePickerController: b512c28220a2b8ac7419f21c491fc8534b7601ac
@@ -156,6 +152,6 @@ SPEC CHECKSUMS:
   SwiftyGif: 93a1cc87bf3a51916001cf8f3d63835fb64c819f
   SwipeCellKit: 3972254a826da74609926daf59b08d6c72e619ea
 
-PODFILE CHECKSUM: 32ad3e068c37a578fe5ef15ae2135d918302bd95
+PODFILE CHECKSUM: e8ad61af73944e66f44e404efd60f1a8a85bb4d3
 
 COCOAPODS: 1.12.0
