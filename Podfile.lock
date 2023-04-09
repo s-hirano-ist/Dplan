@@ -65,7 +65,7 @@ PODS:
   - Motion (3.1.3):
     - Motion/Core (= 3.1.3)
   - Motion/Core (3.1.3)
-  - R.swift (7.2.4)
+  - R.swift (7.3.0)
   - Realm (10.33.0):
     - Realm/Headers (= 10.33.0)
   - Realm/Headers (10.33.0)
@@ -95,7 +95,7 @@ DEPENDENCIES:
   - KRProgressHUD (~> 3.4)
   - Material (~> 3.1.0)
   - Motion (~> 3.1.0)
-  - R.swift (~> 7.2.4)
+  - R.swift (~> 7.3.0)
   - RealmSwift (~> 10.33.0)
   - RxCocoa (~> 6.5.0)
   - RxSwift (~> 6.5.0)
@@ -144,7 +144,7 @@ SPEC CHECKSUMS:
   KRProgressHUD: a248f0bc6c9c2aed40a37b76e03ffecc7f85c887
   Material: a2a3f400a3b549d53ef89e56c58c4535b29db387
   Motion: cf1e060e489f6661126374d5c60dbd2ed991605c
-  R.swift: 681bb9135f482e7a81d9d27445b837fef5467e11
+  R.swift: cef1c530541cb49412752721797f10dae6b32d11
   Realm: d4f810e161fa2c2c589b9860b6eb09238deacd73
   RealmSwift: cef9946f09f2333a8f2ac8bac4f8de52fb9f5ac3
   RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
@@ -156,6 +156,6 @@ SPEC CHECKSUMS:
   SwiftyGif: 93a1cc87bf3a51916001cf8f3d63835fb64c819f
   SwipeCellKit: 3972254a826da74609926daf59b08d6c72e619ea
 
-PODFILE CHECKSUM: e8ef7b7da7c3bb4892b666940908635d1043089c
+PODFILE CHECKSUM: 32ad3e068c37a578fe5ef15ae2135d918302bd95
 
 COCOAPODS: 1.12.0

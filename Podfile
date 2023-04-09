@@ -12,7 +12,7 @@ target 'Dplan' do
 
   pod 'Material', '~> 3.1.0'
   pod 'CropViewController'
-  pod 'R.swift', '~> 7.2.4'
+  pod 'R.swift', '~> 7.3.0'
   pod 'SwipeCellKit', '~> 2.7.1'
   pod 'RxSwift', '~> 6.5.0'
   pod 'RxCocoa', '~> 6.5.0'
@@ -23,7 +23,6 @@ target 'Dplan' do
   pod 'IGListKit', '~> 4.0.0'
   pod 'Alertift', '~> 4.1'
   pod "KRProgressHUD", '~> 3.4'
-
   
   post_install do |installer|
     installer.pods_project.targets.each do |target|
