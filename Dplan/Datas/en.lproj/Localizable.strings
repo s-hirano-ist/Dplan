@@ -1,0 +1,148 @@
+/* 
+ Localizable.strings
+ Dplan
+ 
+ Created by S.Hirano on 2020/03/09.
+ Copyright © 2020 Sola Studio. All rights reserved.
+ */
+
+"Privacy policy" = "Privacy policy";
+"Terms of service" = "Terms of service";
+"Yes" = "Yes";
+"No" = "No";
+"Cancel" = "Cancel";
+"Close" = "Close";
+"Confirm" = "Confirm";
+"Search" = "Search";
+"Share" = "Share";
+"Open in Safari" = "Open in Safari";
+"Edit" = "Edit";
+"Move,Delete" = "Move,Delete";
+"Done" = "Done";
+"OK" = "OK";
+"Save" = "Save";
+"Title" = "Title";
+"No title" = "No title";
+
+"All plans" = "All plans";
+"All places" = "All places";
+"Website" = "Website";
+
+"Show map" = "Show map";
+"Show all" = "Show all";
+"Show less" = "Show less";
+
+"Make new plan" = "Make new plan";
+"Add new day" = "Add new day";
+"Add destination" = "Add destination";
+"Edit destination" = "Edit destination";
+
+"Edit transport" = "Edit transport";
+
+"Edit taken time" = "Edit taken time";
+"Add place" = "Add place";
+"Add plan" = "Add plan";
+"Add website" = "Add website";
+"Edit website" = "Edit website";
+"Add candidate" = "Add canditate";
+"Edit candidate" = "Edit canditate";
+
+"Candidate places" = "Candidate places";
+"Images" = "Images";
+"Plans" = "Plans";
+"Places" = "Places";
+"Websites" = "Websites";
+
+"Go here" = "Go here";
+
+"Open in map app" = "Open in map app";
+"Show route" = "Show route";
+
+"Show route in Maps" = "Show route in Maps";
+"Show route in Google Maps" = "Show route in Google Maps";
+"Show route from here" = "Show route from here";
+
+"Open in Maps" = "Open in Maps";
+"Open in Google Maps" = "Open in Google Maps";
+"Copy location" = "Copy location";
+
+"Departing time" = "Departing time";
+"Destination" = "Destination";
+"Time at destination" = "Time at destination";
+"Time to depart" = "Time to depart";
+"Date of departure" = "Date of departure";
+"Pull to refresh" = "Pull to refresh";
+"https://www.google.com" = "https://www.google.com/";
+
+"Authentication is needed" = "Authentication is needed";
+"Input username and password" = "Input username and password";
+"Log in" = "Log in";
+"Input title" = "Input title";
+
+"Title of event" = "Title of event";
+"Add title image" = "Add title image";
+"Add image" = "Add image";
+"Name" = "Name";
+"Name of place" = "Name of place";
+"Description of place" = "Description of place";
+"Destination" = "Destination";
+"Departing place" = "Departing place";
+"place Name" = "place Name";
+"Details" = "Details";
+"Address" = "Address";
+"Add here to other data" = "Add here to other data";
+"Transport to here" = "Transport to here";
+
+"Stay time" = "stay time";
+"Departing time" = "Departing time";
+"Time" = "Time";
+"Departing date" = "Departing date";
+
+"Notes" = "Notes";
+"Name of place" = "Name of place";
+"Event title" = "Event title";
+"Search for a place or address" = "Search for a place or address";
+"Click to enter title" = "Click to enter title";
+"Not entered" = "Not entered";
+"min" = "min";
+"hr" = "hr";
+"Time to destination" = "Time to destination";
+"Lock time" = "Lock time";
+
+"OverWrite" = "Overwrite";
+
+"About the app" = "About the app";
+"App version" = "App version";
+"user name" = "user name";
+"password" = "password";
+"e-mail address" = "e-mail address";
+"Registrated information" = "Registrated information";
+"Sign out" = "Sign out";
+"Nothing entered" = "Nothing entered";
+"Terms of service" = "Terms of service";
+"Privacy policy" = "Privacy policy";
+"Tap the \" + \" button to add a new plan" = "Tap the \" + \" button to add a new plan";
+"Tap the \" + \" button to add a new bookmark to a website" = "Tap the \" + \" button to add a new bookmark to a website";
+"Tap the \" + \" button to add a new place you want to go" = "Tap the \" + \" button to add a new place you want to go";
+"Add images to plans on the left screen or place you want to go to show images here" = "Add images to plans on the left screen or place you want to go to show images here";
+
+"Unlock premium features" = "Unlock premium features";
+"Remove Ads" = "Remove Ads";
+"Restore premium features" = "Restore premium features";
+"Dismiss" = "閉じる";
+"Premium account" = "Premium account";
+"features: No Ads" = "features: No Ads";
+"Purchase succeeded" = "Purchase succeeded";
+"Restore failed" = "Restore failed";
+"Restore completed" = "Restore completed";
+"Please try again" ="再度お試し下さい";
+"Press dismiss to continue" = "Press dismiss to continue";
+"Nothing to restore" = "Nothing to restore";
+"Please purchase the app. Please contact us for more information" = "Please purchase the app. Please contact us for more information";
+"Error occured on purchase" = "Error occured on purchase";
+"Please retry" = "Please retry";
+"Are you sure to sign out? No data except for user information will be deleted in this action." = "Are you sure to sign out? No data except for user information will be deleted in this action.";
+"Welcome to Dplan" = "Welcome to Dplan";
+
+"Official Twitter" = "Official Twitter";
+"Official Instagram" = "Official Instagram";
