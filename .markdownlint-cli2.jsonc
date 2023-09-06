@@ -1,0 +1,8 @@
+{
+  "config": {
+    "line-length": false, // MD013  行の長さ
+    "no-bare-urls": false, // MD034 URLのリンク化条件
+    "no-duplicate-header": false
+  },
+  "ignores": [".git", "node_modules"] // 無視するディレクトリ
+}

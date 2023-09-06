@@ -36,9 +36,33 @@ Cocoapods の開発環境をセットアップ
 sudo gem install cocoapods
 ```
 
-Cocoapods のライブラリをインストール
+> https://guides.cocoapods.org/using/getting-started.html
+>
+> https://qiita.com/ryamate/items/e51c77fbabc2aec185fc
+
+Cocoapodsのライブラリをインストール
 
 ```bash
-cd Dplan
+pod install
 pod update
 ```
+
+## Hints
+
+### Xcode gitignore
+
+> https://ios-docs.dev/xcode-gitignore/
+
+### Lint
+
+Swift Lint
+
+> https://github.com/realm/SwiftLint
+
+### Apple 提供アイコン
+
+`SF Symbols.app`をインストール
+
+### Realm Swift データベースの閲覧
+
+`Realm Swift.app`をインストール
