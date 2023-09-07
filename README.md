@@ -47,7 +47,7 @@ pod install
 pod update
 ```
 
-## Hints
+## References
 
 ### Xcode gitignore
 
@@ -66,3 +66,17 @@ Swift Lint
 ### Realm Swift データベースの閲覧
 
 `Realm Swift.app`をインストール
+
+## Swift UI
+
+本プロジェクトでは非採用。
+
+### Tutorials
+
+> https://developer.apple.com/tutorials/swiftui/building-lists-and-navigation
+>
+> https://tech-blog.rakus.co.jp/entry/20210716/swiftui
+>
+> https://hirlab.net/nblog/category/programming/art_1440/
+>
+> https://hirlab.net/nblog/category/programming/art_1445/
