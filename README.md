@@ -46,37 +46,3 @@ Cocoapodsのライブラリをインストール
 pod install
 pod update
 ```
-
-## References
-
-### Xcode gitignore
-
-> https://ios-docs.dev/xcode-gitignore/
-
-### Lint
-
-Swift Lint
-
-> https://github.com/realm/SwiftLint
-
-### Apple 提供アイコン
-
-`SF Symbols.app`をインストール
-
-### Realm Swift データベースの閲覧
-
-`Realm Swift.app`をインストール
-
-## Swift UI
-
-本プロジェクトでは非採用。
-
-### Tutorials
-
-> https://developer.apple.com/tutorials/swiftui/building-lists-and-navigation
->
-> https://tech-blog.rakus.co.jp/entry/20210716/swiftui
->
-> https://hirlab.net/nblog/category/programming/art_1440/
->
-> https://hirlab.net/nblog/category/programming/art_1445/
