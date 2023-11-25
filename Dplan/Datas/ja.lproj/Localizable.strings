@@ -139,7 +139,7 @@
 "Press dismiss to continue" = "閉じるボタンを押して下さい";
 "Nothing to restore" = "復元できる購入履歴が存在しません";
 "Please purchase the app. Please contact us for more information" = "まずはプレミア版を購入して下さい。何がお困りの点がございましたらデベロッパーに問い合わせ下さい。";
-"Error occured on purchase" = "購入に失敗しました";
+"Error occurred on purchase" = "購入に失敗しました";
 "Please retry" = "再手続きしてください";
 "Are you sure to sign out? No data except for user information will be deleted in this action." = "本当にログアウトしますか。登録されたユーザー情報以外は削除されません。";
 "Welcome to Dplan" = "Dplanへようこそ";

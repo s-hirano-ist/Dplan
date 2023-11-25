@@ -341,12 +341,12 @@ struct _R {
       /// Locales: ja, en
       var editWebsite: RswiftResources.StringResource { .init(key: "Edit website", tableName: "Localizable", source: source, developmentValue: "Edit website", comment: nil) }
 
-      /// en translation: Error occured on purchase
+      /// en translation: Error occurred on purchase
       ///
-      /// Key: Error occured on purchase
+      /// Key: Error occurred on purchase
       ///
       /// Locales: ja, en
-      var errorOccuredOnPurchase: RswiftResources.StringResource { .init(key: "Error occured on purchase", tableName: "Localizable", source: source, developmentValue: "Error occured on purchase", comment: nil) }
+      var errorOccurredOnPurchase: RswiftResources.StringResource { .init(key: "Error occurred on purchase", tableName: "Localizable", source: source, developmentValue: "Error occurred on purchase", comment: nil) }
 
       /// en translation: Event title
       ///

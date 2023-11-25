@@ -44,8 +44,8 @@
 "Add plan" = "Add plan";
 "Add website" = "Add website";
 "Edit website" = "Edit website";
-"Add candidate" = "Add canditate";
-"Edit candidate" = "Edit canditate";
+"Add candidate" = "Add candidate";
+"Edit candidate" = "Edit candidate";
 
 "Candidate places" = "Candidate places";
 "Images" = "Images";
@@ -139,7 +139,7 @@
 "Press dismiss to continue" = "Press dismiss to continue";
 "Nothing to restore" = "Nothing to restore";
 "Please purchase the app. Please contact us for more information" = "Please purchase the app. Please contact us for more information";
-"Error occured on purchase" = "Error occured on purchase";
+"Error occurred on purchase" = "Error occurred on purchase";
 "Please retry" = "Please retry";
 "Are you sure to sign out? No data except for user information will be deleted in this action." = "Are you sure to sign out? No data except for user information will be deleted in this action.";
 "Welcome to Dplan" = "Welcome to Dplan";
